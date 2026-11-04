@@ -1,0 +1,276 @@
+{
+  "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+  "checkpoint_bytes_verified": false,
+  "feasibility": {
+    "loose": {
+      "deployment_filter_hash": "93f468accdec50a291316959e6f0d7e516c78e8eadf122f2278fb378a8c3aa1b",
+      "feasible_ids": [
+        "msa_a1_pt",
+        "msa_a6_pt",
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_pt",
+        "msa_a62_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ],
+      "feasible_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "initial_candidate_ids": [
+        "msa_a1_pt",
+        "msa_a6_pt",
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a62_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ]
+    },
+    "medium": {
+      "deployment_filter_hash": "5de5678f276c1f906533b63f643c57f142326486d2bde9a7333530a95089085d",
+      "feasible_ids": [
+        "msa_a1_pt",
+        "msa_a6_pt",
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_pt",
+        "msa_a62_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ],
+      "feasible_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "initial_candidate_ids": [
+        "msa_a1_pt",
+        "msa_a6_pt",
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a62_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ]
+    },
+    "tight": {
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "feasible_ids": [
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ],
+      "feasible_mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "initial_candidate_ids": [
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ]
+    }
+  },
+  "identities": [
+    {
+      "architecture": "MLP_L2_H32_D0.1",
+      "architecture_index": 1,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a1.pt",
+      "checkpoint_sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "family": "MLP",
+      "identity_id": "msa_a1_pt",
+      "operation_count": 155712,
+      "parameter_count": 77921,
+      "source_initialization_id": "pt_seed_3006"
+    },
+    {
+      "architecture": "MLP_L3_H32_D0.0",
+      "architecture_index": 6,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a6.pt",
+      "checkpoint_sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "family": "MLP",
+      "identity_id": "msa_a6_pt",
+      "operation_count": 157760,
+      "parameter_count": 78977,
+      "source_initialization_id": "pt_seed_3011"
+    },
+    {
+      "architecture": "TCN_B4_C16_K3_Dil1",
+      "architecture_index": 46,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a46.pt",
+      "checkpoint_sha256": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+      "family": "TCN",
+      "identity_id": "msa_a46_pt",
+      "operation_count": 1339424,
+      "parameter_count": 7137,
+      "source_initialization_id": "pt_seed_3051"
+    },
+    {
+      "architecture": "GRU_L1_H16_D0.1",
+      "architecture_index": 55,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a55.pt",
+      "checkpoint_sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "family": "GRU",
+      "identity_id": "msa_a55_pt",
+      "operation_count": 377888,
+      "parameter_count": 2081,
+      "source_initialization_id": "pt_seed_3060"
+    },
+    {
+      "architecture": "GRU_L1_H32_D0.0",
+      "architecture_index": 56,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a56.pt",
+      "checkpoint_sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "family": "GRU",
+      "identity_id": "msa_a56_pt",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "pt_seed_3061"
+    },
+    {
+      "architecture": "GRU_L1_H32_D0.1",
+      "architecture_index": 57,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a57.pt",
+      "checkpoint_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "family": "GRU",
+      "identity_id": "msa_a57_pt",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "pt_seed_3062"
+    },
+    {
+      "architecture": "GRU_L2_H32_D0.0",
+      "architecture_index": 62,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a62.pt",
+      "checkpoint_sha256": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+      "family": "GRU",
+      "identity_id": "msa_a62_pt",
+      "operation_count": 2230336,
+      "parameter_count": 12033,
+      "source_initialization_id": "pt_seed_3067"
+    },
+    {
+      "architecture": "GRU_L1_H32_D0.1",
+      "architecture_index": 57,
+      "checkpoint": "imported/msa_dti/bank/medet_style_h1_a57.pt",
+      "checkpoint_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "family": "GRU",
+      "identity_id": "msa_a57_medet",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "medet_source_meta_init"
+    },
+    {
+      "architecture": "GRU_L1_H32_D0.1",
+      "architecture_index": 57,
+      "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_b.pt",
+      "checkpoint_sha256": "8cd6f77ea8b54eaf3583bee5619cf2a5a27f9fafff14299bc9165bd83fdd5e09",
+      "family": "GRU",
+      "identity_id": "p3v2_a57_regime_b",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "c3_b_seed_42057"
+    },
+    {
+      "architecture": "GRU_L1_H32_D0.1",
+      "architecture_index": 57,
+      "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_c_control.pt",
+      "checkpoint_sha256": "599394e21dc5bda5721373cae14dfeaa754668ab2e135551a45a77a506df7452",
+      "family": "GRU",
+      "identity_id": "p3v2_a57_regime_c_control",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "c4_c_seed_42157"
+    },
+    {
+      "architecture": "TCN_B4_C16_K3_Dil1",
+      "architecture_index": 46,
+      "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a46_regime_c.pt",
+      "checkpoint_sha256": "cc468e7dc4e27f9a319832c73b3b1e84723c8e8c2a029bee4e8b3e868c40de62",
+      "family": "TCN",
+      "identity_id": "p3v2_a46_regime_c",
+      "operation_count": 1339424,
+      "parameter_count": 7137,
+      "source_initialization_id": "c4_c_seed_42046"
+    }
+  ],
+  "limits_by_tier": {
+    "loose": {
+      "operations": 20000000,
+      "parameters": 500000
+    },
+    "medium": {
+      "operations": 5000000,
+      "parameters": 100000
+    },
+    "tight": {
+      "operations": 1500000,
+      "parameters": 30000
+    }
+  },
+  "metadata_provenance_schema": "paper3-metadata-json-v1",
+  "resource_profiling_executed": false,
+  "source_files": {
+    "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/source_training_manifest.json": {
+      "path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\artifacts\\p3_2_source_bank\\p3_mismatch_v2_r3\\source_training_manifest.json",
+      "sha256": "84ab3d962e9a566303060fa98febcadef26eb1e5d472f81d32d986c35de3b940"
+    },
+    "artifacts/p3_model_bank_manifest.json": {
+      "path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\artifacts\\p3_model_bank_manifest.json",
+      "sha256": "e607a65adfb05b91bf8d9ebac77052d6e13223dfd54e47e655167e20c92342c8"
+    },
+    "configs/p3_mismatch_v2_frozen.json": {
+      "path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\configs\\p3_mismatch_v2_frozen.json",
+      "sha256": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646"
+    }
+  }
+}

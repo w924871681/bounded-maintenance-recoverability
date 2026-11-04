@@ -1,0 +1,138 @@
+{
+  "R2": "PENDING_SEPARATE_AUTHORIZATION",
+  "R3": "PENDING_SEPARATE_AUTHORIZATION",
+  "candidate_id": "P7_7_ORIGINAL_BATCH20_CANDIDATE_V1",
+  "centers": [
+    33000,
+    33001,
+    33002,
+    33003,
+    33004,
+    33005,
+    33006,
+    33007,
+    33008,
+    33009,
+    33010,
+    33011,
+    33012,
+    33013,
+    33014,
+    33015,
+    33016,
+    33017,
+    33018,
+    33019
+  ],
+  "contexts": {
+    "F": {
+      "n_centers": 20,
+      "ordered_centers": [
+        33000,
+        33001,
+        33002,
+        33003,
+        33004,
+        33005,
+        33006,
+        33007,
+        33008,
+        33009,
+        33010,
+        33011,
+        33012,
+        33013,
+        33014,
+        33015,
+        33016,
+        33017,
+        33018,
+        33019
+      ],
+      "seed_offset": 561000,
+      "start_center_id": 33000
+    },
+    "S": {
+      "n_centers": 1,
+      "seed_offset_rule": "center_id*17",
+      "start_center_id_rule": "center_id"
+    }
+  },
+  "data_seed": 7311,
+  "drift_prob_override": {
+    "A": 0.0,
+    "B": 0.0,
+    "C": 0.0
+  },
+  "kmax": 12,
+  "legacy_hash": "core/common.py:22-29 shape+dtype.str+Cbytes SHA256",
+  "metadata_schema": "$paper3_ndarray_v1 with dtype_str/shape/data; numpy scalars to native JSON",
+  "methods": [
+    [
+      "B0",
+      "B0_Frozen_ratio10"
+    ],
+    [
+      "B1",
+      "B1_AlwaysMaintainP50_ratio10"
+    ],
+    [
+      "B2",
+      "B2_RAVM_ratio10"
+    ],
+    [
+      "B8",
+      "B8_AlwaysOpen_ratio10"
+    ],
+    [
+      "P7.7",
+      "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33"
+    ]
+  ],
+  "model_features": 25,
+  "model_seeds": [
+    7311,
+    7312,
+    7313
+  ],
+  "n_history": 17000,
+  "onset_raw_index": 6520,
+  "provenance_hash": "finite deterministic JSON; distinct schema and context bindings",
+  "raw_features": 24,
+  "reference_span": [
+    800,
+    1000
+  ],
+  "replicates": {
+    "F1": "ascending-full20",
+    "F2": "ascending-full20",
+    "S1": "ascending-singletons",
+    "S2": "descending-singletons"
+  },
+  "scenario_revision": "p3_mismatch_v2_r3",
+  "scenarios": [
+    "C0",
+    "C1",
+    "C3",
+    "C4"
+  ],
+  "schedule_orders": [
+    "canonical",
+    "reversed",
+    "7i_mod1200"
+  ],
+  "schedule_workers": [
+    1,
+    3
+  ],
+  "schema": "paper3-civ-scientific-definition-v1",
+  "selection_based_on_performance": false,
+  "stage_span_rule": "b=1400+(t-1)*640;upd=[1000,1400) if t=1 else[b-400,b);assess=[b,b+240);srv=[b+240,b+640)",
+  "stages": 24,
+  "verification_id": "P7_7_CANONICAL_INPUT_VERIFICATION_V1",
+  "warmup_span": [
+    0,
+    800
+  ],
+  "window": 96
+}

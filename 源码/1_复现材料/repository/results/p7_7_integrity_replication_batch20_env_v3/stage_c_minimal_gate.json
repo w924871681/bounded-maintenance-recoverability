@@ -1,0 +1,26 @@
+{
+  "completed_trajectories": 5,
+  "groups": {
+    "33000/7311/C0": {
+      "all_24_stage_input_fields_equal": true,
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "5de5678f276c1f906533b63f643c57f142326486d2bde9a7333530a95089085d",
+      "deployment_tier": "medium",
+      "five_methods": true,
+      "initial_state_hash": "362f5d246a6cc2f16cebe32c789c7749eaa9bb4491df9df6c040eb0bc7e72323",
+      "receipt_sha256": {
+        "B0": "f9fec54be97b70e794b1fd1e0550725dd9645f6781ca6a8fa92a3558cfdd091a",
+        "B1": "eefdbdc2bb4c61f82f0676d652a445eb4ff6c0c581e7e2962ba44143a539d8b7",
+        "B2": "8ce10348986a2309d4d0e53336eada61953f03265c0d7e30fc159495c9cf5065",
+        "B8": "9e8632d7a09889a129b91ee6d579f95cfce0042174c4f2fd1cd22bf103661813",
+        "P7.7": "498e6d65a541a8ffc5fb4b3e73fb07fbbd84131bf6317e7512526e35720b4c2f"
+      },
+      "scenario_hash": "8aa719b57cf2e041961fac4127e5b99dfe797ae1cc6a50a37dfc05c69433f097"
+    }
+  },
+  "included_in_predeclared_new_1200": true,
+  "manifest_digest": "7eebe390398395b6ebb1247ba2722b6d5928a65b0c06d039b85eacaa39c359ea",
+  "performance_used_for_gate": false,
+  "predeclared_group": "33000/7311/C0",
+  "stage_c_pass": true
+}

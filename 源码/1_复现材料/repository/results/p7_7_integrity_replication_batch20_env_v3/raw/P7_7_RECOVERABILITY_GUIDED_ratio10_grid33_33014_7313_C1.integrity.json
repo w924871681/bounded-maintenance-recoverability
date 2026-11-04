@@ -1,0 +1,193 @@
+{
+  "attempt_csv_hash": "aae86bba470fff0956bf69aa9cfd4e3ae0d153a901a148f7aba8d2aafd299411",
+  "attempt_csv_relative": "attempts/P7_7_RECOVERABILITY_GUIDED_ratio10_grid33_33014_7313_C1/A_DYNAMIC_0002/DW0001/trajectory.csv",
+  "attempt_id": "A_DYNAMIC_0002",
+  "audit_hash": "77ea6dcd40dbe96e2837932072808b318b8c8c7a8ede5252a3050fd8f2255f15",
+  "audit_path": "attempts/P7_7_RECOVERABILITY_GUIDED_ratio10_grid33_33014_7313_C1/A_DYNAMIC_0002/DW0001/audit.json",
+  "audit_relative": "attempts/P7_7_RECOVERABILITY_GUIDED_ratio10_grid33_33014_7313_C1/A_DYNAMIC_0002/DW0001/audit.json",
+  "audit_sha256": "77ea6dcd40dbe96e2837932072808b318b8c8c7a8ede5252a3050fd8f2255f15",
+  "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+  "created_utc": "2026-10-10T02:01:26.213240+00:00",
+  "deployment_filter_hash": "5de5678f276c1f906533b63f643c57f142326486d2bde9a7333530a95089085d",
+  "deployment_tier": "medium",
+  "environment_binding": "7bed0e525859e81ed4cfd5cdb7cf6f8947a44c36920a4999e168fa4eb4e50079",
+  "executor_bundle_digest": "9a928dc0b7f96977b7881814e67b6b72020f706fdc0ac45ec1b7a3f8c9413b31",
+  "full_24_stage_input_parity_checked": true,
+  "future_online_access_violation_count": 0,
+  "implementation_hash": "378f2b8644f97e87fa819661da694d1bfcb163e7d183d110edf5f08c9d6dfe3d",
+  "initial_state_hash": "523103aa03eaa91f316852a9f3a6762b22337d285837822ef751ee4a1aca2732",
+  "initial_state_manifest_sha256": "18b329d5468d85961e28f24a1f45df9b2191530a9b26244642dbf6d2304e19dc",
+  "input_bundle_digest": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+  "manifest_digest": "7eebe390398395b6ebb1247ba2722b6d5928a65b0c06d039b85eacaa39c359ea",
+  "output_hash": "aae86bba470fff0956bf69aa9cfd4e3ae0d153a901a148f7aba8d2aafd299411",
+  "performance_based_continuation": false,
+  "primary_service_values_finite": true,
+  "protocol_hash": "6339a9247b984b497d1543198b3a7b7c0cfdf9c7bcfd1c52b47b62e17d2fd0df",
+  "rng_before_path": "attempts/P7_7_RECOVERABILITY_GUIDED_ratio10_grid33_33014_7313_C1/A_DYNAMIC_0002/DW0001/rng_before.json",
+  "rng_before_sha256": "3615b4833470f9fff47da6d46cd08fb7ece68aab9935f39e3b096f1d2ed18991",
+  "rng_file_sha256": "3615b4833470f9fff47da6d46cd08fb7ece68aab9935f39e3b096f1d2ed18991",
+  "rng_relative": "attempts/P7_7_RECOVERABILITY_GUIDED_ratio10_grid33_33014_7313_C1/A_DYNAMIC_0002/DW0001/rng_before.json",
+  "runner_hash": "ced000f213f8fc9b52a859e683fc6d27dd04a268641c3d6024500f56c1c158fe",
+  "runtime_receipt_path": "workers/DW0001_A_DYNAMIC_0002_trajectory.runtime.json",
+  "runtime_receipt_sha256": "a573bd2faaa73127f531e331d1a8a9d3fafb08dfbc8567bebc729058972d7a50",
+  "schema": "paper3-batch20-replication-trajectory-receipt-v1",
+  "scientific_runtime_signature": "31e897e3a131c7f2d222484d7629e82a312812646ebb46fa6eab9f6908796ddd",
+  "source_bindings_digest": "e9e75128c989c0cfbd608e6266326f679a4e810e91d45f0de9a7b6fdac17df4c",
+  "stage_input_hashes": [
+    {
+      "D_assess_hash": "8cd4076d23b672be506597ed8c27c1c7de2b7d8313f679912cfcf9fad5e0a904",
+      "D_srv_hash": "f8552f00c365cd39a1aa400e2e707511ba086138b99e7099b9dbfd4a7947404b",
+      "D_upd_hash": "7fb07a559d3a2106dc7c8b5b46caa8ab3914f0933d3976551fff9085c8a8068b",
+      "stage": 1
+    },
+    {
+      "D_assess_hash": "4a424661e150dbb9b4618fb2f51917504e05fdf81a34e796619f76e95d96184c",
+      "D_srv_hash": "aceea51b7ca056f7729e0628fda058896b688b06dfe608da4bf50108eafd86a4",
+      "D_upd_hash": "f8552f00c365cd39a1aa400e2e707511ba086138b99e7099b9dbfd4a7947404b",
+      "stage": 2
+    },
+    {
+      "D_assess_hash": "b2e1d8314b3cfe8324ea4a1825ed81814a6eb91af203f94bf9023b149a1fea3b",
+      "D_srv_hash": "9972b1dcf83c0f8e7e141e15e97b3d455a80d0c713d7d66e891713ab2775a2a1",
+      "D_upd_hash": "aceea51b7ca056f7729e0628fda058896b688b06dfe608da4bf50108eafd86a4",
+      "stage": 3
+    },
+    {
+      "D_assess_hash": "aa5d8e1d2d3d480e3ba2da1c3dc96a9515ca2c7ef8fc36b7e0c1614fc6d66705",
+      "D_srv_hash": "a28123dc9b2a560f1e9318eb60b06df7dc0186b588614b0b26f03592aea731ae",
+      "D_upd_hash": "9972b1dcf83c0f8e7e141e15e97b3d455a80d0c713d7d66e891713ab2775a2a1",
+      "stage": 4
+    },
+    {
+      "D_assess_hash": "ebc756b2408a066912767c7e276f0d4e2b964c1e7228672f5f5381ce87d09d10",
+      "D_srv_hash": "2a1e02075922785d19741331727e3b83de8fd5ff5940db491237db6ffeb011c3",
+      "D_upd_hash": "a28123dc9b2a560f1e9318eb60b06df7dc0186b588614b0b26f03592aea731ae",
+      "stage": 5
+    },
+    {
+      "D_assess_hash": "2bb2be29bdd39ec0227fe92dea3b63054c6832a69cc8a61956504bd21ac1c5af",
+      "D_srv_hash": "361ede7cc40282491931421bc6ad360ab811268a92df698de75ff49f9b8839b9",
+      "D_upd_hash": "2a1e02075922785d19741331727e3b83de8fd5ff5940db491237db6ffeb011c3",
+      "stage": 6
+    },
+    {
+      "D_assess_hash": "860b9001b406dac4e04e3a656881753d685338cc68e3a67dff56532e8f62745f",
+      "D_srv_hash": "8aff91ff3a8ee67fdeb94ebfb3cf330b0bf633f7235702705ef6c99b1e563848",
+      "D_upd_hash": "361ede7cc40282491931421bc6ad360ab811268a92df698de75ff49f9b8839b9",
+      "stage": 7
+    },
+    {
+      "D_assess_hash": "d9fecbba02b03f35f771d9e6acf98cc2d36dd1139774631489dad50e8c872064",
+      "D_srv_hash": "a161a4a34bcae883487066d77c027a7488faa47ff1ef4e763538f0a2071fc9bd",
+      "D_upd_hash": "8aff91ff3a8ee67fdeb94ebfb3cf330b0bf633f7235702705ef6c99b1e563848",
+      "stage": 8
+    },
+    {
+      "D_assess_hash": "ec597cd6ae5573795ec35e521ea31d5a677596d7a8324120f1844a429d164475",
+      "D_srv_hash": "f08f50a3d01b275f8b197e4cd7c5ab044c95873603267353d66a9e037e433be4",
+      "D_upd_hash": "a161a4a34bcae883487066d77c027a7488faa47ff1ef4e763538f0a2071fc9bd",
+      "stage": 9
+    },
+    {
+      "D_assess_hash": "b9c1186e453d3f98cda770af993bbc1627c6584797ceb29016dc137cf5f22a22",
+      "D_srv_hash": "3fd681eac2601b1c99d7d3ba231f925af8b2235fea0f324cf686e009d668955d",
+      "D_upd_hash": "f08f50a3d01b275f8b197e4cd7c5ab044c95873603267353d66a9e037e433be4",
+      "stage": 10
+    },
+    {
+      "D_assess_hash": "7f69e9ba06413d075766638504f15bc09ac3e627ed12c38539bb9734b38394e0",
+      "D_srv_hash": "37f5f700a9df4ec47ecbe484016e413360eae20a95105e5f7d035cd65718f734",
+      "D_upd_hash": "3fd681eac2601b1c99d7d3ba231f925af8b2235fea0f324cf686e009d668955d",
+      "stage": 11
+    },
+    {
+      "D_assess_hash": "55d5cdfdb00ed9901a79d6eae1d6b63c28d1284821e4e5021231858a1f7cfdcb",
+      "D_srv_hash": "6811cdd108156c83698945ffbc05fedbf23cfd8482ba963a2d73c955df344764",
+      "D_upd_hash": "37f5f700a9df4ec47ecbe484016e413360eae20a95105e5f7d035cd65718f734",
+      "stage": 12
+    },
+    {
+      "D_assess_hash": "fa426c0ff78552b5271d1d04270cdcedb4998f43402840c54ba62cd60a037e56",
+      "D_srv_hash": "1c5ef55426803a45bed97cc260cd7b7b0c158cd98651cbceb203fc5004f13f42",
+      "D_upd_hash": "6811cdd108156c83698945ffbc05fedbf23cfd8482ba963a2d73c955df344764",
+      "stage": 13
+    },
+    {
+      "D_assess_hash": "20cd642c081b55d9db7275f6536f96831bc4f44a262724cd3cc1243d524c73e3",
+      "D_srv_hash": "23aec43ff14fb967a82cecdbdb6f640a1d83ce441e650934fbc46dbc39f5052d",
+      "D_upd_hash": "1c5ef55426803a45bed97cc260cd7b7b0c158cd98651cbceb203fc5004f13f42",
+      "stage": 14
+    },
+    {
+      "D_assess_hash": "ec08610680cb8c461a742b2e521ad263745714323116c407da6a97c6d3289de9",
+      "D_srv_hash": "f3509a2d78e2fc6d63f559e05fc25a81a98a3981fe59182e9f8e76c549c437a5",
+      "D_upd_hash": "23aec43ff14fb967a82cecdbdb6f640a1d83ce441e650934fbc46dbc39f5052d",
+      "stage": 15
+    },
+    {
+      "D_assess_hash": "cfa9a54c3a7f637ae3c8a8ea45013a2f604ae3c03801f039f01f4ff2cb6c4d56",
+      "D_srv_hash": "af96c756d1504193fc7eaba5ba0814b9e4207d11069a7ff23c1022e8f68d51e6",
+      "D_upd_hash": "f3509a2d78e2fc6d63f559e05fc25a81a98a3981fe59182e9f8e76c549c437a5",
+      "stage": 16
+    },
+    {
+      "D_assess_hash": "40f4249ef18bc23063cca14cd848507df48bdd6cd6913d4cf7f43d6b6fc47ab7",
+      "D_srv_hash": "82d57d312afa5f780bd3e6638a3405d453d2fcadbdd1777baa4be72cd43dcb76",
+      "D_upd_hash": "af96c756d1504193fc7eaba5ba0814b9e4207d11069a7ff23c1022e8f68d51e6",
+      "stage": 17
+    },
+    {
+      "D_assess_hash": "20c239ebcd20ec073e1e96d5d1eb50db3f37301e1c84a44d131eca9f8577c694",
+      "D_srv_hash": "450f82128032065dddc1fd988c303468b70cb1422bf44f5dda0aed008ec9c981",
+      "D_upd_hash": "82d57d312afa5f780bd3e6638a3405d453d2fcadbdd1777baa4be72cd43dcb76",
+      "stage": 18
+    },
+    {
+      "D_assess_hash": "19727ead7c37162493e84c9aac39f1bdd400987d331ade1e910b1fbe260f7da1",
+      "D_srv_hash": "787dbce6adae05995ec653abdf6ecc404e3baaab05de6f99f4d817ea892047b8",
+      "D_upd_hash": "450f82128032065dddc1fd988c303468b70cb1422bf44f5dda0aed008ec9c981",
+      "stage": 19
+    },
+    {
+      "D_assess_hash": "3905a276c69e89e2a6daf9db4cc2e846b4d648ee5076e9b94681e422354be0bd",
+      "D_srv_hash": "c9c186adccaa5a0e34d9e11c6c30253fc783352eff2d6951ef2369b2784ef3f1",
+      "D_upd_hash": "787dbce6adae05995ec653abdf6ecc404e3baaab05de6f99f4d817ea892047b8",
+      "stage": 20
+    },
+    {
+      "D_assess_hash": "8934164272e2b7f7ad81f79690724e3b8964502b4d5342428ff7dae099064c3b",
+      "D_srv_hash": "f93a4f5ad12887d91f7ba422d42078c87ea851c251330ff2f17d80beb7f0f316",
+      "D_upd_hash": "c9c186adccaa5a0e34d9e11c6c30253fc783352eff2d6951ef2369b2784ef3f1",
+      "stage": 21
+    },
+    {
+      "D_assess_hash": "26d5fe8bf7745ec27730b023aee14cbdcacf102b6f4e121a5efabf2cf5fee5fc",
+      "D_srv_hash": "2019008dfb7561bd07f6b9bc52c1e2d5bd8ad844337091fbf7a6d0259154447b",
+      "D_upd_hash": "f93a4f5ad12887d91f7ba422d42078c87ea851c251330ff2f17d80beb7f0f316",
+      "stage": 22
+    },
+    {
+      "D_assess_hash": "f7edcb75914e960b7dd9dadccaddd5bed4617daa58fcc4ad21a358791961dc5a",
+      "D_srv_hash": "b6baad865311ba8e9db702e1d35a365d039c35aae530b242fad2a487d49071d1",
+      "D_upd_hash": "2019008dfb7561bd07f6b9bc52c1e2d5bd8ad844337091fbf7a6d0259154447b",
+      "stage": 23
+    },
+    {
+      "D_assess_hash": "0bd277d11cfc172da0aba59c62236fe96802ff31140c497a64675793d5d50a22",
+      "D_srv_hash": "06f12552d890419bb15f92d759506788ddff9b72dbd4df93a1662f68d7cbe4e5",
+      "D_upd_hash": "b6baad865311ba8e9db702e1d35a365d039c35aae530b242fad2a487d49071d1",
+      "stage": 24
+    }
+  ],
+  "statistics_executed": false,
+  "task": {
+    "center_id": 33014,
+    "config_id": "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33",
+    "method": "P7.7",
+    "scenario": "C1",
+    "seed": 7313
+  },
+  "trajectory_rows": 24,
+  "valid": true,
+  "worker_id": "DW0001"
+}
