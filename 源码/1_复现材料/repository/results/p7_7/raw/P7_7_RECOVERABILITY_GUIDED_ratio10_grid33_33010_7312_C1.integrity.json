@@ -1,0 +1,17 @@
+{
+  "schema": "p7.7-final-heldout-trajectory-receipt-v1",
+  "valid": true,
+  "method": "P7.7",
+  "method_config_id": "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33",
+  "center_id": 33010,
+  "seed": 7312,
+  "scenario": "C1",
+  "protocol_hash": "6339a9247b984b497d1543198b3a7b7c0cfdf9c7bcfd1c52b47b62e17d2fd0df",
+  "runner_hash": "ced000f213f8fc9b52a859e683fc6d27dd04a268641c3d6024500f56c1c158fe",
+  "implementation_hash": "378f2b8644f97e87fa819661da694d1bfcb163e7d183d110edf5f08c9d6dfe3d",
+  "output_hash": "ceefd42dc1268d5c05d51eb699f62ec7f0671f09dccce38cc80530926edb3a17",
+  "trajectory_rows": 24,
+  "final_heldout_accessed": true,
+  "alibaba_accessed": false,
+  "p8_executed": false
+}
