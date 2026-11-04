@@ -1,0 +1,17 @@
+{
+  "schema": "p7.4b-validation-opening-v1",
+  "created_at_utc": "2026-09-23T08:52:55.521472+00:00",
+  "validation_open_authorized": true,
+  "fit_freeze_sha256": "7fc2e9b38e9df759af9de85a9d908c126277bafeea199dde1694ae0cb9bb5095",
+  "final_pipeline_hashes": {
+    "artifacts/p7_4b_A0_scaler.json": "cff4ec252551519d8a3996033c41400190ffa8ca1d6b0abc1df4cdec1589998f",
+    "artifacts/p7_4b_A0_estimator.pt": "3006174eff5778821bc87d404c566a33b7b9032a335244eda1d5371a0a0eb713",
+    "artifacts/p7_4b_A1_scaler.json": "60c66a7240efbfb60290b433cfb693f527f750d7f70bf22a3c613396a1800fa6",
+    "artifacts/p7_4b_A1_estimator.pt": "c71e8b250bf2b3b9dc99f76aec702f603e4196cc32f5f0e2a0f2805b573ca6f3"
+  },
+  "fit_freeze_git_commit": "024e6e1c36ad06737dcaa5e6ec0bc406b5239c54",
+  "no_refit_or_reselection_after_opening": true,
+  "heldout_accessed": false,
+  "alibaba_accessed": false,
+  "P8_executed": false
+}

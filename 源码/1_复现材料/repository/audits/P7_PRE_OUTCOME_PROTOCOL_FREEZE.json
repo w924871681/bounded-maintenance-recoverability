@@ -1,0 +1,19 @@
+{
+  "schema": "p7-pre-outcome-protocol-freeze-v1",
+  "bound_at_utc": "2026-09-16T14:48:34.880286+00:00",
+  "preregistration_git_commit": "46ee80aa1473e2a74853165ead42e816aabe2ca8",
+  "files": {
+    "configs/p7_protocol.json": "358882f75ce4170d576bff62913ff3999e7008dd3c3b1f0c6b63464c50d1ee57",
+    "configs/p7_delta_grid.json": "3865cf558a9bcf3b6e8891d376b1fa7ef0d665454a3fb13df52daf9cab28eb45",
+    "configs/p7_baseline_grids.json": "2682989b3525308330822f8e072697ad552df6ec42c089be6e66ebf752375489",
+    "configs/p7_ravm_provenance.json": "5c93ad04f8a5e8511376b37466175525cca3005222a50ad9aa5b0ad659575924",
+    "docs/P7_PROTOCOL_AND_EXECUTION_LOG.md": "33e2f8e77b665bff5435bc44476daf71532c8d185976979440755e4163c5ab91",
+    "core/p7.py": "412aa06af17b312f872b9921027610c41fbb9a83a215ffa2150e6aa349dd4821",
+    "scripts/run_p7.py": "51dd05f494ae561858c8de804eb34a4ef0590f69480aae0cc5dbae2baff25494",
+    "tests/test_p7.py": "d6257493cf99ba19955af9a1203ab182bf095c54f0787b5b77ea9664e3a86f89"
+  },
+  "P6_manifest_sha256": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f",
+  "calibration_outcomes_materialized": false,
+  "heldout_accessed": false,
+  "alibaba_accessed": false
+}

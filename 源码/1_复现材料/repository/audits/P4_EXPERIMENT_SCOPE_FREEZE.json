@@ -1,0 +1,106 @@
+{
+  "schema": "dt-lifecycle-escalation-p4-experiment-scope-freeze-v1",
+  "status": "FROZEN_BEFORE_P5_AND_P6",
+  "frozen_at_utc": "2026-09-15T16:35:01Z",
+  "timezone_context": "Asia/Shanghai, 2026-09-16",
+  "third_paper_repository": "D:/dt-talk/DT_LIFECYCLE_ESCALATION",
+  "p3_2_protocol_git_commit": "9ff2dc8a6d9771a14be61d48dfdc39f48754e829",
+  "amendment": {
+    "path": "docs/P3_2_PROTOCOL_AND_CLAIM_AMENDMENT.md",
+    "sha256": "31a3bf8c2d7f4d0a4f3a27daf4edea113b3038a15c330c9f0aa85028f0ef8e18",
+    "checksum_path": "audits/P3_2_PROTOCOL_AND_CLAIM_AMENDMENT.sha256",
+    "claim_scope": "C3 primary controlled model-identity mismatch; C4 secondary Nonlinear Dependency-Shift Stress / heterogeneous dependency-shift stress, not architecture-family replacement or architecture failure",
+    "p3_2b_formal_verdict_retained": "FAIL",
+    "single_c4_prefrozen_auxiliary_negative_rate_gate": {"threshold": 0.5, "result": "FAIL", "count": 123, "denominator": 288},
+    "original_combined_c3_c4_negative_rate_gate": {"threshold": 0.5, "result": "PASS", "count": 411, "denominator": 576},
+    "architecture_forensic_verdict": "IDENTITY_MATCH_SUPPORTED_BUT_ARCHITECTURE_NOT_SUPPORTED",
+    "further_c4_generator_tuning_forbidden": true
+  },
+  "frozen_generator": {
+    "revision": "p3_mismatch_v2_r3",
+    "label": "p3_mismatch_v2_frozen",
+    "config_path": "configs/p3_mismatch_v2_frozen.json",
+    "config_sha256": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "prior_checksum_manifest": "audits/p3_mismatch_v2_frozen.sha256",
+    "modification_or_rerun_forbidden": true,
+    "stages": 24,
+    "shift_stage": 9,
+    "input_window_length": 96,
+    "prediction_horizon": 1,
+    "stage_raw_sizes": {"update": 400, "assessment": 240, "service": 400},
+    "data_seed": 7311,
+    "model_seeds": [7311, 7312, 7313]
+  },
+  "center_pools": {
+    "source_training": {"ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], "data_seed": 2904, "target_side": false},
+    "generator_design_development": {"ids": [31000, 31001, 31002], "already_used": true, "estimator_fitting_allowed": false},
+    "fresh_phenomenon_development": {"ids": [31100, 31101, 31102, 31103, 31104, 31105], "already_used": true, "p5_descriptive_audit_allowed": true, "estimator_fitting_allowed": false},
+    "prospective_estimator_fitting": {"id_start": 31200, "id_end_inclusive": 31229, "count": 30, "already_materialized": false, "p5_access_allowed": false, "p6_only_after_human_review": true},
+    "decision_gate_calibration": {"id_start": 32000, "id_end_inclusive": 32019, "count": 20, "p4_p5_access_allowed": false},
+    "final_synthetic_heldout": {"id_start": 33000, "id_end_inclusive": 33019, "count": 20, "p4_p5_access_allowed": false},
+    "source_design_fresh_fitting_calibration_heldout_pairwise_disjoint": true,
+    "preexisting_center_splits_path": "configs/center_splits.json",
+    "preexisting_center_splits_sha256": "a3fac8b47e78f5a7de9b4bddb425aca8bff517005751ced09ff1590ea8c5ebe4",
+    "pool_assignment_note": "The 31200-31229 fitting IDs are a prospective 30-center allocation following the execution-spec recommendation, not generated or inspected data; the earlier center-splits file remains unchanged and is superseded only for future estimator fitting by this Git-bound manifest."
+  },
+  "primary_oracle_setting": {
+    "recoverability_horizon_H_R": 4,
+    "service_eta": 0.25,
+    "service_threshold_rule": "tau_svc=(1+eta)*L_ref; L_ref=C0 stages 1-8 sequential P50 mean service MSE per center/model-seed",
+    "local_budget": "B50",
+    "local_policy_updates": [0, 10, 20, 50],
+    "bounded_probe_updates": 50,
+    "sensitivity_horizons_prespecified": [2, 4, 6],
+    "sensitivity_eta_grid_prespecified": [0.1, 0.25, 0.5]
+  },
+  "scenario_roles": {
+    "C0": {"generator": "stationary", "role": "maintainable/no-shift reference", "p3_2_confirmed": true},
+    "C1": {"generator": "same-family gradual parameter drift", "role": "maintainable drift reference", "p3_2_confirmed": true},
+    "C2": {"role": "same-family abrupt parameter drift", "p3_2_confirmed": false, "p4_p5_execution_authorized": false},
+    "C3": {"generator": "frozen regime-B telemetry transfer-function and centered response-orientation replacement", "role": "primary controlled model-identity mismatch", "p3_2_confirmed": true},
+    "C4": {"generator": "frozen direct nonlinear multi-lag target dependency", "role": "secondary Nonlinear Dependency-Shift Stress / heterogeneous dependency-shift stress", "architecture_level_claim_forbidden": true, "p3_2_confirmed": true},
+    "C5": {"role": "optional persistent regime replacement", "p3_2_confirmed": false, "p4_p5_execution_authorized": false},
+    "C6": {"role": "recurring regime", "p3_2_confirmed": false, "p4_p5_execution_authorized": false},
+    "C7": {"role": "transient corruption robustness", "p3_2_confirmed": false, "p4_p5_execution_authorized": false},
+    "C8": {"role": "persistent mismatch plus unreliable monitoring robustness", "p3_2_confirmed": false, "p4_p5_execution_authorized": false}
+  },
+  "frozen_p3_2_confirmatory_scenarios": ["C0", "C1", "C3", "C4"],
+  "response_event": {"components": ["gain", "residual"], "xi_definition": "xi_t=[gain_t,residual_t]^T", "gain_definition": "(pre_assess_loss-post_assess_loss)/(pre_assess_loss+1e-12)", "residual_definition": "post_assess_loss", "effort_feature_permanently_removed": true},
+  "source_and_model_bank": {
+    "r3_source_training_manifest_path": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/source_training_manifest.json",
+    "r3_source_training_manifest_sha256": "84ab3d962e9a566303060fa98febcadef26eb1e5d472f81d32d986c35de3b940",
+    "p3_2b_bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+    "native_checkpoint_sha256": {
+      "formal_h1_a1.pt": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "formal_h1_a6.pt": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "formal_h1_a46.pt": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+      "formal_h1_a55.pt": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "formal_h1_a56.pt": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "formal_h1_a57.pt": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "formal_h1_a62.pt": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+      "medet_style_h1_a57.pt": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a"
+    },
+    "r3_new_checkpoint_sha256": {
+      "p3v2_a57_regime_b.pt": "8cd6f77ea8b54eaf3583bee5619cf2a5a27f9fafff14299bc9165bd83fdd5e09",
+      "p3v2_a57_regime_c_control.pt": "599394e21dc5bda5721373cae14dfeaa754668ab2e135551a45a77a506df7452",
+      "p3v2_a46_regime_c.pt": "cc468e7dc4e27f9a319832c73b3b1e84723c8e8c2a029bee4e8b3e868c40de62"
+    }
+  },
+  "existing_development_evidence": {
+    "p3_2b_scenario_manifest_path": "results/p3_2b/scenario_manifest.json",
+    "p3_2b_scenario_manifest_sha256": "beeb03ed243495c3c4b5874b0c6b52e87211366d410fb0d182f9adbc430e7100",
+    "p3_2b_primary_analysis_path": "results/p3_2b/analysis.json",
+    "p3_2b_primary_analysis_sha256": "26a10adc89e8f68236ff60cadb3efabb055eeB8300437790b85b07419516b728",
+    "p3_2b_stage_records_path": "results/p3_2b/stage_records.csv",
+    "p3_2b_stage_records_sha256": "8aae5a76cd23906cc3ca3637c9dda5d1d130c6fbbd26b285e487092dcefb40a3"
+  },
+  "phase_limits": {
+    "P4": "freeze only; no generator or trajectory execution",
+    "P5": "development-only two-component response-feature audit; no estimator fit",
+    "P6_estimator_fitting": "FORBIDDEN_UNTIL_HUMAN_SCIENTIFIC_REVIEW",
+    "calibration_access": "FORBIDDEN",
+    "heldout_access": "FORBIDDEN",
+    "proposed_execution": "FORBIDDEN",
+    "generator_modification": "FORBIDDEN"
+  }
+}

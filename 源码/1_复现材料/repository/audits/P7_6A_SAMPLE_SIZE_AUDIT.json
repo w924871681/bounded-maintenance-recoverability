@@ -1,0 +1,32 @@
+{
+  "schema": "p7.6a-sample-size-stop-audit-v1",
+  "phase": "P7.6A",
+  "status": "STOP_COMPLETE_RULE_NOT_IDENTIFIABLE",
+  "planning_valid": false,
+  "prior_p7_4b_formal_verdict": "P7_4B_FAIL",
+  "pilot_validation_centers": 24,
+  "authorized_planning_source_sha256": {
+    "results/p7_4b/metrics_by_center.csv": "9c5790fdba4c924e31be081e12369d748f274448964e495863ab16ea9ff3e585",
+    "results/p7_4b_1/center_paired_effects.csv": "94c3943d55d6b14f9c1ddb81434c4ba665913766fd1c1ef60dbd18ec936dcc7c",
+    "docs/P7_4B_PROTOCOL_FREEZE.md": "92272730775031a7ea23b050e073b5b0973f163a4f5cf73a4b1bfa0c49c2176b",
+    "scripts/run_p7_4b.py": "5f52b379f55b67a667189b3000b311dc0e545c4ccaad603ba46b60133b572d57"
+  },
+  "complete_rule_unavailable_quantities": [
+    "Joint distribution of freshly refitted A0/A1 estimator performance and new ReplicationFit OOF absolute metrics",
+    "Joint distribution of new Fit OOF and new Validation metrics for the frozen A1-versus-A0 deterioration rule",
+    "Prospectively frozen allocation of total fresh-center N between disjoint ReplicationFit and ReplicationValidation pools"
+  ],
+  "planning_simulations_run": 0,
+  "candidate_n_grid_frozen": false,
+  "p50_recommended_n": null,
+  "p75_assurance": null,
+  "p100_assurance": null,
+  "replication_target_scientific_preference": "R-A",
+  "replication_target_execution_frozen": false,
+  "fresh_center_range_reserved": false,
+  "p7_6b_ready": false,
+  "new_replication_trajectories": 0,
+  "final_heldout_access": false,
+  "alibaba_access": false,
+  "p8_access": false
+}

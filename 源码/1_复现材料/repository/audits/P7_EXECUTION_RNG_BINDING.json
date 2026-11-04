@@ -1,0 +1,15 @@
+{
+  "schema": "p7-execution-only-rng-binding-v1",
+  "bound_at_utc": "2026-09-16T14:53:18.339947+00:00",
+  "execution_binding_git_commit": "c79455ca862f14bbcc9c676599a07dd50e0765dd",
+  "original_pre_outcome_manifest_sha256": "e1760f23e636e2ebcad7f956b48efd891991f5d4ffd23e8073fe0df576753f40",
+  "closed_loop_outcomes_materialized": false,
+  "estimator_modified": false,
+  "protocol_grids_modified": false,
+  "change": "isolate Torch RNG with existing prespecified adaptation seed; original primitive unchanged",
+  "files": {
+    "scripts/run_p7_seed_bound.py": "ef65520df029960077eccf98d72778f0b2ad83858c8dc9098e8d173f6c75b218",
+    "docs/P7_EXECUTION_RECOVERY.md": "f92a0035fedeb97bfc188417a5655aaea9ce75778709a0be9ed27cab0dfece60",
+    "tests/test_p7_seed_binding.py": "d40b374545b03ba66ce6a349c8f1aa5443f9a0510155ccadb0823669a71c71f5"
+  }
+}

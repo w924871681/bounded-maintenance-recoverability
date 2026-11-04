@@ -1,0 +1,17 @@
+{
+  "schema": "p7.2-pre-outcome-execution-correction-v1",
+  "recorded_at_utc": "2026-09-20T13:08:00+00:00",
+  "execution_correction_git_commit": "a591e6d1e3e9bb6e168ff0a0f146f31e9087d2f3",
+  "original_pre_outcome_manifest_sha256": "b709f8ec85b8be1b3114754111f6c0d68fe615f7a953e680ddafff70009e87eb",
+  "original_script_sha256": "ebb255c0a2b715a5e7a11ba998958e2bd53e94d5bf9fc035ca0418ce5dfb2ef7",
+  "corrected_script_sha256": "91c345761060c15f53fd7338563b185e2f0bdfb33e722678ccb0a41b695da482",
+  "correction_record_sha256": "cfc3ce57fee3056a6c4adf7db888827cf700134e16f2454a7adb829e8e938eb3",
+  "correction_record_path": "docs/P7_2_EXECUTION_CORRECTION.md",
+  "change": "skip non-dictionary metadata values while enumerating the already-frozen P4 center-pool objects",
+  "scientific_scope_changed": false,
+  "outcomes_existed_at_fix": false,
+  "gatecal_outcomes_materialized": false,
+  "actioncal_outcomes_materialized": false,
+  "heldout_accessed": false,
+  "alibaba_accessed": false
+}

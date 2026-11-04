@@ -1,0 +1,72 @@
+{
+  "schema": "p7.6a-1-design-resolution-audit-v1",
+  "phase": "P7.6A-1",
+  "status": "PRE_OUTCOME_DESIGN_FROZEN_PENDING_SEPARATE_HUMAN_EXECUTION_AUTHORIZATION",
+  "verification_status": "VERIFIED_METADATA_AND_PROTOCOL_ONLY",
+  "human_review_attachment_sha256": "281a55fb3413e39deb01a03cc4352f4e1b1d96a6a9ad87ec96a861ab85fbd3dd",
+  "prior_p7_6a_status": "STOP_COMPLETE_RULE_NOT_IDENTIFIABLE",
+  "prior_p7_4b_verdict": "P7_4B_FAIL",
+  "replication_target": "R-A_REPRESENTATION_PRINCIPLE",
+  "center_count_basis": "DESIGN_BASED_NOT_POWER_DERIVED",
+  "total_fresh_centers": 72,
+  "replication_fit_centers": 36,
+  "replication_validation_centers": 36,
+  "metadata_strata": 9,
+  "centers_per_stratum_per_pool": 4,
+  "four_fit_oof_folds_each_9_heldout_and_27_training": true,
+  "candidate_stream": {
+    "start": 32248,
+    "end_inclusive": 32631,
+    "count": 384,
+    "metadata_only_replay_sha256": "7ceb2156a8ac250a5aeeb84a6f6a84d9b1962544884a273ff3a3853e6d83f3b3",
+    "pre_metadata_commit": "0975a14f56260fdc2ed28f631831ebbb1339c086"
+  },
+  "provenance": {
+    "current_repository_text_and_filename_candidate_identity_collisions": 0,
+    "nonidentity_matches": [
+      "previous P7.4B exclusive range upper bound 32248",
+      "historical process PID 32552"
+    ],
+    "prior_p7_4b_used_ids_excluded": "32200-32247",
+    "final_heldout_permanently_excluded": "33000-33019",
+    "candidate_selection_based_only_on_id_type_tier": true,
+    "no_outcome_selection": true
+  },
+  "metadata_replay_verified_against_all_48_frozen_p7_4b_centers": true,
+  "sha256_canonicalization": "SHA-256 of UTF-8 JSON with sort_keys=True, separators=(',',':'), ensure_ascii=False",
+  "component_sha256": {
+    "selected_center_ids": "6f16d265bf62946d3dddb7327438ec038c4ae70192e914448bd11ed603aef109",
+    "fit_validation_assignment": "01db5632964f9fccafea13be58b5a0e518c0fcf12a980a9ea4cbb9c69c44e285",
+    "nine_metadata_strata": "34bb77cd07732cb21663c93af80f23f23a2032a24d6bc23b2ec27825c52dfaff",
+    "fit_folds": "71cb22d3f3a46b9b4e9e261d69fde357bd8df2d56ed6e03148949c0929911b47",
+    "A0_formula": "ffb1e72ac7aab22dd573d2a59461ac72a6204409edf9dcdaa3029713e22a64f8",
+    "A1_formula_and_scale": "f8ce6c1fbfe46394200bf7beba6eb637053880829c4dd45286512a51c401b598",
+    "behavior_path": "cc41b8f37b29e665ad46eb2cf46e8f4632ae5b32d40914c8f6d4e0677586e006",
+    "training_configuration": "ddd0ab3fa3d9e50ac944c2d40b1f5f1c0153a95e2199c3c0711588516f19532b",
+    "preprocessing": "604bb631212b40229ad45184e6e8118387e9e7ccdb899ae2205fd8cd4adfcc98",
+    "estimator_seeds": "b7c29fe14f9e545451d71d3e1b5d13573a34a8968e568838972aaf7a7a55c130",
+    "bootstrap_seed": "cf4f201c3c0e69a27a4c22df717f616b9dd00ae0ffcc20a9f6b6363522847ecf",
+    "complete_decision_rule": "1917a3940a1875d588f9db6c512ee08f25cf10dbd0e11ad973f36d006d022c99"
+  },
+  "file_sha256": {
+    "configs/P7_6B_CENTER_ASSIGNMENT.json": "172c694057fea9926fecabe800538a5f8ff5bddf8880c078dd457b705b53fb95",
+    "configs/P7_6B_FROZEN_PROTOCOL.json": "86272adb9a335ff72030cc4ba5c1fbc5f52e543eacd58ba032433e590251ee23",
+    "docs/P7_6B_DESIGN_BASED_REPLICATION_FREEZE.md": "27ce25281a2d98d1ebe3f6621e5140755ce3919676e452715d06ff2a85fd107b",
+    "docs/P7_6A_1_METADATA_STREAM_RULE.md": "f3551c79e486d0fab00d738d634d1785ce439c43ad67f725aa71b349bcab2381",
+    "scripts/p7_6a_1_metadata_replay.py": "11fd6c997c5789a0fffba6f4899665c90e8ae184640aa8debcf941d8ad5bb39c",
+    "configs/P7_4B_FROZEN_PROTOCOL.json": "c482cb02a6961473f102651e4a5de7f6be907085a48815af682054f4c518ad9b",
+    "docs/P7_4B_PROTOCOL_FREEZE.md": "92272730775031a7ea23b050e073b5b0973f163a4f5cf73a4b1bfa0c49c2176b",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/p7_2_selected_action_params.json": "b400931644cd212e0f8dbb684c516d62618791ee4fc6d1e392ae7a235ecf4cb2"
+  },
+  "prospective_bootstrap_seed": 7601,
+  "estimated_future_shared_trajectories": 864,
+  "estimated_future_stage_records": 20736,
+  "p7_6b_protocol_resolved": true,
+  "p7_6b_execution_authorized": false,
+  "p7_6b_runner_ready": false,
+  "no_new_replication_outcome": true,
+  "no_final_heldout_evaluation": true,
+  "no_alibaba_evaluation": true,
+  "no_p8_execution": true
+}

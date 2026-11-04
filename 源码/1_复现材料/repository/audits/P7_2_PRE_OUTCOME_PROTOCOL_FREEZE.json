@@ -1,0 +1,19 @@
+{
+  "schema": "p7.2-pre-outcome-protocol-freeze-v1",
+  "bound_at_utc": "2026-09-20T13:04:46.794708+00:00",
+  "protocol_git_commit": "b5cd94cbafd48314c69bbffb3113dee31fed91d5",
+  "amendment_git_commit": "3f92531198234e5ad8a0750e6199bfb9c1a6ec8a",
+  "outcomes_materialized": false,
+  "heldout_accessed": false,
+  "alibaba_accessed": false,
+  "files": {
+    "configs/p7_2_fresh_center_pools.json": "6aa2f545c34f5f3db93a41b53a02a6fc9a67bd27469005fcb3e3860df89f78ba",
+    "configs/p7_2_fresh_center_pools.sha256": "8531a7a2fb36aa49958b80c21986033c2188ecccd54922dd634b8a607b7c50a1",
+    "configs/p7_2_gate_grid.json": "f28f017d3469232152d87a4964960cd4430bd2d13cf989af688e0ece5028d803",
+    "configs/p7_2_gate_grid.sha256": "3d691193980b3b9611dccc0e7ca4a4bc982614197521a52b6c0d2cd4e39a43df",
+    "docs/P7_2_GATE_CALIBRATION_AMENDMENT.md": "df9720ccede45f780143e1c5ec82b762c922f3adc79ad9070637c10875fc1106",
+    "docs/P7_2_GATE_CALIBRATION_AMENDMENT.sha256": "0b529f27438393204aca89a8471f9502999b57bed3eea349da77d76528050217",
+    "scripts/run_p7_2.py": "ebb255c0a2b715a5e7a11ba998958e2bd53e94d5bf9fc035ca0418ce5dfb2ef7",
+    "tests/test_p7_2.py": "6cd4a7f40f49877c0e9cb7ccc0bb9530e12b93ca003817935f7fc6b0f6b900e7"
+  }
+}

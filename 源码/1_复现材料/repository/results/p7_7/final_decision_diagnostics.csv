@@ -1,0 +1,5 @@
+metric,count,rate,denominator
+correct retain,381,0.06614583333333333,5760
+unnecessary RI,12,0.0020833333333333333,5760
+correct escalation,86,0.014930555555555556,5760
+missed escalation,1813,0.31475694444444446,5760

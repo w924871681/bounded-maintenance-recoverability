@@ -1,0 +1,57 @@
+{
+  "schema": "p7.6b-r0-testonly-interruption-archive-v1",
+  "test_only": true,
+  "source_tag": "interrupted_cuda2_20260928",
+  "reason": "Injected stage-4 interruption before any complete receipt; archive incomplete and diagnostic files before canonical restart.",
+  "complete_receipts_before_archive": 0,
+  "files": [
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/failures/fit/90000_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/failures/fit/90000_7311_C0.json",
+      "sha256": "543c331f02d59bff8ceb09b15b6ee32acef242fb771e79b5782ca90dad41fb27",
+      "bytes": 1323
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/fit_execution_status.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/fit_execution_status.json",
+      "sha256": "84f2704e1043ca0338eab156f2486c3f91001add96a0e2c8aa7b0deb965a5f69",
+      "bytes": 192
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/raw/fit/90000_7311_C0.claim",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/raw/fit/90000_7311_C0.claim",
+      "sha256": "e58a26c74fc2b5306e51980ec2e66f10e185fe1b6831772c10acf204d2bf4f89",
+      "bytes": 5
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/raw/fit/90001_7311_C0.claim",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/raw/fit/90001_7311_C0.claim",
+      "sha256": "460143e6473f0614a14d7265357cf0b504c78ef4f81ccae0dd6f42ae4452317d",
+      "bytes": 4
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/references/fit/90000_7311.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/references/fit/90000_7311.json",
+      "sha256": "de5a4c2482b0063bd0dad81762bdb6680bc9f380cc8e702fde532421742e073c",
+      "bytes": 2922
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/references/fit/90001_7311.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/references/fit/90001_7311.json",
+      "sha256": "3d12eade59940a34b74db59d866ee1c96604f0af2ccffa677d661863d61beb45",
+      "bytes": 2854
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/task_states/fit/90000_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/task_states/fit/90000_7311_C0.json",
+      "sha256": "5b386ac3c61b47f457142ea7ca87ba7f84174ea4fb8e25253c3d5e2c5d3d4e77",
+      "bytes": 251
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/task_states/fit/90001_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/interrupted_cuda2_20260928/forensic_archive/attempt1/task_states/fit/90001_7311_C0.json",
+      "sha256": "8e06f330b8547b1ba2c62954a4824b12e704adcfe91b54d5bb58da0cad1cbd56",
+      "bytes": 241
+    }
+  ]
+}

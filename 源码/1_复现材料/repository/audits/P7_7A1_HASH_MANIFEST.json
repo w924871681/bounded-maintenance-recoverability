@@ -1,0 +1,28 @@
+{
+  "schema": "p7.7a1-hash-manifest-v1",
+  "status": "DESIGN_FROZEN_PRE_HELDOUT",
+  "final_heldout_accessed": false,
+  "files": {
+    "configs/P7_7_FINAL_LIFECYCLE_PROTOCOL.json": "6bec3319dd64c92f6a92c4b208edd6175b9a96ce64c33763081e61faba4683ff",
+    "scripts/run_p7_7_final.py": "d4f6b529cf7089e441c0e0e6398473482d11ab2f6e926e6eb68e282c39048666",
+    "core/p7.py": "412aa06af17b312f872b9921027610c41fbb9a83a215ffa2150e6aa349dd4821",
+    "scripts/run_p7.py": "51dd05f494ae561858c8de804eb34a4ef0590f69480aae0cc5dbae2baff25494",
+    "reports/P7_7_FINAL_LIFECYCLE_PROTOCOL.md": "f7a2f3b8579e09ee9f990e7619d3e2f435ebe2d6bddcc30489bb12b343309f4f",
+    "reports/P7_7A1_FINAL_LIFECYCLE_DESIGN_RESOLUTION.md": "1f7ccfa43dfe1be7efb5f796da6d4237098b1bb03809fbc4debeb75c7c591df1",
+    "audits/P7_7A1_IMPLEMENTATION_QUALIFICATION.json": "55c8567a4befba7159206c7f274bee0b60472ab2c16060bc8d4d0fc7f23b8514",
+    "audits/P7_7A1_FINAL_HELDOUT_ACCESS_GUARD.json": "0295856cd5cfac63d6d6debc3bc75b803a3d7ba1e64235c2c8efb1a079954e2f",
+    "artifacts/p7_6b_A1_estimator.pt": "e8d047bda5a1e1d62cd9f089db1ade79c0c08750f9dfc878d6e71cc06d8c47cb",
+    "artifacts/p7_6b_A1_scaler.json": "2c9da0a29b469b8bb92bdbbcb893769a8baa39a57b3dbd26247ba9b1c8564c38",
+    "configs/p7_2_selected_action_params.json": "b400931644cd212e0f8dbb684c516d62618791ee4fc6d1e392ae7a235ecf4cb2",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.json": "1973c25adab030d24555e384a8d2f740a193d9debbe0a88c81aac1045da3033f",
+    "configs/P7_6B_FROZEN_PROTOCOL.json": "86272adb9a335ff72030cc4ba5c1fbc5f52e543eacd58ba032433e590251ee23",
+    "audits/P7_6B_FINAL_SCIENTIFIC_AUDIT.json": "85caccf51c49e7046908a1550df62702c3d16f07d109d9315d6d7a98a102c674",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/center_splits.json": "a3fac8b47e78f5a7de9b4bddb425aca8bff517005751ced09ff1590ea8c5ebe4"
+  },
+  "final_population": {"centers": [33000,33001,33002,33003,33004,33005,33006,33007,33008,33009,33010,33011,33012,33013,33014,33015,33016,33017,33018,33019], "seeds": [7311,7312,7313], "scenarios": ["C0","C1","C3","C4"]},
+  "comparators": ["B0", "B1", "B2", "B8", "Proposed"],
+  "qualification_centers": [31000,31001,31002],
+  "alibaba_accessed": false,
+  "p8_executed": false
+}

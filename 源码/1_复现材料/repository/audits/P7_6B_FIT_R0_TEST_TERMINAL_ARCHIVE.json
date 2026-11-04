@@ -1,0 +1,55 @@
+{
+  "schema": "p7.6b-r0-testonly-terminal-state-archive-v1",
+  "test_only": true,
+  "complete_receipts_before_archive": 0,
+  "files": [
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/failures/fit/90000_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/failures/fit/90000_7311_C0.json",
+      "sha256": "b75ceaae3dd6fba5317c03421555bdb319d76735a960001a42d4285df59dad7c",
+      "bytes": 1323
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/fit_execution_status.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/fit_execution_status.json",
+      "sha256": "84f2704e1043ca0338eab156f2486c3f91001add96a0e2c8aa7b0deb965a5f69",
+      "bytes": 192
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/raw/fit/90000_7311_C0.claim",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/raw/fit/90000_7311_C0.claim",
+      "sha256": "b4c687d09ce1c46882f9729f250975fb8b23a7197d6276c4c07cc0eb0445736f",
+      "bytes": 5
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/raw/fit/90001_7311_C0.claim",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/raw/fit/90001_7311_C0.claim",
+      "sha256": "987e24b968162fa34403188ca14026127ea30c0a476a1e7cb4b358e4f6eee1a9",
+      "bytes": 5
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/references/fit/90000_7311.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/references/fit/90000_7311.json",
+      "sha256": "de5a4c2482b0063bd0dad81762bdb6680bc9f380cc8e702fde532421742e073c",
+      "bytes": 2922
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/references/fit/90001_7311.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/references/fit/90001_7311.json",
+      "sha256": "3d12eade59940a34b74db59d866ee1c96604f0af2ccffa677d661863d61beb45",
+      "bytes": 2854
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/task_states/fit/90000_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/task_states/fit/90000_7311_C0.json",
+      "sha256": "7a44ae6f78908bf222dec76489b660feea8702db2df7ae9bcd326c00b8659437",
+      "bytes": 296
+    },
+    {
+      "old_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/task_states/fit/90001_7311_C0.json",
+      "archive_path": "results/p7_6b_r0_testonly/terminal_pid_cuda2_20260928/forensic_archive/attempt1/task_states/fit/90001_7311_C0.json",
+      "sha256": "182c9f973a72ca13bea48f01b3e6de66af04ffd477f8b239a819e415bef28a58",
+      "bytes": 255
+    }
+  ]
+}

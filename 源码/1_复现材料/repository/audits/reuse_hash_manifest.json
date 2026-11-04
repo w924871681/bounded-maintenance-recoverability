@@ -1,0 +1,118 @@
+{
+  "schema": "dt-lifecycle-escalation/reuse-hash-manifest/v1",
+  "all_exact_copies_match": true,
+  "files": [
+    {
+      "source": "D:/dt-talk/repository/core/space/models.py",
+      "destination": "imported/msa_dti/space/models.py",
+      "source_sha256": "a6c73ffac8a0ccad3232f7ea8e75afccc6f0bb7ae5356ba0a02545c67d6e1017",
+      "destination_sha256": "a6c73ffac8a0ccad3232f7ea8e75afccc6f0bb7ae5356ba0a02545c67d6e1017",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/core/space/profile.py",
+      "destination": "imported/msa_dti/space/profile.py",
+      "source_sha256": "d7abbbcebe5c4dde274aa193c20bdfc733c07b7efb16b00c00566c4aff154db3",
+      "destination_sha256": "d7abbbcebe5c4dde274aa193c20bdfc733c07b7efb16b00c00566c4aff154db3",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/core/space/types.py",
+      "destination": "imported/msa_dti/space/types.py",
+      "source_sha256": "364016db8428ec5b3004bc290349ffef226feb4a0d776064415ed8f19f7e5e37",
+      "destination_sha256": "364016db8428ec5b3004bc290349ffef226feb4a0d776064415ed8f19f7e5e37",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/core/space/enumerator.py",
+      "destination": "imported/msa_dti/space/enumerator.py",
+      "source_sha256": "d7509947a2534e23f37cf9150276eb32886fb975275268ee390c217ab3d793ee",
+      "destination_sha256": "d7509947a2534e23f37cf9150276eb32886fb975275268ee390c217ab3d793ee",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/candidate_bank_manifest.json",
+      "destination": "imported/msa_dti/bank/candidate_bank_manifest.source.json",
+      "source_sha256": "3cc0aa73598e5ddd5fd68f2cfbf46f669be71df8f6a8144deab08451d4178283",
+      "destination_sha256": "3cc0aa73598e5ddd5fd68f2cfbf46f669be71df8f6a8144deab08451d4178283",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a1.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a1.pt",
+      "source_sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "destination_sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a6.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a6.pt",
+      "source_sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "destination_sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a46.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a46.pt",
+      "source_sha256": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+      "destination_sha256": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a55.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a55.pt",
+      "source_sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "destination_sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a56.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a56.pt",
+      "source_sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "destination_sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a57.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a57.pt",
+      "source_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "destination_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/results/limited_validation_formal_protocol/candidate_bank/assets/formal_h1_a62.pt",
+      "destination": "imported/msa_dti/bank/formal_h1_a62.pt",
+      "source_sha256": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+      "destination_sha256": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-talk/repository/outputs/final_e2e_c23_external_d2904_t2904/source_assets/medet_style_h1_a57.pt",
+      "destination": "imported/msa_dti/bank/medet_style_h1_a57.pt",
+      "source_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "destination_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-trustworthy-maintenance/vendor/sim.py",
+      "destination": "imported/ravm_dt/sim.py",
+      "source_sha256": "930fa8ebe34a442d53af16a054955580f2d0c41ef2514a3cfd125b0e6905883d",
+      "destination_sha256": "930fa8ebe34a442d53af16a054955580f2d0c41ef2514a3cfd125b0e6905883d",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-trustworthy-maintenance/vendor/main_cfg.py",
+      "destination": "imported/ravm_dt/main_cfg.py",
+      "source_sha256": "fea128a2649301017a2a8ad6cab3db30392e180c2f3aa1216e9a83fefcd5d005",
+      "destination_sha256": "fea128a2649301017a2a8ad6cab3db30392e180c2f3aa1216e9a83fefcd5d005",
+      "exact_match": true
+    },
+    {
+      "source": "D:/dt-trustworthy-maintenance/core/statistics.py",
+      "destination": "imported/ravm_dt/statistics.py",
+      "source_sha256": "e8ef1e2963c60e8b3102d48e19472d902f2666b5c5a5b204a5cd1c6dcbe7a415",
+      "destination_sha256": "e8ef1e2963c60e8b3102d48e19472d902f2666b5c5a5b204a5cd1c6dcbe7a415",
+      "exact_match": true
+    }
+  ]
+}

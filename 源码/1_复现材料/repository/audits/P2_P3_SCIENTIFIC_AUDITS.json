@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "test_raw_role_disjointness": true,
+    "test_window_no_cross_role_boundary": true,
+    "test_no_future_service_leakage": true,
+    "test_assessment_not_used_for_gradients": true,
+    "test_probe_does_not_modify_deployed_state": true,
+    "test_same_initial_state": true,
+    "test_same_bank_hash": true,
+    "test_deployment_filter": true,
+    "test_candidate_adaptation_budget": true,
+    "test_oracle_future_data_offline_only": true,
+    "test_center_pool_disjointness": true,
+    "test_all_deployed_models_meet_limits": true,
+    "test_effort_feature_variance": true,
+    "test_effort_feature_removed_when_constant": true
+  },
+  "effort_variance": 0.0,
+  "effort_informative": false,
+  "estimator_feature_decision": "exclude effort; use [gain, residual]",
+  "stage_rows": 5184,
+  "candidate_rows": 8640
+}

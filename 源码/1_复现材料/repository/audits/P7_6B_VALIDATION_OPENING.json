@@ -1,0 +1,20 @@
+{
+  "P8_executed": false,
+  "alibaba_accessed": false,
+  "files": {
+    "artifacts/p7_6b_A0_estimator.pt": "fe8eea778375bb644088862b357007d39e2b2401d548c15200636543447001ae",
+    "artifacts/p7_6b_A0_scaler.json": "b493e335629990b2b4486eb619d38bfe26a416454851fb3fe35b1df9e262752f",
+    "artifacts/p7_6b_A1_estimator.pt": "e8d047bda5a1e1d62cd9f089db1ade79c0c08750f9dfc878d6e71cc06d8c47cb",
+    "artifacts/p7_6b_A1_scaler.json": "2c9da0a29b469b8bb92bdbbcb893769a8baa39a57b3dbd26247ba9b1c8564c38",
+    "configs/P7_6B_EXECUTION_CONFIG.json": "cb4141fda8284a7e98b64187609e5af893e665f960afeef8853a8307fe1e9da3",
+    "configs/P7_6B_FROZEN_PROTOCOL.json": "86272adb9a335ff72030cc4ba5c1fbc5f52e543eacd58ba032433e590251ee23",
+    "results/p7_6b/fit_metrics.csv": "bc3a74f670e1db66182ebde4c16b212283a066f413e98313613daeab15a35be1",
+    "results/p7_6b/fit_oof_predictions.csv": "566aaa4fd76ee5a1719506472af59361b16d0a8460b9b6175595f54e02ac34ea",
+    "scripts/run_p7_6b.py": "8b5bc39f67daee1b2c4227bfa66b1fa6a46bfb1709292c8d950dc3f20b9c3b8f"
+  },
+  "fit_freeze_sha256": "8624504d93b9c8a8676130b6fc08b56e1743516ecef3410cb705298aba1be93f",
+  "heldout_accessed": false,
+  "no_refit_or_reselection_after_opening": true,
+  "schema": "p7.6b-validation-opening-v1",
+  "validation_open_authorized": true
+}

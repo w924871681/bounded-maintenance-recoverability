@@ -1,0 +1,17 @@
+{
+  "schema": "p7.7-final-heldout-trajectory-receipt-v1",
+  "valid": true,
+  "method": "B1",
+  "method_config_id": "B1_AlwaysMaintainP50_ratio10",
+  "center_id": 33003,
+  "seed": 7313,
+  "scenario": "C4",
+  "protocol_hash": "8785dc1ecf9e8123f47d786b880011774ed952daa56345b6f61e60361d15838d",
+  "runner_hash": "20c0a3546f5cff28dc0dccb3737bc27ee47d81b06fcb94f9fe294ca576e43ec5",
+  "implementation_hash": "378f2b8644f97e87fa819661da694d1bfcb163e7d183d110edf5f08c9d6dfe3d",
+  "output_hash": "3526c7112d0a27410051ca72dca0aa5a9683d49060f545a13726c28c17b2e669",
+  "trajectory_rows": 24,
+  "final_heldout_accessed": true,
+  "alibaba_accessed": false,
+  "p8_executed": false
+}

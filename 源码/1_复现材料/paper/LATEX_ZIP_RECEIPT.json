@@ -1,0 +1,8 @@
+{
+  "status": "PASS_CRC_SHA_AND_FRESH_EXTRACTED_COMPILATION",
+  "sha256": "ebdcccd59854e76107299b88ea9e2a3d67a0ca66121683da66ded11e83bae3d9",
+  "bytes": 3114590,
+  "files": 13,
+  "scientific_package_acceptance": false,
+  "build_receipt": "validation/paper_latex_independent_004/RECEIPT.json"
+}

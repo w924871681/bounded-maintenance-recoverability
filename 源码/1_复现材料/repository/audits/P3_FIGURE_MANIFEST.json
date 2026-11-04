@@ -1,0 +1,9 @@
+{
+  "figure_1": "figures/p3_stagewise_recoverability.pdf",
+  "figure_2": "figures/p3_local_vs_reinstantiation_gap.pdf",
+  "encoding": "Okabe-Ito colorblind-safe palette plus line-style/marker redundancy",
+  "uncertainty": "shaded band is normal-approximation 95% interval across 3 centers x 3 seeds at each stage; exploratory only",
+  "programmatic_check": "PASS: both PNG figures are 600 DPI and readable",
+  "visual_review": "PASS: no clipping/overlap; panels aligned; zero and onset references visible; line styles and markers remain distinguishable in grayscale",
+  "review_boundary": "large between-center bands are visible and must not be interpreted as confirmatory intervals with three development centers"
+}

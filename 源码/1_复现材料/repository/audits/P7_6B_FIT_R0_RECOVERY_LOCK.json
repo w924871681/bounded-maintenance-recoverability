@@ -1,0 +1,11 @@
+{
+  "schema": "p7.6b-fit-r0-recovery-lock-v1",
+  "status": "R0_TEST_ONLY_FORMAL_FIT_LOCKED",
+  "prior_execution_status": "P7_6B_FIT_RUNTIME_INTERRUPTED",
+  "formal_fit_new_trajectories_authorized": false,
+  "replication_validation_authorized": false,
+  "human_review_attachment_sha256": "36bfbba5adfd5fbcf4b2b48097c63f0c1183e784ca59c9f58e84d3ac19834d66",
+  "forensic_inventory_sha256": "1c6b929637b17fb94257747fc7abbfe321df2ca3737c06215f3250383e2b192f",
+  "formal_partial_archive_map_sha256": "2c75fc6402a90a3748b797be5475e85b211651fcf0c0c25a0d976a0579e7b710",
+  "release_requires_separate_human_review_and_git_bound_manifest": true
+}

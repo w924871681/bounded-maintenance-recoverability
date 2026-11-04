@@ -1,0 +1,30 @@
+{
+  "schema": "p7-execution-only-resource-scaling-v1",
+  "bound_at_utc": "2026-09-19T13:35:57.9532503Z",
+  "execution_binding_git_commit": "2d22b0ef558ba72be23e0c336a76ab5ace001950",
+  "previous_worker_count": 1,
+  "selected_worker_count": 4,
+  "completed_trajectory_count_before_scaling": 0,
+  "completed_integrity_receipt_count_before_scaling": 0,
+  "scientific_protocol_modified": false,
+  "estimator_or_scaler_modified": false,
+  "generator_or_bank_modified": false,
+  "candidate_grids_modified": false,
+  "heldout_accessed": false,
+  "alibaba_accessed": false,
+  "runtime_interpretation": "actual executor time under four concurrent trajectory workers; descriptive within-run burden, not exclusive-core benchmark",
+  "host_snapshot": {
+    "logical_processors": 20,
+    "free_physical_memory_kib": 6075048,
+    "total_visible_memory_kib": 16434436,
+    "torch_threads_per_worker": 2
+  },
+  "files": {
+    "docs/P7_EXECUTION_RESOURCE_SCALING.md": "cfd30b33ec9c178c8fad54a83760da60e7313fd56c28c18376dd55e4e5a7e2f4",
+    "audits/P7_PRE_OUTCOME_PROTOCOL_FREEZE.json": "e1760f23e636e2ebcad7f956b48efd891991f5d4ffd23e8073fe0df576753f40",
+    "audits/P7_EXECUTION_RNG_BINDING.json": "427bbfd8679725fd113af211205d2200fa11dc6dc1a115ff45e89a78224d5de2",
+    "results/p7/calibration_reference.json": "aca790396dfb9015412778028a177bd4cc1c6ae36fc1572a35e7d8d0fda82e0c",
+    "results/p7/numeric_baseline_thresholds.json": "81c3d3a34ce27b678b381049d6eacd174044c0c201673112f2a2b1a4b458e02d"
+  },
+  "restart_command": "C:/Users/92487/anaconda3/python.exe -u scripts/run_p7_seed_bound.py run --workers 4"
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "dt-lifecycle-escalation-p7.4b-pre-outcome-freeze-v1",
+  "created_at": "2026-09-21T16:28:33+08:00",
+  "status": "READY_FOR_P7_4B_EXECUTION",
+  "parent_git_commit": "de1f1ccbfc33145de74676349e03f15581f17e43",
+  "prospective": true,
+  "p7_4b_outcomes_existed_at_freeze": false,
+  "scientific_boundary": {
+    "authorized_work": "P7.4B-0 protocol freeze only",
+    "trajectory_generation": false,
+    "fit_outcome_materialization": false,
+    "validation_outcome_materialization": false,
+    "training": false,
+    "heldout_33000_33019": false,
+    "Alibaba": false,
+    "P8": false
+  },
+  "fresh_center_audit": {
+    "candidate_range": [32200, 32247],
+    "candidate_count": 48,
+    "repository_csv_files_with_center_id_column": 1499,
+    "center_id_column_hits": [],
+    "filename_hits": [],
+    "structured_config_audit_hits": [
+      {
+        "path": "configs/P7_4B_PROSPECTIVE_STUDY_DRAFT.json",
+        "fields": ["fresh_center_reservation.candidate_id_start", "fresh_center_reservation.candidate_id_end_inclusive"],
+        "classification": "prospective reservation, not prior use"
+      }
+    ],
+    "git_history_text_match_review": "Reviewed matches were timestamps, row indices, numeric values, or hash substrings. No target value occurred as a historical center_id in the structured center-id audit.",
+    "verdict": "ALL_48_IDS_CLEAN_UNUSED_AND_DISJOINT_FROM_FINAL_HELDOUT"
+  },
+  "canonical_component_hash_method": {
+    "algorithm": "SHA-256",
+    "encoding": "UTF-8",
+    "serialization": "json.dumps(value,sort_keys=True,separators=(comma,colon),ensure_ascii=False)"
+  },
+  "component_bindings": {
+    "A0_formula": {
+      "source": "configs/P7_4B_FROZEN_PROTOCOL.json#representations.A0_absolute_control",
+      "sha256": "ce323d6001592fc44cc2b233234a3bd08722222e65c3b26edc33cfb65c380e24"
+    },
+    "A1_formula": {
+      "source": "configs/P7_4B_FROZEN_PROTOCOL.json#representations.A1_fixed_deployment_reference",
+      "sha256": "1ec3b3786cf84696e651429916fb3c2e9b4ef3e2625b8c15149d1448a8f9d771"
+    },
+    "center_IDs": {
+      "source": "ordered centers[*].center_id from configs/P7_4B_CENTER_ASSIGNMENT.json",
+      "sha256": "bafb1c5d83188384ad5ab12db2de7914ccbd0699f98ea8c7e03baf44ff25c963"
+    },
+    "pool_assignment": {
+      "source": "configs/P7_4B_CENTER_ASSIGNMENT.json#pools",
+      "sha256": "414230ee95a920158725daf8f592e7e3a45c8dee7c804c9a1b78bd7ffd1a5a3e"
+    },
+    "scale_source": {
+      "source_fields": ["initial_identity_source", "RI_identity_source", "reference_observation_count", "window_length", "required_valid_point_error_count", "scale_dynamics", "RI_reset_rule"],
+      "sha256": "0539d02cbf0a40ceea596b49eab69080f2b87a27c052be6ce0ba9203f957a8b7"
+    },
+    "median_statistic": {
+      "source_fields": ["point_error_formula", "required_valid_point_error_count", "statistic", "scale_formula"],
+      "sha256": "e73db72447976a0ce29bf9e608dc0530a2ab11df0292205ee6f89cf270b091a1"
+    },
+    "floor": {
+      "source": "A1 floor plus complete reference_scale_audit",
+      "sha256": "ecb7c045c4e79104ce4e67646053923baadf908ab895925f672b0903734954fa"
+    },
+    "target_multipliers": {
+      "source": "selected fields of configs/P7_4B_FROZEN_PROTOCOL.json#target_numerical_scaling",
+      "sha256": "f2af0d50129ecea274a67c77a11036b559cab230b66947b0a740aa11b374613b"
+    },
+    "feature_preprocessing": {
+      "source": "configs/P7_4B_FROZEN_PROTOCOL.json#feature_preprocessing",
+      "sha256": "506e59c9c1de368281b1c64e6ad8ad996d19b0936604912b94b0e0599c698cc7"
+    },
+    "model_architecture": {
+      "source_fields": ["implementation", "architecture", "hidden_activation", "output_activation", "floating_point_dtype"],
+      "sha256": "02f503ba834d360903d8ec1bd25db599f3c421f4443c9b2193982df662f83b11"
+    },
+    "training_schedule": {
+      "source_fields": ["optimizer", "learning_rate", "weight_decay", "loss", "epoch_budget", "batch_size", "shuffle", "early_stopping", "checkpoint_selection", "model_selection"],
+      "sha256": "cc1ce7e077b4f2a157f71107c88a7c19439db2dadb9eba11ad2e91776d2dc48d"
+    },
+    "random_seeds": {
+      "source": "data/model/fold/final-fit/bootstrap seeds in frozen protocol",
+      "sha256": "e2d91c15ba790e3f4baa7d4769944f2bdc4ea9b6ecf91c0405c63846607ca693"
+    },
+    "stop_rules": {
+      "source": "reference_scale_audit plus prospective_validation_criteria plus transport_and_sensitivity_stop_rules",
+      "sha256": "244943d863750015be3fbc5ae2c6dee7d5aea56d60613ddf6e236f2891823648"
+    },
+    "bootstrap_rule": {
+      "source": "configs/P7_4B_FROZEN_PROTOCOL.json#bootstrap",
+      "sha256": "21b0df797e7970f820cbc000099b32244d4e30d3b3d4fca6f7f88bcc852cda29"
+    }
+  },
+  "file_bindings": {
+    "configs/P7_4B_CENTER_ASSIGNMENT.json": "e606e83d85d4e5b736b580809feeea9e0ccaa6203683abbcef2ebee37ac73ab5",
+    "configs/P7_4B_FROZEN_PROTOCOL.json": "c482cb02a6961473f102651e4a5de7f6be907085a48815af682054f4c518ad9b",
+    "docs/P7_4B_PROTOCOL_FREEZE.md": "92272730775031a7ea23b050e073b5b0973f163a4f5cf73a4b1bfa0c49c2176b",
+    "configs/P7_4B_PROSPECTIVE_STUDY_DRAFT.json": "438bd10327bf2ced83beb121319298de4c14907745b59f3c2a94b78b346c7d57",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/p6_estimator_candidates.json": "5f36327ef196410aa7e43ecd3e1b7cffc46cb22619f875dea264bdae06ae9f43",
+    "configs/p6_group_cv_folds.json": "a9e6990b58493a79dd40689b64d90cdbdbe9c4035f9cee7cdcc7f5ef33901306",
+    "reports/P7_4A_REPRESENTATION_THEORY.md": "8f4f636a124fa775f9bdfe994cb2df21de82b6e6f03ec3380e8c60634e62f1d9",
+    "reports/P7_4A_REFERENCE_SCALE_FEASIBILITY.md": "e274fd0b67c0eb8c39a0a67a7baa156d7c7aa1b2a69730ae0c3aeaab51440f16",
+    "audits/P7_4A_THEORY_AND_PROTOCOL_AUDIT.json": "0d9266b68aad0fbd0bd1913dd33345e9e5161560bb7341a05b80f130457df4e3",
+    "imported/ravm_dt/sim.py": "930fa8ebe34a442d53af16a054955580f2d0c41ef2514a3cfd125b0e6905883d",
+    "scripts/run_p6.py": "9a83e1359426a9a185ec420f539137686c86c4db5afd7a21867520e0f2b71ac0",
+    "core/p7.py": "412aa06af17b312f872b9921027610c41fbb9a83a215ffa2150e6aa349dd4821"
+  },
+  "pre_outcome_checks": {
+    "center_count_48": "PASS",
+    "pool_counts_24_and_24": "PASS",
+    "pools_disjoint": "PASS",
+    "pool_union_equals_reservation": "PASS",
+    "all_metadata_assignments_present": "PASS",
+    "four_disjoint_fit_folds_of_six": "PASS",
+    "fold_union_equals_fit_pool": "PASS",
+    "A0_A1_only_representation_differs": "PASS",
+    "validation_excluded_from_preprocessing_and_training": "PASS",
+    "target_unit_conversions_fixed": "PASS",
+    "optimizer_compatibility_inspected": "PASS",
+    "scale_source_and_floor_frozen": "PASS",
+    "RI_selection_optimism_registered": "PASS",
+    "bootstrap_rule_frozen": "PASS",
+    "transport_and_leave_one_center_rules_frozen": "PASS",
+    "claim_boundary_frozen": "PASS",
+    "forbidden_phase_access": "PASS"
+  },
+  "required_next_action": "STOP_AND_WAIT_FOR_HUMAN_SCIENTIFIC_REVIEW_BEFORE_ANY_P7_4B_EXECUTION"
+}

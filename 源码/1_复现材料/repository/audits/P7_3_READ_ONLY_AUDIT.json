@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "2026-09-21T04:04:50.841313+00:00",
+  "diagnostic_table_rows": 15552,
+  "final_statement": "No final heldout data were accessed and no method change was implemented in P7.3.",
+  "integrity_checks": {
+    "ActionCal_raw_artifacts_unchanged": true,
+    "GateCal_raw_artifacts_unchanged": true,
+    "K_L": 6,
+    "K_S": 2,
+    "P6_estimator_hash_unchanged": true,
+    "P6_scaler_hash_unchanged": true,
+    "P7_2_FAIL_preserved": true,
+    "P8_executed": false,
+    "alibaba_accessed": false,
+    "feature_specification_unchanged": true,
+    "fitted_model_artifact_created": false,
+    "heldout_accessed": false,
+    "new_calibration_or_method_freeze_created": false,
+    "new_threshold_optimized": false,
+    "no_adaptation_or_RI_candidate_rerun": true,
+    "no_new_trajectory_generated": true,
+    "posthoc_normalization_entered_online_features": false
+  },
+  "outputs": {
+    "reports/P7_3_ROOT_CAUSE_AUDIT.md": "b826192d5081c6eef4921b61bfbc79f733a56d224937606494ba53e8a251565e",
+    "results/p7_3/center_scale_summary.csv": "3198871ad484e4f7119c72d175e7249b3a65ee337691c76def9e7ea64d7a0ed2",
+    "results/p7_3/common_diagnostic_table.csv": "a29b49fe49d6a37abacbc47f3be6435d7c9bc0975a8208b172e12de923c1d4a9",
+    "results/p7_3/continuous_transport_by_pool.csv": "e2887f6d2806a15278a7d6d3c41a29678ae6e004c88ca894f69bbd22e1ff67f3",
+    "results/p7_3/figures/center_bias_and_scale.png": "841c9537095bb8d99c7ceae7c305f7c2ef3265d298b1979800e45b41b712c7b3",
+    "results/p7_3/figures/pool_margin_distributions.png": "409123663bde7de4ff4b8d41960cdc66b1b2299c12f41a20febbd6d3ef092baa",
+    "results/p7_3/figures/rank_vs_sign_by_center.png": "6dcdce709f77ea0f7fc9323fcbdfcb07aeaf83e9e3ef71b7cbbb6bb7998e86d9",
+    "results/p7_3/figures/rhat_vs_oracle_by_pool.png": "2b3dceb1c2abdebaadd68002ccb5b86f6d19f38e62eef6852ee3a8f009c4ee0b",
+    "results/p7_3/history_coverage_summary.csv": "48629bf6897d84bebfe31b3f993e4fe71055e9a5991a35bfd1bebde835aad803",
+    "results/p7_3/metrics_by_center.csv": "f0a2679cc7cc4594bba28cc95eba389e858a87af94436cfe3050986b67ce0374",
+    "results/p7_3/metrics_by_scenario.csv": "a58efbf35e0dffc8194e3b5710743772dd57e457492a89ff1db9d1ba78596d9a",
+    "results/p7_3/near_zero_margin_summary.csv": "19c9cb7a70bfdd9b11906ec148ec926e10370c8e1a2132f34dbef2e0dcbf3183",
+    "results/p7_3/pool_distribution_summary.csv": "e98977c954fafe81189fcd4d43c7da72dcd0aaa18c81ce45047f94fe2b3fac8a",
+    "results/p7_3/rank_vs_sign_summary.csv": "6c5ab345605ade7378b08bb0a2a318f410cc0f8ba3e392924ccbaf161fe65f8b"
+  },
+  "pool_rows": {
+    "ActionCal-v2": 3456,
+    "GateCal-v2": 3456,
+    "P6-OOF": 8640
+  },
+  "posthoc_notice": "Relative and center-standardized quantities are root-cause diagnostics only, not method results.",
+  "preserved_verdicts": {
+    "P6": "continuous estimator-development PASS",
+    "P7": "formal calibration PASS under original lifecycle-objective rule",
+    "P7_1": "GATE_IS_EFFECTIVELY_ALWAYS_OPEN_ON_CALIBRATION",
+    "P7_2": "FAIL under fresh prospective gate semantics"
+  },
+  "primary_diagnosis": "D6_MIXED_OR_INCONCLUSIVE",
+  "schema": "p7.3-read-only-root-cause-audit-v1",
+  "secondary_diagnosis": null,
+  "selected_read_only_inputs": {
+    "ActionCal_config_id": "Proposed_ratio10_grid33",
+    "ActionCal_raw_file_count": 144,
+    "GateCal_raw_file_count": 144,
+    "P6_error_scale_s": 0.00054436243408415,
+    "frozen_delta_R": -0.000272181217042075,
+    "tracked_immutable_hashes": {
+      "P6_estimator": "2bbad97427506b0260d3ed9370bc88ed4c91a8879c34787a184e37b5185f6b9b",
+      "P6_freeze": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f",
+      "P6_scaler": "1d4cb0b91206bb7defe8389aa8f27ff4776c2acc016662e952bc5f5dc3612f3b",
+      "P7_1_report": "f809812155b48584c01b0148449b56c9974f88a126e2f09fa27d01673e608304",
+      "P7_2_final_freeze": "1973c25adab030d24555e384a8d2f740a193d9debbe0a88c81aac1045da3033f",
+      "P7_2_gate_freeze": "afaebb195fb56f6fdd948cc40d60d6f57911a240a548893c9cd7892eb851519a",
+      "P7_freeze": "fef6e3cc4b36bcbd9369b398b8ad9844876fadb5bea8cc32f71571c7b719ef3e"
+    }
+  },
+  "status": "VALID_READ_ONLY_AUDIT"
+}

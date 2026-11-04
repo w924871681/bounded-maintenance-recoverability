@@ -1,0 +1,105 @@
+{
+  "schema": "p7.7a1-implementation-qualification-v1",
+  "status": "PASS_DEVELOPMENT_ONLY",
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B8",
+    "Proposed"
+  ],
+  "task_count": 8,
+  "tasks": [
+    {
+      "key": "B0_Frozen_ratio10_31000_7311_C0",
+      "sha256": "824ef16957311df518209a30ffdbb48d9c7703549afbe754a6ea56e696740e9a",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "B1_AlwaysMaintainP50_ratio10_31000_7311_C0",
+      "sha256": "126ec383a121a5e8cfbb646c5452efad74c7e1aa771007e7ebb8b0692936250e",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "B2_RAVM_ratio10_31000_7311_C0",
+      "sha256": "545087893cf8bef0eb71ae0e26de6c0faae993af49fcfa0020d533fc5c6d60a7",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "B8_AlwaysOpen_ratio10_31000_7311_C0",
+      "sha256": "92e2b96e8c841c5ba1ab6e902d389de21413ddce69acb3d74a07a474bf9c0134",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "Proposed_ratio10_grid33_31000_7311_C0",
+      "sha256": "03fb4b957852b80f15fcc39dbac8edab8daf0cf6f502e11587e85d21cddf9001",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "Proposed_ratio10_grid33_31000_7311_C1",
+      "sha256": "cbba352bdad1c5a4bd0e7abad4b2d7859e24060d3076fdf49ae3e9119b9fdad5",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 0,
+      "identity_changes": 0,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "Proposed_ratio10_grid33_31000_7311_C3",
+      "sha256": "eeb3109786438fa8fecf7fa52213ebb7cc6daa6586bd86a7c9dcaf3d37b20ea9",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 1,
+      "identity_changes": 1,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    },
+    {
+      "key": "Proposed_ratio10_grid33_31000_7311_C4",
+      "sha256": "ffb0fab6a9e5690f78b65ae75f7ae5a2a230988e5b4d7cf8ec3adaa3ac0cae0c",
+      "rows": 24,
+      "resumed_from_receipt": true,
+      "ri_count": 1,
+      "identity_changes": 1,
+      "future_service_used_in_decision": false,
+      "a1_reset_fields_present": true
+    }
+  ],
+  "all_methods_end_to_end": true,
+  "deterministic_replay": true,
+  "identity_transition_tested": true,
+  "ri_reset_fields_tested": true,
+  "no_future_leakage": true,
+  "receipt_resume_identity": true,
+  "method_specific_paths": true,
+  "final_heldout_accessed": false,
+  "alibaba_accessed": false,
+  "P8_executed": false,
+  "guard_sha256": "0295856cd5cfac63d6d6debc3bc75b803a3d7ba1e64235c2c8efb1a079954e2f"
+}

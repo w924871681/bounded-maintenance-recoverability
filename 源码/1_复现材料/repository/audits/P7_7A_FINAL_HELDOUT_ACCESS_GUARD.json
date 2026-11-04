@@ -1,0 +1,53 @@
+{
+  "schema": "p7.7a-final-heldout-access-guard-v1",
+  "audit_mode": "read_only_scientific_design_audit",
+  "audit_timestamp": "2026-10-03T12:29:26.4029385+08:00",
+  "status": "P7_7A_PROTOCOL_NOT_READY",
+  "final_heldout_accessed": false,
+  "final_heldout_scientific_data_read": false,
+  "final_heldout_centers": [33000, 33001, 33002, 33003, 33004, 33005, 33006, 33007, 33008, 33009, 33010, 33011, 33012, 33013, 33014, 33015, 33016, 33017, 33018, 33019],
+  "center_identifiers_seen_only_in_configuration": true,
+  "alibaba_accessed": false,
+  "p8_executed": false,
+  "new_experiment_run": false,
+  "trajectory_materialized": false,
+  "fit_or_refit_run": false,
+  "validation_run": false,
+  "bootstrap_recomputed": false,
+  "scientific_results_modified": false,
+  "prior_verdicts_preserved": true,
+  "p7_6b_verdict": "P7_6B_REPLICATION_PASS",
+  "p7_6b_final_audit_sha256": "85caccf51c49e7046908a1550df62702c3d16f07d109d9315d6d7a98a102c674",
+  "unresolved_material_items": [
+    "No single hash-bound P7.7A final method manifest binds P7.2 Proposed, estimator/scaler, action path, RI candidate bank, deployment limits and reset semantics for the final population.",
+    "Older generic P7 selected-parameter artifacts conflict in source/ratio convention with the later P7.2 GateCal-v2/ActionCal-v2 Proposed freeze and no final precedence manifest resolves this.",
+    "No exact final-heldout lifecycle runner is present; scripts/run_p7.py is calibration-only and rejects 33000-33019.",
+    "The final eligible comparator set and exact named-baseline implementations are not frozen as one package.",
+    "The final workload/path count, primary endpoint, cost-ratio reporting rule and final statistical/report manifest are not frozen together."
+  ],
+  "files_inspected_as_text_or_metadata_only": [
+    "audits/P7_6B_FINAL_SCIENTIFIC_AUDIT.json",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.json",
+    "configs/p7_2_selected_action_params.json",
+    "configs/p7_2_selected_baseline_params.json",
+    "configs/p7_protocol.json",
+    "configs/center_splits.json",
+    "configs/P7_6B_FROZEN_PROTOCOL.json",
+    "docs/P7_PROTOCOL_AND_EXECUTION_LOG.md",
+    "docs/DT_LIFECYCLE_ESCALATION_EXPERIMENT_EXECUTION_SPEC.md",
+    "core/p7.py",
+    "core/audits.py",
+    "scripts/run_p7.py",
+    "tests/test_p7.py"
+  ],
+  "forbidden_access_check": {
+    "raw_33000_33019_values_read": false,
+    "33000_33019_statistics_read": false,
+    "33000_33019_labels_read": false,
+    "33000_33019_outcomes_read": false,
+    "hidden_evaluation_output_read": false,
+    "alibaba_data_read": false,
+    "p8_data_read": false
+  },
+  "required_next_state": "human review of the listed blockers before any final-heldout authorization"
+}

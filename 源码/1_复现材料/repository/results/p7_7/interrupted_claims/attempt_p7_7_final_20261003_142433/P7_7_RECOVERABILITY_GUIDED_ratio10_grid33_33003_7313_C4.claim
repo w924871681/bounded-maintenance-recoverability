@@ -1,0 +1,9 @@
+{
+  "schema": "p7.7-final-heldout-claim-v1",
+  "attempt_id": "p7_7_final_20261003_142433",
+  "method": "P7.7",
+  "center_id": 33003,
+  "seed": 7313,
+  "scenario": "C4",
+  "started_utc": "2026-10-03T07:19:03.595133Z"
+}

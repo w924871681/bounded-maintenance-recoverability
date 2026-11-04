@@ -1,0 +1,104 @@
+{
+  "schema": "p7.4a-theory-and-protocol-audit-v1",
+  "status": "VALID_THEORY_AND_PROTOCOL_AUDIT",
+  "created_at_utc": "2026-09-21T07:55:46.8140002Z",
+  "phase": "P7.4A_ONLY",
+  "verdict": "VALID_SCALE_REPRESENTATION_IDENTIFIED",
+  "preferred_candidate": "A1_fixed_deployment_reference_median_error_scale",
+  "retained_candidates": [
+    "A0_absolute_control",
+    "A1_fixed_deployment_reference_median_error_scale"
+  ],
+  "pruned_candidates": {
+    "A2_bounded_past_only_identity_service_scale": "rejected before outcomes because it lacks symmetric immediate cold-start evidence and can normalize away degradation"
+  },
+  "preferred_scale_contract": {
+    "source": "latest 200 raw observations from the causal assessment/reference role available before identity deployment",
+    "initial_source": "prefix raw indices [800,1000) after warm-up and before stage 1",
+    "RI_source": "last 200 raw observations of current D_assess after candidate D_upd adaptation and before selected RI commitment",
+    "window_length": 96,
+    "point_error_count": 104,
+    "point_error": "squared prediction error",
+    "formula": "S_m=max(median(e_m_1,...,e_m_104),1e-12)",
+    "strictly_positive": true,
+    "fixed_for_identity_lifetime": true,
+    "recomputed_after_RI_by_same_rule": true,
+    "normalized_target": "R/S_m",
+    "normalized_response": "[gain,post_assessment_mse/S_m]",
+    "theoretical_boundary": 0.0,
+    "sign_preserved": true
+  },
+  "preserved_verdicts": {
+    "P6": "continuous estimator-development PASS",
+    "P7": "PASS under original calibration semantics",
+    "P7_1": "GATE_IS_EFFECTIVELY_ALWAYS_OPEN_ON_CALIBRATION",
+    "P7_2": "FAIL under prospective fresh-pool admission validation",
+    "P7_3": "D6_MIXED_OR_INCONCLUSIVE",
+    "C1": "SUPPORTED",
+    "C2": "WEAKENED_BY_FRESH_POOL_FAILURE",
+    "C3_current_global_hard_absolute_gate": "REJECTED"
+  },
+  "boundary_checks": {
+    "new_trajectories_generated": false,
+    "existing_trajectories_rerun": false,
+    "RI_candidates_rerun": false,
+    "estimator_trained_refit_or_finetuned": false,
+    "P6_scaler_modified": false,
+    "K_S": 2,
+    "K_L": 6,
+    "generator_modified": false,
+    "model_bank_modified": false,
+    "source_checkpoints_modified": false,
+    "new_estimator_features_added": false,
+    "heldout_accessed": false,
+    "alibaba_accessed": false,
+    "P8_executed": false,
+    "new_threshold_selected": false,
+    "new_trained_model_artifact_created": false,
+    "new_estimator_artifact_created": false,
+    "threshold_freeze_created": false,
+    "P7_4B_executed": false,
+    "P7_4B_draft_only": true
+  },
+  "information_role_checks": {
+    "D_upd_used_for_scale": false,
+    "D_assess_or_causal_reference_used_for_scale": true,
+    "separate_support_role_exists": false,
+    "source_validation_loss_used_for_scale": false,
+    "D_srv_used_for_scale": false,
+    "future_information_used_for_scale": false,
+    "oracle_R_used_for_scale": false,
+    "center_fitted_parameter_used": false,
+    "scenario_type_tier_architecture_feature_used": false,
+    "initial_and_RI_rule_symmetric": true,
+    "scale_available_prospectively_online": true
+  },
+  "inspected_inputs_sha256": {
+    "core/protocol.py": "8468b32f245e91c9bcbbb95d93b2dea07b75087d951184fb429cc1f7201cc367",
+    "core/p6.py": "7597861c7bddd8e32080a3f83eff0ab0bc0f55db6c6b11aec773794f33cc2b07",
+    "core/p7.py": "412aa06af17b312f872b9921027610c41fbb9a83a215ffa2150e6aa349dd4821",
+    "scripts/run_p6.py": "9a83e1359426a9a185ec420f539137686c86c4db5afd7a21867520e0f2b71ac0",
+    "scripts/run_p7.py": "51dd05f494ae561858c8de804eb34a4ef0590f69480aae0cc5dbae2baff25494",
+    "scripts/run_p7_2.py": "91c345761060c15f53fd7338563b185e2f0bdfb33e722678ccb0a41b695da482",
+    "docs/DT_LIFECYCLE_ESCALATION_EXPERIMENT_EXECUTION_SPEC.md": "d5e88644bf82adb71753194d11143272d63ee8e78037db10d981c5721acbe40a",
+    "docs/P7_2_GATE_CALIBRATION_AMENDMENT.md": "df9720ccede45f780143e1c5ec82b762c922f3adc79ad9070637c10875fc1106",
+    "reports/P7_3_ROOT_CAUSE_AUDIT.md": "b826192d5081c6eef4921b61bfbc79f733a56d224937606494ba53e8a251565e",
+    "audits/P6_ESTIMATOR_FREEZE.json": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f",
+    "audits/P7_CALIBRATION_FREEZE.json": "fef6e3cc4b36bcbd9369b398b8ad9844876fadb5bea8cc32f71571c7b719ef3e",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.json": "1973c25adab030d24555e384a8d2f740a193d9debbe0a88c81aac1045da3033f",
+    "audits/P7_3_READ_ONLY_AUDIT.json": "015d1ceec1ace1b5369f833a13964c5a30bd00297c878aa00b160a67147f3ff1",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/p7_protocol.json": "358882f75ce4170d576bff62913ff3999e7008dd3c3b1f0c6b63464c50d1ee57",
+    "configs/p7_2_fresh_center_pools.json": "6aa2f545c34f5f3db93a41b53a02a6fc9a67bd27469005fcb3e3860df89f78ba"
+  },
+  "output_sha256": {
+    "reports/P7_4A_REFERENCE_SCALE_FEASIBILITY.md": "e274fd0b67c0eb8c39a0a67a7baa156d7c7aa1b2a69730ae0c3aeaab51440f16",
+    "reports/P7_4A_REPRESENTATION_THEORY.md": "8f4f636a124fa775f9bdfe994cb2df21de82b6e6f03ec3380e8c60634e62f1d9",
+    "configs/P7_4B_PROSPECTIVE_STUDY_DRAFT.json": "438bd10327bf2ced83beb121319298de4c14907745b59f3c2a94b78b346c7d57"
+  },
+  "claim_boundary": {
+    "permitted": "A causal RI-symmetric fixed deployment-reference scale is protocol-feasible and sign-preserving.",
+    "not_permitted": "No utility, transport, repaired gate, lifecycle superiority, heldout readiness, or empirical optimality claim is authorized."
+  },
+  "next_gate": "STOP for human scientific review; P7.4B, C2 retraining, C3 redesign, final heldout, Alibaba, and P8 remain unauthorized."
+}

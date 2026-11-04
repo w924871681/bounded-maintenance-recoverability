@@ -1,0 +1,16 @@
+{
+  "schema": "p7.6b-fit-r1-continuation-recovery-v1",
+  "status": "USER_AUTHORIZED_CONTINUATION_AFTER_THERMAL_PAUSE",
+  "prior_interruption_audit": "audits/P7_6B_FIT_R1_THERMAL_INTERRUPTION.json",
+  "prior_interruption_audit_sha256": "1a38636acfa5919370d1581fd1250de515727875ad2bbdac40bc7264d7d80e60",
+  "continuation_scope": "P7.6B Fit only; canonical restart of all non-complete tasks",
+  "completed_receipts_before_continuation": 5,
+  "claims_archived_before_continuation": [
+    {"trajectory_id":"32248_7312_C1","sha256":"5675b0f0b189fe721e80947d09bab7b5afa9cd27cfdc75903a152bbd8d2e6f38"},
+    {"trajectory_id":"32248_7312_C3","sha256":"ddbef4b5f3cdc39397e51eac72436d8c2f791b3740d6608ae8a1005b2187f3b"}
+  ],
+  "scientific_configuration_unchanged": true,
+  "validation_authorized": false,
+  "thermal_stop_policy": "user-directed continuation; retain telemetry logging but do not auto-stop on temperature or thermal-throttle",
+  "external_application_interference": false
+}

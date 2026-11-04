@@ -1,0 +1,23 @@
+{
+  "schema": "p6-diagnostic-visual-qa-v1",
+  "approved": true,
+  "reviewed_at": "2026-09-16T19:49:00+08:00",
+  "reviewer": "Codex inline visual review, not independent human scientific review",
+  "cv_predictions_sha256": "717b1b32ece3a5315eb289d447768d09ef1b9c5e69a485b7b8092980437e027c",
+  "png_sha256": {
+    "continuous_margin_calibration.png": "906200d1e244440dca41aef3c37f89431d91d55f7caa849a9797a28f55ba28bb",
+    "predicted_vs_oracle.png": "fac1f2c9fad926526b87523a5fb9d47896c932b3c188840ceb6d779143c243b9",
+    "residual_distribution.png": "00de82e2e2456eb65471c80616e25ae2efa04f4df686e575bac50575e951adef",
+    "sign_confusion_matrix.png": "f47570cd130b318238dfffcdc20ba2775721b732a89467e84f8433c660475f4d"
+  },
+  "checks": {
+    "glyphs": "PASS",
+    "text_clipping": "PASS",
+    "text_and_legend_overlap": "PASS",
+    "panel_label_alignment": "PASS",
+    "panel_spacing": "PASS",
+    "color_and_grayscale": "PASS",
+    "data_and_interval_extents": "PASS",
+    "cross_panel_semantics": "PASS_WITH_EXPLICIT_SCENARIO_SPECIFIC_AXES"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "p7.6b-fit-freeze-authorization-scope-v1",
+  "status": "HUMAN_AUTHORIZED_AFTER_432_FIT_RECEIPTS",
+  "human_review_attachment": "P7.6B-Fit-R0 forensic and recovery qualification",
+  "scope": ["fit", "fit-freeze"],
+  "fit_trajectory_count_required": 432,
+  "fit_trajectory_count_verified": 432,
+  "validation_authorized": false,
+  "final_heldout_authorized": false,
+  "alibaba_authorized": false,
+  "p8_authorized": false,
+  "scientific_configuration_changed": false,
+  "fit_freeze_only_after_all_receipts_valid": true
+}

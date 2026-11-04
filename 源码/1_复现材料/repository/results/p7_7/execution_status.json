@@ -1,0 +1,36 @@
+{
+  "schema": "p7.7-final-heldout-execution-status-v1",
+  "status": "COMPLETED",
+  "attempt_id": "p7_7_final_parallel_20261003_152959",
+  "start_utc": "2026-10-03T07:29:59.060711Z",
+  "completion_utc": "2026-10-03T09:27:15.073480Z",
+  "completed_trajectories": 1200,
+  "total_trajectories": 1200,
+  "valid_failures": 0,
+  "final_heldout_accessed": true,
+  "alibaba_accessed": false,
+  "p8_executed": false,
+  "device": "cuda",
+  "workers": 3,
+  "worker_policy": {
+    "policy": "launch-time-adaptive",
+    "samples": [
+      {
+        "available_gib": 5.128,
+        "physical_cores": 14
+      },
+      {
+        "available_gib": 5.136,
+        "physical_cores": 14
+      }
+    ],
+    "reserve_gib": 2.0,
+    "per_worker_budget_gib": 1.0,
+    "cpu_fraction_limit": 0.9,
+    "cores_per_worker_budget": 2,
+    "resolved_workers": 3
+  },
+  "resume_events": 239,
+  "runtime_s": 7036.012769699097,
+  "throughput_trajectories_per_hour": 613.984104549138
+}

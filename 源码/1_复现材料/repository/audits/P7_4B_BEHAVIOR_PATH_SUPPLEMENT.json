@@ -1,0 +1,67 @@
+{
+  "schema": "dt-lifecycle-escalation-p7.4b-behavior-path-supplement-v1",
+  "declared_at": "2026-09-21T19:16:30+08:00",
+  "status": "FROZEN_AND_AUTHORIZED_BEFORE_P7_4B_OUTCOMES",
+  "authorization": {
+    "p7_4b_execution_authorized": true,
+    "fit_trajectory_generation_authorized": true,
+    "validation_access_only_after_fit_freeze": true,
+    "final_heldout_33000_33019_authorized": false,
+    "Alibaba_authorized": false,
+    "P8_authorized": false
+  },
+  "behavior_path": {
+    "method": "Proposed",
+    "delta_R": -0.000272181217042075,
+    "gate_frozen_from": "GateCal-v2",
+    "cost_ratio": 10,
+    "config_id": "Proposed_ratio10_grid33"
+  },
+  "behavior_path_source": "configs/p7_2_selected_action_params.json#selected.config",
+  "a0_a1_may_influence_behavior": false,
+  "single_shared_closed_loop_path": true,
+  "mandatory_stage_equality_audit": [
+    "parent_state_hash",
+    "action",
+    "post_action_identity",
+    "post_action_path_hash"
+  ],
+  "mismatch_rule": "IMMEDIATE_STOP",
+  "a1_scale_timing": {
+    "current_stage_uses_active_identity_scale": true,
+    "selected_RI_scale_constructed_after_action_is_fixed": true,
+    "selected_RI_scale_source": "last 200 raw observations of current D_assess",
+    "new_scale_first_used": "next stage",
+    "valid_point_error_count": 104,
+    "floor": 1e-12,
+    "rejected_candidates_create_persistent_scales": false
+  },
+  "scientific_scope_changed": false,
+  "p7_4b_outcomes_existed_at_freeze": false,
+  "fit_outcomes_existed_at_freeze": false,
+  "validation_outcomes_existed_at_freeze": false,
+  "heldout_accessed": false,
+  "alibaba_accessed": false,
+  "P8_executed": false,
+  "supplement_git_commit": "d67ab88e84242c1c11b58eed6a448980ff37bc9a",
+  "files": {
+    "scripts/run_p7_4b.py": "5f52b379f55b67a667189b3000b311dc0e545c4ccaad603ba46b60133b572d57",
+    "docs/P7_4B_BEHAVIOR_PATH_SUPPLEMENT.md": "44a8a6b1a8b6758558002ff1dbb4c1fa74cc020f0b395940c3acee1f67a5447a",
+    "docs/P7_4B_PROTOCOL_FREEZE.md": "92272730775031a7ea23b050e073b5b0973f163a4f5cf73a4b1bfa0c49c2176b",
+    "configs/P7_4B_CENTER_ASSIGNMENT.json": "e606e83d85d4e5b736b580809feeea9e0ccaa6203683abbcef2ebee37ac73ab5",
+    "configs/P7_4B_FROZEN_PROTOCOL.json": "c482cb02a6961473f102651e4a5de7f6be907085a48815af682054f4c518ad9b",
+    "audits/P7_4B_PRE_OUTCOME_FREEZE.json": "4f146baa1b4b0b4aa1aba94ec1f700084685effc43c7f2c44c0ac6a60a53c9b8",
+    "audits/P7_4B_PRE_OUTCOME_FREEZE.sha256": "0da682a5e81119357fb377f4ec4879c0f46877647dbbea34b9be805ea6292571",
+    "configs/p7_2_selected_action_params.json": "b400931644cd212e0f8dbb684c516d62618791ee4fc6d1e392ae7a235ecf4cb2",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.json": "1973c25adab030d24555e384a8d2f740a193d9debbe0a88c81aac1045da3033f",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.sha256": "1fd08e1fd9ba5aa5bb97b3659960b8c21ca7aa846012b9ff0cdcdd4ffeea07cb",
+    "audits/P6_ESTIMATOR_FREEZE.json": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f",
+    "artifacts/p6_recoverability_estimator.pt": "2bbad97427506b0260d3ed9370bc88ed4c91a8879c34787a184e37b5185f6b9b",
+    "artifacts/p6_recoverability_scaler.json": "1d4cb0b91206bb7defe8389aa8f27ff4776c2acc016662e952bc5f5dc3612f3b",
+    "core/p7.py": "412aa06af17b312f872b9921027610c41fbb9a83a215ffa2150e6aa349dd4821",
+    "scripts/run_p7.py": "51dd05f494ae561858c8de804eb34a4ef0590f69480aae0cc5dbae2baff25494",
+    "scripts/run_p7_2.py": "91c345761060c15f53fd7338563b185e2f0bdfb33e722678ccb0a41b695da482",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/p7_protocol.json": "358882f75ce4170d576bff62913ff3999e7008dd3c3b1f0c6b63464c50d1ee57"
+  }
+}
