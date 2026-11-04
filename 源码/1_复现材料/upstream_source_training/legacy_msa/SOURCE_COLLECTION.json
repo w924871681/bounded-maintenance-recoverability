@@ -1,0 +1,527 @@
+{
+  "status": "SOURCE_COLLECTION_ONLY_PORTABLE_TRAINING_ENTRY_PENDING",
+  "files": [
+    {
+      "file": "configs/__init__.py",
+      "source": "D:\\dt-talk\\repository\\configs\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "configs/main_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\main_cfg.py",
+      "sha256": "6093d96c2a4afec4ea3f771b98fe8eecafe49419081671fc52be3756913dae5f",
+      "bytes": 10067
+    },
+    {
+      "file": "configs/methods/__init__.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "configs/methods/adaptation_trajectory_audit_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\adaptation_trajectory_audit_v1_cfg.py",
+      "sha256": "70321f6e88e304313f0de0a2c1b0d845b4110a190ff9f382eb9fb5bb121861f9",
+      "bytes": 1372
+    },
+    {
+      "file": "configs/methods/anchor_safe_selector_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\anchor_safe_selector_cfg.py",
+      "sha256": "8e4516dfbbc8f7fcadc9fe4d80f5e0e65337cf6927cebfa4f87d97091caf3e0a",
+      "bytes": 3355
+    },
+    {
+      "file": "configs/methods/best_fixed_ft_formal_baseline_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\best_fixed_ft_formal_baseline_v1_cfg.py",
+      "sha256": "276581ba7108007a49714c928f518243ba65fa450f5d24f441eb503d7392150b",
+      "bytes": 1689
+    },
+    {
+      "file": "configs/methods/candidate_space_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\candidate_space_cfg.py",
+      "sha256": "f305887d47a1e673dd13aacd47133d3dc60939bdac1985b86be7732d58ae1636",
+      "bytes": 3426
+    },
+    {
+      "file": "configs/methods/ccmt_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\ccmt_v1_cfg.py",
+      "sha256": "b2838954a09b1cb0d019b0b8ae5fe1e2a9f69b89e5708a17c9f3517f46828129",
+      "bytes": 1742
+    },
+    {
+      "file": "configs/methods/crss_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\crss_v1_cfg.py",
+      "sha256": "7a5d7606aa87ea81d17d1b5a552999ce923dddde87a8cabfc4200fb7246dc218",
+      "bytes": 1507
+    },
+    {
+      "file": "configs/methods/fwsa_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\fwsa_v1_cfg.py",
+      "sha256": "3df395d8c47d46e2d0d08ff1248e13e1bef2b869dc065f595d66b0101330ad98",
+      "bytes": 1394
+    },
+    {
+      "file": "configs/methods/h_meta_nas_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\h_meta_nas_cfg.py",
+      "sha256": "9136757e64ac1d798158938e6135147786ea65830b58c58d577306933733abc2",
+      "bytes": 1610
+    },
+    {
+      "file": "configs/methods/limited_validation_calibration_repair_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\limited_validation_calibration_repair_cfg.py",
+      "sha256": "67ef6db16dd861ccb6703fa47c88cd337ee68de53db94f6d239d31f31a49b46a",
+      "bytes": 2013
+    },
+    {
+      "file": "configs/methods/limited_validation_formal_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\limited_validation_formal_cfg.py",
+      "sha256": "6dd8b0e36a361c1dbb582cd284fe0b90cbefaacd87a2dc015e7bb31df1fd3c72",
+      "bytes": 2702
+    },
+    {
+      "file": "configs/methods/lprt_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\lprt_v1_cfg.py",
+      "sha256": "dbef42e8e5c612dd4d344d43029864d647cf71e3e60a8ff5c1d53676b34ba651",
+      "bytes": 1485
+    },
+    {
+      "file": "configs/methods/lrss_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\lrss_v1_cfg.py",
+      "sha256": "3cc0590f4eda63e95ac470d5d8ca7d9219463cb159a9c89343e58d7d03f63e2b",
+      "bytes": 1941
+    },
+    {
+      "file": "configs/methods/main_evaluation_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\main_evaluation_cfg.py",
+      "sha256": "6128fd9559f24fe136dafb889ff8a5d280edd52538ec18021dd6d7e13c767b59",
+      "bytes": 5518
+    },
+    {
+      "file": "configs/methods/main_experiments_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\main_experiments_cfg.py",
+      "sha256": "6bd37d547240749acf5928b647af29228dd84ddb0ac07e4abb7e7d36c15d0cec",
+      "bytes": 5540
+    },
+    {
+      "file": "configs/methods/medet_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\medet_cfg.py",
+      "sha256": "67c270f57d1b5beaab8f67f428c836a035883399dded4f79d06d6b0ec24ddaf8",
+      "bytes": 2393
+    },
+    {
+      "file": "configs/methods/meta_nas_lite_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\meta_nas_lite_cfg.py",
+      "sha256": "3bd98a2038a0274b5746d4ae49aa9477d731925472d82d0ccb9d4639f0c0f9f7",
+      "bytes": 1528
+    },
+    {
+      "file": "configs/methods/mpv_aux_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\mpv_aux_v1_cfg.py",
+      "sha256": "ac3dcc3bf4325fb337d1f5c0495f0bd5111075640904148d7aefbfdedbdca4e8",
+      "bytes": 1546
+    },
+    {
+      "file": "configs/methods/new_formal_main_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\new_formal_main_cfg.py",
+      "sha256": "6f91a31926f72ef402b8c5cd37abb5dc03b654e8afed53a2ec6f5c08708b1db7",
+      "bytes": 1498
+    },
+    {
+      "file": "configs/methods/oracle_ceiling_audit_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\oracle_ceiling_audit_cfg.py",
+      "sha256": "04188b7c65f473970ae7e5f767cdd44010d523117770ef932c1ebe2d83ff36c4",
+      "bytes": 1060
+    },
+    {
+      "file": "configs/methods/oracle_geometry_selection_information_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\oracle_geometry_selection_information_v1_cfg.py",
+      "sha256": "4cd6546df0ce34bd8d1608c5fab0753623fd6e2b7f5d73f177889e494ef7d7f3",
+      "bytes": 1647
+    },
+    {
+      "file": "configs/methods/ours_ablation_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\ours_ablation_cfg.py",
+      "sha256": "3714bec4ac17ae5876bf904872eeb0fb76af58eaa36ae43e427f2b1463cfba03",
+      "bytes": 319
+    },
+    {
+      "file": "configs/methods/ours_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\ours_cfg.py",
+      "sha256": "6ec5d14fba3a9bde3f3c3cd5bac70b26e5dc3973218a593694301fb779236a8f",
+      "bytes": 5468
+    },
+    {
+      "file": "configs/methods/ppcr_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\ppcr_v1_cfg.py",
+      "sha256": "9116b890e5d882d6c4d6d2e2ea37a9611cab4cc1d6f6c64acbf43d1e1aa57a80",
+      "bytes": 1701
+    },
+    {
+      "file": "configs/methods/pre_submission_enhancements_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\pre_submission_enhancements_cfg.py",
+      "sha256": "c4cd5175e6598988f0ce37648f3d7ea1f796250c37086cdab36cadcfa7fd07d4",
+      "bytes": 2667
+    },
+    {
+      "file": "configs/methods/pretrain_ft_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\pretrain_ft_cfg.py",
+      "sha256": "99161470028f92c8090f03e3195b93115ab5d4e0d6a059fdb2fc1f9c535a6dd0",
+      "bytes": 3974
+    },
+    {
+      "file": "configs/methods/prge_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\prge_v1_cfg.py",
+      "sha256": "a7f73397b46b4aa3a5af2a8cdec85bf1056e28f2846bb6e503dc171aa3bec2dd",
+      "bytes": 1657
+    },
+    {
+      "file": "configs/methods/robustness_experiments_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\robustness_experiments_cfg.py",
+      "sha256": "495df41bdda40667fe960bc63bac5a0f98dd70a4b8c20e9ef9aa34ab47cb2f03",
+      "bytes": 3092
+    },
+    {
+      "file": "configs/methods/rtpf_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\rtpf_v1_cfg.py",
+      "sha256": "8d34278b1f720a78f426c4c0770549a015c201e01e26e378fb617954cc587004",
+      "bytes": 1708
+    },
+    {
+      "file": "configs/methods/saa_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\saa_v1_cfg.py",
+      "sha256": "fa3ecb122ba719401340ad4894f5002c9bf291fe8c9f3cd6b2ce7b911f6758f7",
+      "bytes": 1537
+    },
+    {
+      "file": "configs/methods/saa_v1_magnitude_audit_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\saa_v1_magnitude_audit_cfg.py",
+      "sha256": "4a24bb2f87fee62fd5fa885229e26f2b583b3c3a684dde9ff60ad5e6af8ee4cb",
+      "bytes": 1165
+    },
+    {
+      "file": "configs/methods/selector_improvement_study_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\selector_improvement_study_cfg.py",
+      "sha256": "aefff201be130f53f75938a8a8ace5c53c05d5428a2d99f4e34d20fcb69c457d",
+      "bytes": 1892
+    },
+    {
+      "file": "configs/methods/shared_evaluation_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\shared_evaluation_cfg.py",
+      "sha256": "556d2c8f688f3f1059761f1b0d36ca76e33d19521d54b822743a7ef8489e8b66",
+      "bytes": 4543
+    },
+    {
+      "file": "configs/methods/source_prior_bank_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\source_prior_bank_cfg.py",
+      "sha256": "c6863bcfc7c71eafcc354ab63f04764465ffd75509f6707c15e71e9b27bf4a5c",
+      "bytes": 3489
+    },
+    {
+      "file": "configs/methods/supplementary_experiments_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\supplementary_experiments_cfg.py",
+      "sha256": "2a84ce869959ee7e39063e70a5fa4dc2507da183f1e07c95b90172bcf05ba84e",
+      "bytes": 3463
+    },
+    {
+      "file": "configs/methods/support_val_check_divergence_audit_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\support_val_check_divergence_audit_v1_cfg.py",
+      "sha256": "7578be40c8bb1a4f70fccb9b2b423ff384a9ea04973143abb9823f1d5b02a050",
+      "bytes": 1397
+    },
+    {
+      "file": "configs/methods/t1_pri_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\t1_pri_v1_cfg.py",
+      "sha256": "0c213ec2e0a4f25a73a39c051a0f7a66ff9a14b84be67aea4fc3f629e5c1a414",
+      "bytes": 1657
+    },
+    {
+      "file": "configs/methods/t3jar_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\t3jar_v1_cfg.py",
+      "sha256": "271749b26eb300bd1bf32aa1b48e428c3e2d75cdf82b523a5b4283e54ae83e29",
+      "bytes": 1855
+    },
+    {
+      "file": "configs/methods/target_profile_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\target_profile_cfg.py",
+      "sha256": "0d184b32140a1d47f180a29d6dee6c57d1b10a78d5b032f0f02f2cde90d0be6b",
+      "bytes": 2348
+    },
+    {
+      "file": "configs/methods/tcrg_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\tcrg_v1_cfg.py",
+      "sha256": "949e88fc98b6c3cafc505cbf817371e93026ebe002b5b01588a1b427557c2f4f",
+      "bytes": 1661
+    },
+    {
+      "file": "configs/methods/temporal_diversity_validation_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\temporal_diversity_validation_cfg.py",
+      "sha256": "1e72e88cedd29c05cada226efb0586f4460371797fef370e6fcaa423f1309852",
+      "bytes": 1713
+    },
+    {
+      "file": "configs/methods/trsa_r_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\trsa_r_v1_cfg.py",
+      "sha256": "4eb884cd83f145e8f581409bade452f0ca9378fa56cded3cfcc70376e37645fe",
+      "bytes": 1076
+    },
+    {
+      "file": "configs/methods/trsa_v1_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\trsa_v1_cfg.py",
+      "sha256": "d76a28cdb36dc80dcf82d59ddac305eec55bd725dfdbc11616717c121d766645",
+      "bytes": 1653
+    },
+    {
+      "file": "configs/methods/zerocost_nas_cfg.py",
+      "source": "D:\\dt-talk\\repository\\configs\\methods\\zerocost_nas_cfg.py",
+      "sha256": "15702cbc6b6dd847dcb65233a339b80e8396db7ab8be8289b83ba699b1f70b61",
+      "bytes": 1307
+    },
+    {
+      "file": "core/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "core/config.py",
+      "source": "D:\\dt-talk\\repository\\core\\config.py",
+      "sha256": "d172d1cfeeeebc18d7d0c9af9e5742bea494d081e1c2810d6b017e4c16432deb",
+      "bytes": 7881
+    },
+    {
+      "file": "core/data/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\data\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "core/data/center_api.py",
+      "source": "D:\\dt-talk\\repository\\core\\data\\center_api.py",
+      "sha256": "91b2bf11f4f2baa89f21d95a27c56917472cfb25690d208f5a1c3d8c9a13dbe4",
+      "bytes": 20359
+    },
+    {
+      "file": "core/data/sim.py",
+      "source": "D:\\dt-talk\\repository\\core\\data\\sim.py",
+      "sha256": "316661a980cd8da741a6ee8ad577bbbbe55a5d1d971e3c40b58547d377ca0216",
+      "bytes": 13351
+    },
+    {
+      "file": "core/data/v2_pools.py",
+      "source": "D:\\dt-talk\\repository\\core\\data\\v2_pools.py",
+      "sha256": "1cec7ed3af586014d830931c2e6187de129ff8be30fb74cce7f631eadf06dfcb",
+      "bytes": 2733
+    },
+    {
+      "file": "core/methods/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "core/methods/ours/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "core/methods/ours/adapt.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\adapt.py",
+      "sha256": "adc1ea75593158d704c54b5ae98f32c9c6039c2c4c30f31050e3d0c8cbe82367",
+      "bytes": 11825
+    },
+    {
+      "file": "core/methods/ours/c23_mode_selector.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\c23_mode_selector.py",
+      "sha256": "ae378e442ee628449c7e137281790ba690c6e431b415bcb8ad144a6e782185f8",
+      "bytes": 5922
+    },
+    {
+      "file": "core/methods/ours/c2_adapt.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\c2_adapt.py",
+      "sha256": "13c0307fec1ddca52d7690a4689910c7acb1a7c1ee4427f7cfa4881392ca4f02",
+      "bytes": 4550
+    },
+    {
+      "file": "core/methods/ours/condition.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\condition.py",
+      "sha256": "599dd7d8265ac8e02502a082bd54fa939a74fe82a9bd923a57078c710837ccc2",
+      "bytes": 13074
+    },
+    {
+      "file": "core/methods/ours/paper_engine.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\paper_engine.py",
+      "sha256": "86f57c674c78e1ed32eab0784df548977026014644c4d4a98cadf7a01e7c4ab3",
+      "bytes": 84875
+    },
+    {
+      "file": "core/methods/ours/paper_modules.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\paper_modules.py",
+      "sha256": "f51d5a894730e792b7b9bafe57d5925412ede0a473339a59a0ccf56c1ec0b715",
+      "bytes": 14621
+    },
+    {
+      "file": "core/methods/ours/prior_response_profile.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\prior_response_profile.py",
+      "sha256": "92633fd7107af18d25b39c5a7939fb7722b5d11845f74dc78e17e2fe0b822529",
+      "bytes": 16083
+    },
+    {
+      "file": "core/methods/ours/source_prior.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\source_prior.py",
+      "sha256": "eed18ce554ad1ff58b162281fcf52e6b42c49eafb223aee59c8fa3bf0e937347",
+      "bytes": 17174
+    },
+    {
+      "file": "core/methods/ours/stage2_runtime.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\stage2_runtime.py",
+      "sha256": "38e3e7f043c0895f4e688f64e7f6106eb1b07cca36a30081ff4ccca31d4091ed",
+      "bytes": 3351
+    },
+    {
+      "file": "core/methods/ours/stage2_v4_c23.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\stage2_v4_c23.py",
+      "sha256": "3667e27d71d6c82bb62a815c7f11f7ee380791d3498452ce59c7672335710fde",
+      "bytes": 5701
+    },
+    {
+      "file": "core/methods/ours/weight_bank.py",
+      "source": "D:\\dt-talk\\repository\\core\\methods\\ours\\weight_bank.py",
+      "sha256": "d18a2ac4e42dc776a08ba7820cfc0addd2b7c93127162108d76c378102c942ed",
+      "bytes": 11935
+    },
+    {
+      "file": "core/space/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\space\\__init__.py",
+      "sha256": "1109e2a58e25136c348845e4b66a8d98bfeceeebb1b23a3c8a57e33431306a86",
+      "bytes": 342
+    },
+    {
+      "file": "core/space/enumerator.py",
+      "source": "D:\\dt-talk\\repository\\core\\space\\enumerator.py",
+      "sha256": "d7509947a2534e23f37cf9150276eb32886fb975275268ee390c217ab3d793ee",
+      "bytes": 2473
+    },
+    {
+      "file": "core/space/models.py",
+      "source": "D:\\dt-talk\\repository\\core\\space\\models.py",
+      "sha256": "a6c73ffac8a0ccad3232f7ea8e75afccc6f0bb7ae5356ba0a02545c67d6e1017",
+      "bytes": 5729
+    },
+    {
+      "file": "core/space/profile.py",
+      "source": "D:\\dt-talk\\repository\\core\\space\\profile.py",
+      "sha256": "d7abbbcebe5c4dde274aa193c20bdfc733c07b7efb16b00c00566c4aff154db3",
+      "bytes": 7084
+    },
+    {
+      "file": "core/space/types.py",
+      "source": "D:\\dt-talk\\repository\\core\\space\\types.py",
+      "sha256": "364016db8428ec5b3004bc290349ffef226feb4a0d776064415ed8f19f7e5e37",
+      "bytes": 1928
+    },
+    {
+      "file": "core/utils/__init__.py",
+      "source": "D:\\dt-talk\\repository\\core\\utils\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "core/utils/metrics.py",
+      "source": "D:\\dt-talk\\repository\\core\\utils\\metrics.py",
+      "sha256": "e7ed8db5fb695f590735d64f93e14b1f99699ff7b212be0394424e2c7cc12b8d",
+      "bytes": 9275
+    },
+    {
+      "file": "core/utils/timer.py",
+      "source": "D:\\dt-talk\\repository\\core\\utils\\timer.py",
+      "sha256": "51085f2120156f621dc87a3961e66d85833eca420b202ca024fafbfa3518f2d0",
+      "bytes": 2400
+    },
+    {
+      "file": "formal_protocol/__init__.py",
+      "source": "D:\\dt-talk\\repository\\formal_protocol\\__init__.py",
+      "sha256": "2b33dcc60b1e73facab2a463a4a1c5d561230100d9fa39b720452bfeb3ee982c",
+      "bytes": 71
+    },
+    {
+      "file": "formal_protocol/pipeline.py",
+      "source": "D:\\dt-talk\\repository\\formal_protocol\\pipeline.py",
+      "sha256": "9ab6e5cf3f25fa7bee74a2631df8f35e2f8b4ad08f9f2211ceeeb0c487473529",
+      "bytes": 57464
+    },
+    {
+      "file": "LICENSE",
+      "source": "D:\\dt-talk\\repository\\LICENSE",
+      "sha256": "a244d1878fecba7d8b4b63c13ca695762b6b407f91f6f6bfb18435850d2adb47",
+      "bytes": 1069
+    },
+    {
+      "file": "main_evaluation/__init__.py",
+      "source": "D:\\dt-talk\\repository\\main_evaluation\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "main_evaluation/pipeline.py",
+      "source": "D:\\dt-talk\\repository\\main_evaluation\\pipeline.py",
+      "sha256": "72492e882c0522440a645f5b91320b36626ccaa73c6a1a7078ca1e783afc1a5e",
+      "bytes": 50177
+    },
+    {
+      "file": "outputs/shared.evaluation_external_d2904_t2904/source_assets/source_assets_manifest.json",
+      "source": "D:\\dt-talk\\repository\\outputs\\shared.evaluation_external_d2904_t2904\\source_assets\\source_assets_manifest.json",
+      "sha256": "30042bd54eb70c8bd7722d712690ec659e9e5094ab8e14a7c436bae0a43b87a2",
+      "bytes": 7782
+    },
+    {
+      "file": "outputs/source_prior_bank_d2904_t2904/strong_bank/c31_strong_bank_manifest.json",
+      "source": "D:\\dt-talk\\repository\\outputs\\source_prior_bank_d2904_t2904\\strong_bank\\c31_strong_bank_manifest.json",
+      "sha256": "4b71e6affe3093a6a012afeea2e38000ca9ab9ae1e6991f92826bee6c9dccb2f",
+      "bytes": 8644
+    },
+    {
+      "file": "requirements.txt",
+      "source": "D:\\dt-talk\\repository\\requirements.txt",
+      "sha256": "b9720e84dedd88940c84c93fc39977a8e285bfdd924aece82649c32ea8500d0e",
+      "bytes": 93
+    },
+    {
+      "file": "shared/__init__.py",
+      "source": "D:\\dt-talk\\repository\\shared\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "shared/data_access.py",
+      "source": "D:\\dt-talk\\repository\\shared\\data_access.py",
+      "sha256": "13acba3c0c2c22d8e97e11471e427a879b17596f951bcd5f5fafcea85c688119",
+      "bytes": 5672
+    },
+    {
+      "file": "shared/evaluation/__init__.py",
+      "source": "D:\\dt-talk\\repository\\shared\\evaluation\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "shared/evaluation/common.py",
+      "source": "D:\\dt-talk\\repository\\shared\\evaluation\\common.py",
+      "sha256": "12b9add3eadb06fde7e27c248554c6feb2918773e873f583b2ae153c78727f1b",
+      "bytes": 14787
+    },
+    {
+      "file": "source_prior_bank/__init__.py",
+      "source": "D:\\dt-talk\\repository\\source_prior_bank\\__init__.py",
+      "sha256": "7abf2ef84065cec1f664fe0f584bc07f9b763747855a5f7d8da998d868891cde",
+      "bytes": 19
+    },
+    {
+      "file": "source_prior_bank/pipeline.py",
+      "source": "D:\\dt-talk\\repository\\source_prior_bank\\pipeline.py",
+      "sha256": "f66a46837ab3dd8e565b9dbdca0408a96de64d6a615558eb0a45d2d4b27a63cc",
+      "bytes": 48064
+    }
+  ]
+}

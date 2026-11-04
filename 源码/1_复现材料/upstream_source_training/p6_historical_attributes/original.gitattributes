@@ -1,0 +1,44 @@
+* text=auto eol=lf
+*.pt binary
+*.npz binary
+*.png binary
+*.pdf binary
+*.svg binary
+imported/msa_dti/space/*.py -text
+imported/ravm_dt/*.py -text
+imported/msa_dti/bank/candidate_bank_manifest.source.json -text
+# Preserve the exact pre-frozen P3.2 bytes named by SHA-256 manifests.
+configs/p3_2_protocol.json -text
+configs/p3_2_protocol_r2.json -text
+configs/p3_2_protocol_r3.json -text
+configs/p3_mismatch_v2_frozen.json -text
+artifacts/p3_2_source_bank/source_training_manifest.json -text
+artifacts/p3_2_source_bank/p3_mismatch_v2_r3/source_training_manifest.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r3/analysis.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r3/scientific_audit.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r3/p3_mismatch_v2_r3_config.json -text
+results/p3_2b/analysis.json -text
+results/p3_2b/scientific_audit.json -text
+audits/p3_mismatch_v2_frozen.sha256 -text
+audits/p3_mismatch_v2_r1.sha256 -text
+audits/p3_mismatch_v2_r2.sha256 -text
+audits/p3_mismatch_v2_r3.sha256 -text
+audits/p3_2b_fresh_development.sha256 -text
+results/p3_2a/revisions/p3_mismatch_v2_r1/p3_mismatch_v2_r1_config.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r1/structural/generator_structural_audit.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r1/scientific_audit.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r1/analysis.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r2/p3_mismatch_v2_r2_config.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r2/structural/generator_structural_audit.json -text
+results/p3_2a/revisions/p3_mismatch_v2_r2/structural/target_structural_statistics.csv -text
+results/p3_2a/revisions/p3_mismatch_v2_r3/structural/generator_structural_audit.json -text
+results/p3_2b/structural/generator_structural_audit.json -text
+results/p3_2b/stage_records.csv -text
+results/p3_2b/per_policy_horizon_losses.csv -text
+# Preserve exact P6 output/config/freeze bytes across Git checkout on Windows.
+configs/p6_* -text
+results/p6/** -text
+artifacts/p6_recoverability_* -text
+audits/P6_* -text
+reports/P6_* -text
+docs/P6_EXECUTION_CHANGELOG.md -text

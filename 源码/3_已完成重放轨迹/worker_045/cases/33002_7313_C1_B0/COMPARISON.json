@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SINGLE_LIFECYCLE",
+  "task": {
+    "center_id": 33002,
+    "seed": 7313,
+    "scenario": "C1",
+    "method": "B0",
+    "config_id": "B0_Frozen_ratio10"
+  },
+  "stages": 24,
+  "absolute_tolerance": 0,
+  "comparison_policy": "Exact scientific equality; no unapproved tolerance introduced",
+  "differences": [],
+  "excluded_timing_columns": [
+    "decision_runtime_actual_s",
+    "decision_runtime_standalone_estimate_s"
+  ],
+  "elapsed_seconds": 7.875,
+  "full_matrix_reproduced": false,
+  "source_bank_retrained": false
+}

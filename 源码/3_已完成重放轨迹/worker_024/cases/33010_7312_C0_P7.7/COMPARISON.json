@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SINGLE_LIFECYCLE",
+  "task": {
+    "center_id": 33010,
+    "seed": 7312,
+    "scenario": "C0",
+    "method": "P7.7",
+    "config_id": "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33"
+  },
+  "stages": 24,
+  "absolute_tolerance": 0,
+  "comparison_policy": "Exact scientific equality; no unapproved tolerance introduced",
+  "differences": [],
+  "excluded_timing_columns": [
+    "decision_runtime_actual_s",
+    "decision_runtime_standalone_estimate_s"
+  ],
+  "elapsed_seconds": 26.70300000000134,
+  "full_matrix_reproduced": false,
+  "source_bank_retrained": false
+}
