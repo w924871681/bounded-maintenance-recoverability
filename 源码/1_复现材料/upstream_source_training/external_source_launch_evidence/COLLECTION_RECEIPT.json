@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EXACT_LAUNCH_EVIDENCE_COPY",
+  "files": [
+    {
+      "file": "tools/prepare_final_e2e_c23_external_sources.py",
+      "sha256": "48dd2fe1ac241d0a960e8624801d73f0424ab79fc3677f5304fdc158fbb22806",
+      "bytes": 1208,
+      "original_path": "D:\\dt-talk\\new_exercise_revised\\tools\\prepare_final_e2e_c23_external_sources.py"
+    },
+    {
+      "file": "RUN_FINAL_E2E_C23_EXTERNAL_SOURCES.ps1",
+      "sha256": "bd245ce2af3baf0b7f4a311c4d9b602beac08706cbe316c0e5f135d5730c3276",
+      "bytes": 878,
+      "original_path": "D:\\dt-talk\\new_exercise_revised\\RUN_FINAL_E2E_C23_EXTERNAL_SOURCES.ps1"
+    },
+    {
+      "file": "FINAL_E2E_C23_POWERSHELL_COMMON.ps1",
+      "sha256": "d760773dd3c984003907c5f7c9920dda43a78fa1ff77ee600dbf45941c9ff85f",
+      "bytes": 3776,
+      "original_path": "D:\\dt-talk\\new_exercise_revised\\FINAL_E2E_C23_POWERSHELL_COMMON.ps1"
+    },
+    {
+      "file": "outputs/final_e2e_c23_external_d2904_t2904/preflight/external_baseline_identity.json",
+      "sha256": "562bff4ce39eda8d49b8025622229b1c14cc39d0aef604800ee36fa7a2be853b",
+      "bytes": 3623,
+      "original_path": "D:\\dt-talk\\new_exercise_revised\\outputs\\final_e2e_c23_external_d2904_t2904\\preflight\\external_baseline_identity.json"
+    },
+    {
+      "file": "outputs/final_e2e_c23_external_d2904_t2904/logs/external_source_assets.log",
+      "sha256": "76c1f5e7158ddced55abcfbfac66e11100aa30ce848e44de0788e81d86461c04",
+      "bytes": 47034,
+      "original_path": "D:\\dt-talk\\new_exercise_revised\\outputs\\final_e2e_c23_external_d2904_t2904\\logs\\external_source_assets.log"
+    }
+  ],
+  "original_interpreter_version_confirmed": false,
+  "original_launch_defaults": {
+    "device": "cuda",
+    "safe_mode": "gru-native"
+  }
+}

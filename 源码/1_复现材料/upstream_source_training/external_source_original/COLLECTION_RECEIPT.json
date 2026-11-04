@@ -1,0 +1,348 @@
+{
+  "status": "PASS_ORIGINAL_BUILDER_COLLECTION_AND_FROZEN_BINDINGS",
+  "python_files": 38,
+  "files": [
+    {
+      "file": "cfg/main_cfg.py",
+      "sha256": "1aa40d3fd5f17227d5c1a31d9f685608cdad95dac155b5852506ba2980e6e1a9",
+      "bytes": 9169,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\main_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "cfg/methods/final_e2e_c23_cfg.py",
+      "sha256": "2d1b190a6b40325f86b4d548b617782dab9f24d8a09628164df12d27497f74fb",
+      "bytes": 4519,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\methods\\final_e2e_c23_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "cfg/methods/final_e2e_c23_external_cfg.py",
+      "sha256": "bb3708acaf3bf0a54b06f6e482611e38ece99d86a7b8bb78129307ab8f990078",
+      "bytes": 2778,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\methods\\final_e2e_c23_external_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "cfg/methods/ours_cfg.py",
+      "sha256": "6ec5d14fba3a9bde3f3c3cd5bac70b26e5dc3973218a593694301fb779236a8f",
+      "bytes": 5468,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\methods\\ours_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "cfg/methods/ours_v2_cfg.py",
+      "sha256": "f305887d47a1e673dd13aacd47133d3dc60939bdac1985b86be7732d58ae1636",
+      "bytes": 3426,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\methods\\ours_v2_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "cfg/methods/prior_response_profile_cfg.py",
+      "sha256": "2601dd8aa66fcaa4f4792e51ddcb066be6078894d271287a60a409d7a4548f29",
+      "bytes": 2346,
+      "source": "D:\\dt-talk\\new_exercise_revised\\cfg\\methods\\prior_response_profile_cfg.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/config.py",
+      "sha256": "d62473dd15f8730d44d8ed34ef2345a3b3031b519a5af24aa5eab662b3c7a6a1",
+      "bytes": 7845,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\config.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\data\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/data/center_api.py",
+      "sha256": "a83b9d758f2520560132020b9b1b617609b9898aefc6df4f1be73e66d1cc5cdb",
+      "bytes": 17512,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\data\\center_api.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/data/sim.py",
+      "sha256": "930fa8ebe34a442d53af16a054955580f2d0c41ef2514a3cfd125b0e6905883d",
+      "bytes": 13191,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\data\\sim.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/data/v2_pools.py",
+      "sha256": "f0d665e9110c8e5065a6a6a1a4d482f4e1a13576c780096acaa65d540ba94836",
+      "bytes": 2721,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\data\\v2_pools.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/adapt.py",
+      "sha256": "b68d30521e9e6d7a553f0e5e8e5f440940b9d9876b27b1eac8c44bd7dcd6c0a6",
+      "bytes": 11299,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\adapt.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/c23_mode_selector.py",
+      "sha256": "ae378e442ee628449c7e137281790ba690c6e431b415bcb8ad144a6e782185f8",
+      "bytes": 5922,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\c23_mode_selector.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/c2_adapt.py",
+      "sha256": "24478aeaa26125932d8446bdbb40df8664c73710b50ef50429dccc2eec5f3075",
+      "bytes": 4548,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\c2_adapt.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/condition.py",
+      "sha256": "599dd7d8265ac8e02502a082bd54fa939a74fe82a9bd923a57078c710837ccc2",
+      "bytes": 13074,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\condition.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/paper_engine.py",
+      "sha256": "86f57c674c78e1ed32eab0784df548977026014644c4d4a98cadf7a01e7c4ab3",
+      "bytes": 84875,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\paper_engine.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/paper_modules.py",
+      "sha256": "f51d5a894730e792b7b9bafe57d5925412ede0a473339a59a0ccf56c1ec0b715",
+      "bytes": 14621,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\paper_modules.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/prior_response_profile.py",
+      "sha256": "92633fd7107af18d25b39c5a7939fb7722b5d11845f74dc78e17e2fe0b822529",
+      "bytes": 16083,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\prior_response_profile.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/source_prior.py",
+      "sha256": "eed18ce554ad1ff58b162281fcf52e6b42c49eafb223aee59c8fa3bf0e937347",
+      "bytes": 17174,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\source_prior.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/stage2_runtime.py",
+      "sha256": "38e3e7f043c0895f4e688f64e7f6106eb1b07cca36a30081ff4ccca31d4091ed",
+      "bytes": 3351,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\stage2_runtime.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/stage2_v4_c23.py",
+      "sha256": "3667e27d71d6c82bb62a815c7f11f7ee380791d3498452ce59c7672335710fde",
+      "bytes": 5701,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\stage2_v4_c23.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/methods/ours/weight_bank.py",
+      "sha256": "fd2d382a8cadb958f0b8a573edadebab5d2186f429ff6d338b56e16b83ef74e6",
+      "bytes": 12300,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\methods\\ours\\weight_bank.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/space/__init__.py",
+      "sha256": "a5749143cd6d2a1e5f9ced05a6341f4fd2a49e578289d71969e92d77f1192de0",
+      "bytes": 357,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\space\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/space/enumerator.py",
+      "sha256": "e71a57b49d6a34f7757e636ca9ca6966e08810bfa5296aa76a120eb36fac6a74",
+      "bytes": 2544,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\space\\enumerator.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/space/models.py",
+      "sha256": "c7a5aa571032f82870bb70f5ba64da0f3287922a7196f17129f4a1139e6b48e1",
+      "bytes": 5903,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\space\\models.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/space/profile.py",
+      "sha256": "9bfdde9c94dedaf7a533bdb8306580172c8349b590f34f457ce2c39afe30538c",
+      "bytes": 7301,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\space\\profile.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/space/types.py",
+      "sha256": "f55ff840246d169a019466a13f3b97ba748aaf2f620a43022d7eefff8bcce4c6",
+      "bytes": 1986,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\space\\types.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\utils\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/utils/metrics.py",
+      "sha256": "89047bc0073be1c9ef300cdb0a09183d1b3f7f64a3732fd35a36e03e3a1eb862",
+      "bytes": 9479,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\utils\\metrics.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "core/utils/timer.py",
+      "sha256": "bbfd445ad359513036f1d6f5fcdd3662c41692b34faedf9beed2bcf1cb7238be",
+      "bytes": 2485,
+      "source": "D:\\dt-talk\\new_exercise_revised\\core\\utils\\timer.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "external_e2e_c23/__init__.py",
+      "sha256": "8b084a9f378124b2b1a51563bf3c22444eb7ff33692017da28b2136ae56987ed",
+      "bytes": 24,
+      "source": "D:\\dt-talk\\new_exercise_revised\\external_e2e_c23\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "external_e2e_c23/pipeline.py",
+      "sha256": "24582f2078fa5545d0163478c7ddfbdc41c790228baed3f665e14691673a1a81",
+      "bytes": 39758,
+      "source": "D:\\dt-talk\\new_exercise_revised\\external_e2e_c23\\pipeline.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "final_e2e/__init__.py",
+      "sha256": "8efbbab3ad90e4dbb491adc24ba8c0bd18d303f3c94a231e8f95f4a44748a6db",
+      "bytes": 49,
+      "source": "D:\\dt-talk\\new_exercise_revised\\final_e2e\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "final_e2e/data_access.py",
+      "sha256": "a4efb6672b34fc14e0b64de1fe39a3761774b783d9c9c82155f31a28cff7d14c",
+      "bytes": 2988,
+      "source": "D:\\dt-talk\\new_exercise_revised\\final_e2e\\data_access.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "final_e2e_c23/__init__.py",
+      "sha256": "067111ea0cf17627ce6f9900d775a63f4ef14ba1b2c330a5e3d5a4bc80ff37dc",
+      "bytes": 44,
+      "source": "D:\\dt-talk\\new_exercise_revised\\final_e2e_c23\\__init__.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "final_e2e_c23/common.py",
+      "sha256": "16d611cb87e07bc5b33574df7850ac0dcdc9f087d5cb02458acc2bb47802ccf0",
+      "bytes": 14778,
+      "source": "D:\\dt-talk\\new_exercise_revised\\final_e2e_c23\\common.py",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/fixed_center_selection.json",
+      "sha256": "79e5b1fc295f14b3a1e2bedabb156170d02982176792ae151b676fc3d072270a",
+      "bytes": 8738,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c1r_rebase_d2904_t2904\\stage2\\reduced\\fixed_center_selection.json",
+      "frozen_input_expected_sha256": "79e5b1fc295f14b3a1e2bedabb156170d02982176792ae151b676fc3d072270a"
+    },
+    {
+      "file": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/merged_profiles_240.json",
+      "sha256": "58a6d9342c2b8c9d59b4ce24af594903deda8681403d3fb286ede86a662911a4",
+      "bytes": 8324106,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c1r_rebase_d2904_t2904\\stage2\\reduced\\merged_profiles_240.json",
+      "frozen_input_expected_sha256": "58a6d9342c2b8c9d59b4ce24af594903deda8681403d3fb286ede86a662911a4"
+    },
+    {
+      "file": "outputs/c1r_rebase_d2904_t2904/stage2/source_teacher_pi50.json",
+      "sha256": "30c39ef1abde5b05bdd2e4f0ae33e71e762ab5f890c3caa48943255b0f68acb8",
+      "bytes": 739821,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c1r_rebase_d2904_t2904\\stage2\\source_teacher_pi50.json",
+      "frozen_input_expected_sha256": "30c39ef1abde5b05bdd2e4f0ae33e71e762ab5f890c3caa48943255b0f68acb8"
+    },
+    {
+      "file": "outputs/c23_d2904_t2904/c23_identity.json",
+      "sha256": "af3e9302a68235519a87592b8ff3e4d53197eb384dd3fb4b6a9dc9cbce16e0e9",
+      "bytes": 2242,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c23_d2904_t2904\\c23_identity.json",
+      "frozen_input_expected_sha256": "af3e9302a68235519a87592b8ff3e4d53197eb384dd3fb4b6a9dc9cbce16e0e9"
+    },
+    {
+      "file": "outputs/c23_d2904_t2904/stage1d/c23_stage1d_joint_audit.json",
+      "sha256": "cea986f5f5be626e3b9599c36b43fb5e92463eba14d50e6f84ff70ddcafc7d37",
+      "bytes": 1947901,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c23_d2904_t2904\\stage1d\\c23_stage1d_joint_audit.json",
+      "frozen_input_expected_sha256": "cea986f5f5be626e3b9599c36b43fb5e92463eba14d50e6f84ff70ddcafc7d37"
+    },
+    {
+      "file": "outputs/c23_d2904_t2904/stage1q2/c23_stage1q2_joint_qualification.json",
+      "sha256": "0919aab54be0db63e8e00e003282f80ec1b31251ea372f9a83e94324bf369c8c",
+      "bytes": 3888125,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\c23_d2904_t2904\\stage1q2\\c23_stage1q2_joint_qualification.json",
+      "frozen_input_expected_sha256": "0919aab54be0db63e8e00e003282f80ec1b31251ea372f9a83e94324bf369c8c"
+    },
+    {
+      "file": "outputs/final_e2e_c23_external_d2904_t2904/source_assets/source_assets_manifest.json",
+      "sha256": "30042bd54eb70c8bd7722d712690ec659e9e5094ab8e14a7c436bae0a43b87a2",
+      "bytes": 7782,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\final_e2e_c23_external_d2904_t2904\\source_assets\\source_assets_manifest.json",
+      "frozen_input_expected_sha256": null
+    },
+    {
+      "file": "outputs/formal_c1_seed2904/shared_artifacts/ours_weight_bank_source_pooled_c1_v1_src20.pt",
+      "sha256": "bb3a655606af3b554a8f088bb1d2f3f8d9f190b0911a812fd3755d3de3216b9d",
+      "bytes": 66246114,
+      "source": "D:\\dt-talk\\new_exercise_revised\\outputs\\formal_c1_seed2904\\shared_artifacts\\ours_weight_bank_source_pooled_c1_v1_src20.pt",
+      "frozen_input_expected_sha256": "bb3a655606af3b554a8f088bb1d2f3f8d9f190b0911a812fd3755d3de3216b9d"
+    }
+  ],
+  "bytes": 81510448,
+  "frozen_dependency_files": 7,
+  "target_models": [
+    {
+      "identity": "pt_ft_h1_btight",
+      "checkpoint_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "paper_checkpoint": "repository/imported/msa_dti/bank/formal_h1_a57.pt",
+      "original_checkpoint_provenance_only": "D:\\dt-talk\\new_exercise_revised\\outputs\\final_e2e_c23_external_d2904_t2904\\source_assets\\pt_ft_h1_a57.pt"
+    },
+    {
+      "identity": "medet_style_h1_btight",
+      "checkpoint_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "paper_checkpoint": "repository/imported/msa_dti/bank/medet_style_h1_a57.pt",
+      "original_checkpoint_provenance_only": "D:\\dt-talk\\new_exercise_revised\\outputs\\final_e2e_c23_external_d2904_t2904\\source_assets\\medet_style_h1_a57.pt"
+    }
+  ],
+  "protocol_exact": true,
+  "source_models_retrained": false,
+  "runtime_import_validation": false,
+  "old_materials_deleted": false
+}

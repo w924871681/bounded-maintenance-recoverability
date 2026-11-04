@@ -1,0 +1,17 @@
+{
+  "all_stage_path_matches": true,
+  "behavior_sha256": "b400931644cd212e0f8dbb684c516d62618791ee4fc6d1e392ae7a235ecf4cb2",
+  "center_id": 32381,
+  "generator_sha256": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+  "implementation_sha256": "8b5bc39f67daee1b2c4227bfa66b1fa6a46bfb1709292c8d950dc3f20b9c3b8f",
+  "model_seed": 7312,
+  "protocol_sha256": "86272adb9a335ff72030cc4ba5c1fbc5f52e543eacd58ba032433e590251ee23",
+  "rows": 24,
+  "runtime_config_sha256": "cb4141fda8284a7e98b64187609e5af893e665f960afeef8853a8307fe1e9da3",
+  "scales_sha256": "67780bf2a72b4dd9b756b8b8e1fe985fc3dda0945a4a77a3e9106456664b419d",
+  "scenario": "C3",
+  "schema": "p7.6b-paired-trajectory-integrity-v1",
+  "status": "COMPLETE",
+  "trajectory_id": "32381_7312_C3",
+  "trajectory_sha256": "1ee88a013492c52ed73239ef851dfd81878ce6e1cd62ec130ead21e16d27618a"
+}

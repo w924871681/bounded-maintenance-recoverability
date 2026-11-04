@@ -1,0 +1,460 @@
+{
+  "study": "c1r_stage2_fixed_minimal_reestimation_selection",
+  "config": {
+    "protocol_version": "c1r_fixed_method_minimal_reestimation_v1_1",
+    "data_seed": 2904,
+    "train_seed": 2904,
+    "c1_bank_path": "outputs/formal_c1_seed2904/shared_artifacts/ours_weight_bank_source_pooled_c1_v1_src20.pt",
+    "expected_c1_file_sha256": "bb3a655606af3b554a8f088bb1d2f3f8d9f190b0911a812fd3755d3de3216b9d",
+    "expected_architectures": 66,
+    "expected_horizons": [
+      1,
+      4
+    ],
+    "expected_bank_keys": 264,
+    "stage1_audit_centers": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "stage1_anchor_indices": [
+      0,
+      8,
+      17,
+      18,
+      46,
+      53,
+      54,
+      62,
+      65
+    ],
+    "stage1_adapt_steps": 50,
+    "stage1_adapt_lr": 0.0003,
+    "stage1_huber_delta": 0.2,
+    "stage1_bootstrap_repeats": 4000,
+    "stage1_ci_noninferiority": -0.01,
+    "stage1_family_noninferiority": -0.03,
+    "base_blocks": [
+      [
+        20,
+        50,
+        10000
+      ],
+      [
+        70,
+        50,
+        20000
+      ],
+      [
+        120,
+        50,
+        30000
+      ],
+      [
+        170,
+        50,
+        40000
+      ]
+    ],
+    "extended_blocks": [
+      [
+        220,
+        50,
+        50000
+      ],
+      [
+        270,
+        50,
+        60000
+      ],
+      [
+        320,
+        50,
+        70000
+      ],
+      [
+        370,
+        50,
+        80000
+      ]
+    ],
+    "base_center_range": [
+      20,
+      219
+    ],
+    "merged_center_range": [
+      20,
+      419
+    ],
+    "H_list": [
+      1,
+      4
+    ],
+    "K_list": [
+      10,
+      20
+    ],
+    "full_base_cases": 800,
+    "full_merged_cases": 1600,
+    "reduced_base_centers": 30,
+    "reduced_extended_centers": 30,
+    "reduced_total_centers": 60,
+    "reduced_base_cases": 120,
+    "reduced_merged_cases": 240,
+    "reduced_min_per_stratum": 2,
+    "reduced_selection_seed": 2904,
+    "source_teacher_archs_per_task": 24,
+    "candidate_adapt_steps": 50,
+    "rebase_root": "outputs/c1r_rebase_d2904_t2904",
+    "source_teacher_path": "outputs/c1r_rebase_d2904_t2904/stage2/source_teacher_pi50.json",
+    "full_base_profiles_path": "outputs/prior_response_profile_d2904_t2904/profiles/prior_response_profiles.json",
+    "full_merged_profiles_path": "outputs/c1r_rebase_d2904_t2904/stage2/v4_development_profiles.json",
+    "reduced_selection_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/fixed_center_selection.json",
+    "base_profiles_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/base_profiles_120.json",
+    "merged_profiles_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/merged_profiles_240.json",
+    "base_cache_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/base_teacher_cache_120.json",
+    "merged_cache_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/merged_teacher_cache_240.json",
+    "v4_assets_audit_path": "outputs/c1r_rebase_d2904_t2904/stage2/reduced/v4_development_assets_audit.json",
+    "stage2_recall12_margin": -0.02,
+    "stage2_best_in12_margin": -0.01,
+    "stage2_regret_relative_margin": -0.03,
+    "stage2_cvar_relative_margin": -0.05,
+    "stage4_check_ci_noninferiority": -0.01,
+    "stage4_check_point_margin": -0.005,
+    "stage4_mean_regret_margin": 0.005,
+    "stage4_near_oracle_drop_max": 0.01,
+    "stage4_subgroup_margin": -0.03,
+    "final_pool_k_start": 720,
+    "final_pool_k_count": 50
+  },
+  "selection_created_without_candidate_quality": true,
+  "selection_seed": 2904,
+  "stratification": "center_type x budget_tier",
+  "base": {
+    "range": [
+      20,
+      219
+    ],
+    "N_centers": 30,
+    "center_ids": [
+      21,
+      28,
+      31,
+      32,
+      39,
+      54,
+      58,
+      61,
+      76,
+      85,
+      86,
+      88,
+      90,
+      93,
+      96,
+      97,
+      117,
+      119,
+      123,
+      127,
+      132,
+      145,
+      151,
+      166,
+      174,
+      192,
+      194,
+      205,
+      210,
+      212
+    ],
+    "strata": {
+      "A|loose": {
+        "available": 13,
+        "selected": 2,
+        "center_ids": [
+          39,
+          192
+        ]
+      },
+      "A|medium": {
+        "available": 33,
+        "selected": 5,
+        "center_ids": [
+          76,
+          88,
+          93,
+          123,
+          127
+        ]
+      },
+      "A|tight": {
+        "available": 14,
+        "selected": 2,
+        "center_ids": [
+          28,
+          97
+        ]
+      },
+      "B|loose": {
+        "available": 15,
+        "selected": 2,
+        "center_ids": [
+          117,
+          205
+        ]
+      },
+      "B|medium": {
+        "available": 36,
+        "selected": 5,
+        "center_ids": [
+          54,
+          85,
+          90,
+          96,
+          132
+        ]
+      },
+      "B|tight": {
+        "available": 29,
+        "selected": 4,
+        "center_ids": [
+          31,
+          58,
+          119,
+          194
+        ]
+      },
+      "C|loose": {
+        "available": 6,
+        "selected": 2,
+        "center_ids": [
+          86,
+          166
+        ]
+      },
+      "C|medium": {
+        "available": 25,
+        "selected": 4,
+        "center_ids": [
+          61,
+          151,
+          210,
+          212
+        ]
+      },
+      "C|tight": {
+        "available": 29,
+        "selected": 4,
+        "center_ids": [
+          21,
+          32,
+          145,
+          174
+        ]
+      }
+    }
+  },
+  "extended": {
+    "range": [
+      220,
+      419
+    ],
+    "N_centers": 30,
+    "center_ids": [
+      226,
+      232,
+      234,
+      241,
+      253,
+      278,
+      287,
+      304,
+      306,
+      307,
+      313,
+      318,
+      324,
+      331,
+      333,
+      335,
+      336,
+      344,
+      348,
+      351,
+      352,
+      366,
+      367,
+      377,
+      384,
+      388,
+      393,
+      394,
+      403,
+      417
+    ],
+    "strata": {
+      "A|loose": {
+        "available": 17,
+        "selected": 2,
+        "center_ids": [
+          307,
+          394
+        ]
+      },
+      "A|medium": {
+        "available": 28,
+        "selected": 4,
+        "center_ids": [
+          253,
+          278,
+          348,
+          377
+        ]
+      },
+      "A|tight": {
+        "available": 15,
+        "selected": 2,
+        "center_ids": [
+          313,
+          388
+        ]
+      },
+      "B|loose": {
+        "available": 16,
+        "selected": 2,
+        "center_ids": [
+          318,
+          366
+        ]
+      },
+      "B|medium": {
+        "available": 32,
+        "selected": 5,
+        "center_ids": [
+          306,
+          333,
+          351,
+          384,
+          393
+        ]
+      },
+      "B|tight": {
+        "available": 32,
+        "selected": 5,
+        "center_ids": [
+          226,
+          234,
+          336,
+          403,
+          417
+        ]
+      },
+      "C|loose": {
+        "available": 4,
+        "selected": 2,
+        "center_ids": [
+          287,
+          324
+        ]
+      },
+      "C|medium": {
+        "available": 32,
+        "selected": 5,
+        "center_ids": [
+          232,
+          241,
+          331,
+          352,
+          367
+        ]
+      },
+      "C|tight": {
+        "available": 24,
+        "selected": 3,
+        "center_ids": [
+          304,
+          335,
+          344
+        ]
+      }
+    }
+  },
+  "all_center_ids": [
+    21,
+    28,
+    31,
+    32,
+    39,
+    54,
+    58,
+    61,
+    76,
+    85,
+    86,
+    88,
+    90,
+    93,
+    96,
+    97,
+    117,
+    119,
+    123,
+    127,
+    132,
+    145,
+    151,
+    166,
+    174,
+    192,
+    194,
+    205,
+    210,
+    212,
+    226,
+    232,
+    234,
+    241,
+    253,
+    278,
+    287,
+    304,
+    306,
+    307,
+    313,
+    318,
+    324,
+    331,
+    333,
+    335,
+    336,
+    344,
+    348,
+    351,
+    352,
+    366,
+    367,
+    377,
+    384,
+    388,
+    393,
+    394,
+    403,
+    417
+  ],
+  "N_centers": 60,
+  "N_cases": 240,
+  "inputs": {
+    "c1_bank_sha256": "bb3a655606af3b554a8f088bb1d2f3f8d9f190b0911a812fd3755d3de3216b9d",
+    "full_base_profiles_sha256": "ad03cb0a48778122be7e1bb17e75c234ddc36cae80c1549bbc69653110864ea2",
+    "full_merged_profiles_sha256": "7154b747ec2d818e4091f947794b65e80043b96db5e34a6e4eb16a6c53e5a707"
+  },
+  "test_used": false
+}
