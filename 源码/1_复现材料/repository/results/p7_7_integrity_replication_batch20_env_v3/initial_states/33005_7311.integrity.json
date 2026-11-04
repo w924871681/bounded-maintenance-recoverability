@@ -1,0 +1,13 @@
+{
+  "environment_binding": "7bed0e525859e81ed4cfd5cdb7cf6f8947a44c36920a4999e168fa4eb4e50079",
+  "initial_state_hash": "3b79aa579cb2f047cb6a077a48794be73220fb97a86e33e40e37faf5eafa5dbd",
+  "input_bundle_digest": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+  "manifest_digest": "7eebe390398395b6ebb1247ba2722b6d5928a65b0c06d039b85eacaa39c359ea",
+  "output_hash": "713888e2801421da44fb2c86b1786fffa58411f9fe7eaf13a9edbe9e173a1c45",
+  "schema": "paper3-batch20-initial-state-receipt-v1",
+  "task": {
+    "center_id": 33005,
+    "seed": 7311
+  },
+  "valid": true
+}

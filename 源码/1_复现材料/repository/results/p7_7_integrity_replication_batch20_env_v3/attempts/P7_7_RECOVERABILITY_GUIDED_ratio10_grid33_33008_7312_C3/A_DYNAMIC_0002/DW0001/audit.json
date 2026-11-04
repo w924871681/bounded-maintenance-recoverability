@@ -1,0 +1,4219 @@
+{
+  "environment_binding": "7bed0e525859e81ed4cfd5cdb7cf6f8947a44c36920a4999e168fa4eb4e50079",
+  "generator_called": false,
+  "global_torch_dropout_limitation": "Original adapt seed fixes NumPy minibatch sampling; MLP dropout uses actual recorded global Torch RNG.",
+  "globals_overridden": [
+    "timeline_for_v2",
+    "scenario_hash_v2",
+    "initial_model"
+  ],
+  "historical_outputs_modified": false,
+  "initial_state": {
+    "authoritative_expected_initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+    "bank": {
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "checkpoint_file_sha256": {
+        "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a46_regime_c.pt": "cc468e7dc4e27f9a319832c73b3b1e84723c8e8c2a029bee4e8b3e868c40de62",
+        "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_b.pt": "8cd6f77ea8b54eaf3583bee5619cf2a5a27f9fafff14299bc9165bd83fdd5e09",
+        "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_c_control.pt": "599394e21dc5bda5721373cae14dfeaa754668ab2e135551a45a77a506df7452",
+        "imported/msa_dti/bank/formal_h1_a1.pt": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+        "imported/msa_dti/bank/formal_h1_a46.pt": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+        "imported/msa_dti/bank/formal_h1_a55.pt": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+        "imported/msa_dti/bank/formal_h1_a56.pt": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+        "imported/msa_dti/bank/formal_h1_a57.pt": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+        "imported/msa_dti/bank/formal_h1_a6.pt": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+        "imported/msa_dti/bank/formal_h1_a62.pt": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+        "imported/msa_dti/bank/medet_style_h1_a57.pt": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a"
+      },
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "deployment_tier": "tight",
+      "feasible_ids": [
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ],
+      "feasible_mask": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "identities": [
+        {
+          "architecture": "MLP_L2_H32_D0.1",
+          "architecture_index": 1,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a1.pt",
+          "checkpoint_sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+          "family": "MLP",
+          "identity_id": "msa_a1_pt",
+          "operation_count": 155712,
+          "parameter_count": 77921,
+          "source_initialization_id": "pt_seed_3006"
+        },
+        {
+          "architecture": "MLP_L3_H32_D0.0",
+          "architecture_index": 6,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a6.pt",
+          "checkpoint_sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+          "family": "MLP",
+          "identity_id": "msa_a6_pt",
+          "operation_count": 157760,
+          "parameter_count": 78977,
+          "source_initialization_id": "pt_seed_3011"
+        },
+        {
+          "architecture": "TCN_B4_C16_K3_Dil1",
+          "architecture_index": 46,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a46.pt",
+          "checkpoint_sha256": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+          "family": "TCN",
+          "identity_id": "msa_a46_pt",
+          "operation_count": 1339424,
+          "parameter_count": 7137,
+          "source_initialization_id": "pt_seed_3051"
+        },
+        {
+          "architecture": "GRU_L1_H16_D0.1",
+          "architecture_index": 55,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a55.pt",
+          "checkpoint_sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+          "family": "GRU",
+          "identity_id": "msa_a55_pt",
+          "operation_count": 377888,
+          "parameter_count": 2081,
+          "source_initialization_id": "pt_seed_3060"
+        },
+        {
+          "architecture": "GRU_L1_H32_D0.0",
+          "architecture_index": 56,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a56.pt",
+          "checkpoint_sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+          "family": "GRU",
+          "identity_id": "msa_a56_pt",
+          "operation_count": 1050688,
+          "parameter_count": 5697,
+          "source_initialization_id": "pt_seed_3061"
+        },
+        {
+          "architecture": "GRU_L1_H32_D0.1",
+          "architecture_index": 57,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a57.pt",
+          "checkpoint_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+          "family": "GRU",
+          "identity_id": "msa_a57_pt",
+          "operation_count": 1050688,
+          "parameter_count": 5697,
+          "source_initialization_id": "pt_seed_3062"
+        },
+        {
+          "architecture": "GRU_L2_H32_D0.0",
+          "architecture_index": 62,
+          "checkpoint": "imported/msa_dti/bank/formal_h1_a62.pt",
+          "checkpoint_sha256": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+          "family": "GRU",
+          "identity_id": "msa_a62_pt",
+          "operation_count": 2230336,
+          "parameter_count": 12033,
+          "source_initialization_id": "pt_seed_3067"
+        },
+        {
+          "architecture": "GRU_L1_H32_D0.1",
+          "architecture_index": 57,
+          "checkpoint": "imported/msa_dti/bank/medet_style_h1_a57.pt",
+          "checkpoint_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+          "family": "GRU",
+          "identity_id": "msa_a57_medet",
+          "operation_count": 1050688,
+          "parameter_count": 5697,
+          "source_initialization_id": "medet_source_meta_init"
+        },
+        {
+          "architecture": "GRU_L1_H32_D0.1",
+          "architecture_index": 57,
+          "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_b.pt",
+          "checkpoint_sha256": "8cd6f77ea8b54eaf3583bee5619cf2a5a27f9fafff14299bc9165bd83fdd5e09",
+          "family": "GRU",
+          "identity_id": "p3v2_a57_regime_b",
+          "operation_count": 1050688,
+          "parameter_count": 5697,
+          "source_initialization_id": "c3_b_seed_42057"
+        },
+        {
+          "architecture": "GRU_L1_H32_D0.1",
+          "architecture_index": 57,
+          "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_c_control.pt",
+          "checkpoint_sha256": "599394e21dc5bda5721373cae14dfeaa754668ab2e135551a45a77a506df7452",
+          "family": "GRU",
+          "identity_id": "p3v2_a57_regime_c_control",
+          "operation_count": 1050688,
+          "parameter_count": 5697,
+          "source_initialization_id": "c4_c_seed_42157"
+        },
+        {
+          "architecture": "TCN_B4_C16_K3_Dil1",
+          "architecture_index": 46,
+          "checkpoint": "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a46_regime_c.pt",
+          "checkpoint_sha256": "cc468e7dc4e27f9a319832c73b3b1e84723c8e8c2a029bee4e8b3e868c40de62",
+          "family": "TCN",
+          "identity_id": "p3v2_a46_regime_c",
+          "operation_count": 1339424,
+          "parameter_count": 7137,
+          "source_initialization_id": "c4_c_seed_42046"
+        }
+      ],
+      "initial_candidate_ids": [
+        "msa_a46_pt",
+        "msa_a55_pt",
+        "msa_a56_pt",
+        "msa_a57_medet",
+        "p3v2_a57_regime_b",
+        "p3v2_a57_regime_c_control",
+        "p3v2_a46_regime_c"
+      ],
+      "limits": {
+        "operations": 1500000,
+        "parameters": 30000
+      }
+    },
+    "before_first_decision_verified": true,
+    "center_id": 33008,
+    "center_type": "C",
+    "deployment_tier": "tight",
+    "incumbent": {
+      "architecture": "GRU_L1_H32_D0.1",
+      "architecture_index": 57,
+      "checkpoint": "imported/msa_dti/bank/formal_h1_a57.pt",
+      "checkpoint_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "family": "GRU",
+      "identity_id": "msa_a57_pt",
+      "operation_count": 1050688,
+      "parameter_count": 5697,
+      "source_initialization_id": "pt_seed_3062"
+    },
+    "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+    "original_initial_model_called": true,
+    "profile_digest": "7587e3c5669e1dc54950a0416cf7722d3e5f657d8fce657462081089735d4cfa",
+    "reference_feature_hash": "b5ac8bfb8229d858b7db8eab5f8abc3fbe07d5ebf1060fc46cbd4102371c47e8",
+    "reference_raw_hash": "5aa028669e309779cad076d7fd3f7fe23d795812cc86aef8834ee75b3c6ff0c6",
+    "reference_span": [
+      800,
+      1000
+    ],
+    "scenario": "C3",
+    "scenario_fingerprint": "2e309960c3b6f4f61f686283e171f345dd0be7e4086a9ab30606657cd130663a",
+    "seed": 7312,
+    "warmup_feature_hash": "46a7153b80a39b85e7a4954ffc70530b715b2e3e1fdbe59747450550b93a08bf",
+    "warmup_raw_hash": "6dbd88837646a913e7eb70d254469db594a78f427cb6d77866c4c5ac15b6069e",
+    "warmup_seed": 40320,
+    "warmup_seed_rule": "seed+center_id",
+    "warmup_span": [
+      0,
+      800
+    ],
+    "warmup_steps": 50
+  },
+  "input_bundle_digest": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+  "input_stage_checks": [
+    {
+      "D_assess_hash": "41c8602ab764f333c3a50d3c4755904b1aaa4576489b644ede81a391ec276b95",
+      "D_srv_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+      "D_upd_hash": "e2cbf0711ece716b243056bf0f397c44d73554039fa8406f2b85d810e29ac0f6",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 1
+    },
+    {
+      "D_assess_hash": "81bc135dad91db2f22dda5a743ff86054d66811a901552e72bd5234f2c42e5bc",
+      "D_srv_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+      "D_upd_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 2
+    },
+    {
+      "D_assess_hash": "10a43c96540cbfeff37c2a38ccfa33c9fac86584fa802de2e8a733d6068e6906",
+      "D_srv_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+      "D_upd_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 3
+    },
+    {
+      "D_assess_hash": "752119901de6af63a37232a6174b44f5792f61545a300ce85d3e0c29b8515993",
+      "D_srv_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+      "D_upd_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 4
+    },
+    {
+      "D_assess_hash": "1dac168ba2485c516a85f6cad5741bcbc00cc08ff6f59c540a3e5671337cf9fd",
+      "D_srv_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+      "D_upd_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 5
+    },
+    {
+      "D_assess_hash": "8de13c475d67a30d2d7c5c242a5159ee1e33847e92a61d8cc607228f33a543dc",
+      "D_srv_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+      "D_upd_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 6
+    },
+    {
+      "D_assess_hash": "97001e0587999433f736e68bc3b41462c51604a0cfcb06b3ad1be37fbf7e211f",
+      "D_srv_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+      "D_upd_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 7
+    },
+    {
+      "D_assess_hash": "14623852bff0cca34758d362544918c9de10070e0cc5049cffd40e3d3a5136b2",
+      "D_srv_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+      "D_upd_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 8
+    },
+    {
+      "D_assess_hash": "c6dfd5e85c8534715d79f79e7f68bc51c451055ad5a00506796591e7d1558531",
+      "D_srv_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+      "D_upd_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 9
+    },
+    {
+      "D_assess_hash": "21d248c78ce00dcdd77412822137390b79758af1094887c16a016b3d7e6d2d82",
+      "D_srv_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+      "D_upd_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 10
+    },
+    {
+      "D_assess_hash": "95d7903f0e4b0ace62703694a06139497f978b5275e2abb2d41547bd1e20444d",
+      "D_srv_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+      "D_upd_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 11
+    },
+    {
+      "D_assess_hash": "31b66343bed38b8be2fa9aa70cacd533529fd917bff83997199c0f47cb19e276",
+      "D_srv_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+      "D_upd_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 12
+    },
+    {
+      "D_assess_hash": "c53258acdc1008169ad0924b12e6634c8bad9e5bbdc319c6f4c52966515b0ac0",
+      "D_srv_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+      "D_upd_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 13
+    },
+    {
+      "D_assess_hash": "9d5367afee4c2ca68599c387f33b9df66731e983bc07bc8a5addd81b5660614c",
+      "D_srv_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+      "D_upd_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 14
+    },
+    {
+      "D_assess_hash": "4d69add6baf328d7b6dc2e9cf07f5af35fcd5f5354c8c3df3e0fc94484e66ff0",
+      "D_srv_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+      "D_upd_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 15
+    },
+    {
+      "D_assess_hash": "7c8c9211701be449396f56e582f9ca156171481e1c3b5f579e35935fe8c994fc",
+      "D_srv_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+      "D_upd_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 16
+    },
+    {
+      "D_assess_hash": "5f1de25b6d9f280c83f7af6ef25e17f021977c8f79cbebb17a5a335df2cfc442",
+      "D_srv_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+      "D_upd_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 17
+    },
+    {
+      "D_assess_hash": "19f796f260912f67e121f037219dd2f7624582762407d708e20d4415b80d020c",
+      "D_srv_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+      "D_upd_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 18
+    },
+    {
+      "D_assess_hash": "ed4bb5edbc0eaceb94a3bf99cff66bd60ef77f2b2a48c2a5ff35a1eaaaf37507",
+      "D_srv_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+      "D_upd_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 19
+    },
+    {
+      "D_assess_hash": "ecba6a44b5dac2970fd37615be871978b92559a9ad5b59f5c3f0d240a1800cd0",
+      "D_srv_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+      "D_upd_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 20
+    },
+    {
+      "D_assess_hash": "23c47cf87a85b805bbcf60be6e32085fa2d03cf5c57fd4a3b83c09a045c4b7d6",
+      "D_srv_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+      "D_upd_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 21
+    },
+    {
+      "D_assess_hash": "737dd9039225671af073377ab14b778de85537e9d809ba8d6fd96b82788e136e",
+      "D_srv_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+      "D_upd_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 22
+    },
+    {
+      "D_assess_hash": "4db1bcabdb17c658e993975729b4fae683991e5596fb407d6ca3633c9f47f766",
+      "D_srv_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+      "D_upd_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 23
+    },
+    {
+      "D_assess_hash": "c9c72292d1818d5f873930bc7ae7aa6a0502c4d894c7c733276c24fc6547de9e",
+      "D_srv_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+      "D_upd_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+      "bank_hash": "c9571436972af00eecdcbd3cf6ee80d54b92ae07ddcaf4f8ff76210ba9099b11",
+      "deployment_filter_hash": "146c7a1531dbe4f97134405d337af52af4c620d4e7dbd17ebd967e212e7622c9",
+      "initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "paired_input_fields_match": true,
+      "stage": 24
+    }
+  ],
+  "model_output_worker_invariance_claimed": false,
+  "new_seed_introduced": false,
+  "original_bank_build_and_profiling_preserved": true,
+  "original_globals_mutated": false,
+  "original_offline_labels_and_call_order_preserved": true,
+  "original_run_one_code_object_preserved": true,
+  "original_run_one_code_sha256": "0372ed5f60e6d2a5500909c17e308849ba83182453b3fc408a4c5256bb09bdc2",
+  "retry_exact_failed_state_restored": false,
+  "rng_state_before_original_run": {
+    "bindings": {
+      "environment_binding": "7bed0e525859e81ed4cfd5cdb7cf6f8947a44c36920a4999e168fa4eb4e50079",
+      "expected_initial_state_hash": "e68851e8ee601e6936dc7bb6e414b99d2d1ecf0fb284bb27b5929daea8496bcb",
+      "final_configuration_sha256": "6339a9247b984b497d1543198b3a7b7c0cfdf9c7bcfd1c52b47b62e17d2fd0df",
+      "input_bundle_digest": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+      "source_bindings_digest": "e9e75128c989c0cfbd608e6266326f679a4e810e91d45f0de9a7b6fdac17df4c",
+      "task": {
+        "center_id": 33008,
+        "config_id": "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33",
+        "method": "P7.7",
+        "scenario": "C3",
+        "seed": 7312
+      }
+    },
+    "cpu": {
+      "base64": "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",
+      "byte_count": 5056,
+      "dtype": "uint8",
+      "sha256": "f53bd8c9b2b36eedad42294006b108090626412bae90c1298626a7d34d3da721",
+      "shape": [
+        5056
+      ]
+    },
+    "cuda": [
+      {
+        "device_index": 0,
+        "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+        "state": {
+          "base64": "PILv9xCRAABwlQQAAAAAAA==",
+          "byte_count": 16,
+          "dtype": "uint8",
+          "sha256": "a573ea4c70e19c9b2855c4925aff19f073506243f8e87ed1dbb6ae3e2eb1b839",
+          "shape": [
+            16
+          ]
+        }
+      }
+    ],
+    "cuda_runtime": "12.1",
+    "manual_seed_called": false,
+    "schema": "paper3-original-task-torch-rng-v1",
+    "scope": "EXISTING_EXECUTION_RNG_PROVENANCE",
+    "state_digest": "a47498c1aff5b5f542a2d24d16fe08e8722bf0d44d50aefa6240ca813775a316",
+    "torch_version": "2.5.1+cu121"
+  },
+  "schema": "paper3-exact-frozen-trajectory-adapter-audit-v1",
+  "scientific_runtime": {
+    "cuda_available": true,
+    "cuda_current_device": 0,
+    "cuda_devices": [
+      {
+        "capability": [
+          8,
+          6
+        ],
+        "index": 0,
+        "multiprocessor_count": 30,
+        "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+        "total_memory_bytes": 6441926656,
+        "uuid": "5ce4dcb0-372a-37a7-64e9-ae708d1c204c"
+      }
+    ],
+    "cuda_driver": {
+      "api": null,
+      "status": "NOT_AVAILABLE",
+      "version": null
+    },
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cudnn_enabled": true,
+    "cudnn_version": 90100,
+    "default_dtype": "torch.float32",
+    "default_settings_modified_by_verifier": false,
+    "deterministic_algorithms_enabled": false,
+    "external_driver_binary_inventory_verified": false,
+    "manual_seed_called": false,
+    "model_or_optimizer_called": false,
+    "numpy_git_revision": "b832a09cf2a169c833dd2371e7c07aa00b293242",
+    "numpy_version": "2.4.6",
+    "original_models_device": "cuda",
+    "schema": "paper3-readonly-scientific-runtime-v1",
+    "torch_build_configuration": "PyTorch built with:\n  - C++ Version: 201703\n  - MSVC 192930154\n  - Intel(R) oneAPI Math Kernel Library Version 2024.2.2-Product Build 20240823 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)\n  - OpenMP 2019\n  - LAPACK is enabled (usually provided by MKL)\n  - CPU capability usage: AVX2\n  - CUDA Runtime 12.1\n  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90\n  - CuDNN 90.1  (built against CUDA 12.4)\n  - Magma 2.5.4\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=12.1, CUDNN_VERSION=9.1.0, CXX_COMPILER=C:/actions-runner/_work/pytorch/pytorch/builder/windows/tmp_bin/sccache-cl.exe, CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /Zc:__cplusplus /bigobj /FS /utf-8 -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE /wd4624 /wd4068 /wd4067 /wd4267 /wd4661 /wd4717 /wd4244 /wd4804 /wd4273, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.5.1, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=OFF, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=OFF, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, \n",
+    "torch_cuda_build_version": "12.1",
+    "torch_git_version": "a8d6afb511a69687bbb2b7e88a3cf67917e1697e",
+    "torch_num_interop_threads": 14,
+    "torch_num_threads": 2,
+    "torch_version": "2.5.1+cu121"
+  },
+  "scientific_runtime_signature": "31e897e3a131c7f2d222484d7629e82a312812646ebb46fa6eab9f6908796ddd",
+  "source_bindings_digest": "e9e75128c989c0cfbd608e6266326f679a4e810e91d45f0de9a7b6fdac17df4c",
+  "source_bindings_sha256": {
+    "PAPER3_CANONICAL_INPUT_VERIFICATION_PLAN.md": "ee9d379b2d5cd851b370dc657da8f7c431d5c1231f23e1ecccb252358e5acb9c",
+    "PAPER3_SINGLE_GROUP_INTEGRITY_FORENSIC_REPORT.md": "08cd3143813819a5d8cb4aae35c9a3cfcbe90a418a9f15a89a65e65a97e2d09a",
+    "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a46_regime_c.pt": "cc468e7dc4e27f9a319832c73b3b1e84723c8e8c2a029bee4e8b3e868c40de62",
+    "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_b.pt": "8cd6f77ea8b54eaf3583bee5619cf2a5a27f9fafff14299bc9165bd83fdd5e09",
+    "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/p3v2_a57_regime_c_control.pt": "599394e21dc5bda5721373cae14dfeaa754668ab2e135551a45a77a506df7452",
+    "artifacts/p3_2_source_bank/p3_mismatch_v2_r3/source_training_manifest.json": "84ab3d962e9a566303060fa98febcadef26eb1e5d472f81d32d986c35de3b940",
+    "artifacts/p3_model_bank_manifest.json": "e607a65adfb05b91bf8d9ebac77052d6e13223dfd54e47e655167e20c92342c8",
+    "artifacts/p6_recoverability_estimator.pt": "2bbad97427506b0260d3ed9370bc88ed4c91a8879c34787a184e37b5185f6b9b",
+    "artifacts/p6_recoverability_scaler.json": "1d4cb0b91206bb7defe8389aa8f27ff4776c2acc016662e952bc5f5dc3612f3b",
+    "artifacts/p7_6b_A1_estimator.pt": "e8d047bda5a1e1d62cd9f089db1ade79c0c08750f9dfc878d6e71cc06d8c47cb",
+    "artifacts/p7_6b_A1_scaler.json": "2c9da0a29b469b8bb92bdbbcb893769a8baa39a57b3dbd26247ba9b1c8564c38",
+    "audits/P6_ESTIMATOR_FREEZE.json": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f",
+    "audits/P7_2_FINAL_CALIBRATION_FREEZE.json": "1973c25adab030d24555e384a8d2f740a193d9debbe0a88c81aac1045da3033f",
+    "audits/P7_6B_FINAL_SCIENTIFIC_AUDIT.json": "85caccf51c49e7046908a1550df62702c3d16f07d109d9315d6d7a98a102c674",
+    "audits/P7_7A2_BRANCH_B_IMPLEMENTATION_QUALIFICATION.json": "31105d81f3ecd41833208a011b38ed2c6fb93acde09d50ddc37b16536fd5f362",
+    "audits/P7_7A2_FINAL_HELDOUT_ACCESS_GUARD.json": "024eb629d8da21870c7d647e259b6c3d8e523396113fa63ee69880fa6e4930b5",
+    "audits/P7_7_FINAL_HELDOUT_AUTHORIZATION.json": "8f142dccb24a5260f46f4498ac9aa2869db814ceed9c6fafca47f3fbd9fb83da",
+    "audits/P7_7_FINAL_HELDOUT_SCIENTIFIC_AUDIT.json": "c25c01b2b89b43e01d22c157a3bbb39d5321d43fe3cefbeb8dfb9500f175b8dd",
+    "audits/environment.json": "62032b84e25bd8284352a3db87091c54b8209232092f1fc212f9af782d5de015",
+    "configs/P7_6B_FROZEN_PROTOCOL.json": "86272adb9a335ff72030cc4ba5c1fbc5f52e543eacd58ba032433e590251ee23",
+    "configs/P7_7A2_INTEGRATION_DECISION.json": "6bd8403c81895f559286b93b6a9eb04fafbebb17b0782be1cbc57fb563f613e1",
+    "configs/P7_7_FINAL_LIFECYCLE_PROTOCOL.json": "6339a9247b984b497d1543198b3a7b7c0cfdf9c7bcfd1c52b47b62e17d2fd0df",
+    "configs/center_splits.json": "a3fac8b47e78f5a7de9b4bddb425aca8bff517005751ced09ff1590ea8c5ebe4",
+    "configs/p3_mismatch_v2_frozen.json": "529655647c1359e2a164cddc3c5c8b534f5cdbad53e2ede29ada477910975646",
+    "configs/p7_2_selected_action_params.json": "b400931644cd212e0f8dbb684c516d62618791ee4fc6d1e392ae7a235ecf4cb2",
+    "configs/requirements_frozen.txt": "aa7f267400111ffcd3a2b4d501557150a8130abe61c83a36ffc6ccdff96a37f4",
+    "core/__init__.py": "2eb599b6fa82980c2876a578e58c1bc3e42023720056766f60bcf298416e5a59",
+    "core/audits.py": "d8bd0a71d1704cd9840bb500a2d56c9d8b79e62225c8586cf1eabb74f09e8654",
+    "core/common.py": "10c8dcf936e60e6b9b992778310648e258ed5a105d290d09434ba0c968183aaa",
+    "core/data.py": "6cd7e375d40c8ecf390fe37dee270d93890b3981f666e521e17441612f304d5e",
+    "core/models.py": "55028939faab38ea23736d191647f33f08ad48f14f204bbecf55bb3d76642e7e",
+    "core/oracle.py": "52fd6e3c289a94c615898402cf416132a1e4dd27cb0deb47545ea5f9f5dd2a38",
+    "core/p3_2_analysis.py": "dc186c0432104c481f6524527631c86e97271926d9a93cf1b0347b4b93a9dba3",
+    "core/p3_2_audits.py": "93880b8e7db95416c16d7565cafde41297d316b42ed5d724fda9c2daa21e0d0d",
+    "core/p3_2_data.py": "0f5a5bff889a0ac866793dc49b21680f927af13c9e6fc3d5c3d75bbf4d9d5b27",
+    "core/p3_2_models.py": "05aef843c99e3e4054c6b99a47063e85e6138c50bbb829c39183221a08765982",
+    "core/p3_2_oracle.py": "5b67e64ced2cc5ce9f4f9e6873c087ae6216bde15998351de4fa4ac82349f0bf",
+    "core/p6.py": "7597861c7bddd8e32080a3f83eff0ab0bc0f55db6c6b11aec773794f33cc2b07",
+    "core/p7.py": "378f2b8644f97e87fa819661da694d1bfcb163e7d183d110edf5f08c9d6dfe3d",
+    "core/p7_6b_selected_data.py": "dee7eda85297562c96fa23046e2238e10a35ae7a4eaf381173a38d57e3ec59dc",
+    "core/protocol.py": "8468b32f245e91c9bcbbb95d93b2dea07b75087d951184fb429cc1f7201cc367",
+    "docs/P7_7_FINAL_HELDOUT_PARALLEL_RESOURCE_ADJUSTMENT_20261003.md": "c76579e557ec825eda4be1d636a245a366589e1d0b000808e34f47293638cbe5",
+    "imported/__init__.py": "5ddf6f7296705aadfcbcd3bab925e03addf0c11a71e212511664dba3657ed0cf",
+    "imported/msa_dti/__init__.py": "ac912ef469ceb568a4808e2c9d6a58f35103c7ad58e1d0b0b4d215f19073d435",
+    "imported/msa_dti/bank/formal_h1_a1.pt": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+    "imported/msa_dti/bank/formal_h1_a46.pt": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+    "imported/msa_dti/bank/formal_h1_a55.pt": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+    "imported/msa_dti/bank/formal_h1_a56.pt": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+    "imported/msa_dti/bank/formal_h1_a57.pt": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+    "imported/msa_dti/bank/formal_h1_a6.pt": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+    "imported/msa_dti/bank/formal_h1_a62.pt": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+    "imported/msa_dti/bank/medet_style_h1_a57.pt": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+    "imported/msa_dti/space/__init__.py": "1109e2a58e25136c348845e4b66a8d98bfeceeebb1b23a3c8a57e33431306a86",
+    "imported/msa_dti/space/enumerator.py": "d7509947a2534e23f37cf9150276eb32886fb975275268ee390c217ab3d793ee",
+    "imported/msa_dti/space/models.py": "a6c73ffac8a0ccad3232f7ea8e75afccc6f0bb7ae5356ba0a02545c67d6e1017",
+    "imported/msa_dti/space/profile.py": "d7abbbcebe5c4dde274aa193c20bdfc733c07b7efb16b00c00566c4aff154db3",
+    "imported/msa_dti/space/types.py": "364016db8428ec5b3004bc290349ffef226feb4a0d776064415ed8f19f7e5e37",
+    "imported/ravm_dt/__init__.py": "0114da6465e378037d9c01edffe201729334b4e1cae45e6b174488debf76f5f8",
+    "imported/ravm_dt/main_cfg.py": "fea128a2649301017a2a8ad6cab3db30392e180c2f3aa1216e9a83fefcd5d005",
+    "imported/ravm_dt/sim.py": "930fa8ebe34a442d53af16a054955580f2d0c41ef2514a3cfd125b0e6905883d",
+    "imported/ravm_dt/statistics.py": "e8ef1e2963c60e8b3102d48e19472d902f2666b5c5a5b204a5cd1c6dcbe7a415",
+    "reports/P7_7A2_BRANCH_B_INTEGRATION_SPEC.md": "cb6953b0c8a00684fcf90be13282a1799a540d7b59fe285a8c584d83e16818e3",
+    "reports/P7_7A2_RECOVERABILITY_ESCALATION_INTEGRATION_AUDIT.md": "b258990789b2e6cf06fbe48bc10c5a83db1f5134cd5ffb771776a2eb601a9606",
+    "reports/P7_7_FINAL_LIFECYCLE_PROTOCOL.md": "3291349cd092257642d01e8edd47fe2691c7228486b3b5b1c935128871cbdc7f",
+    "results/p7_7/execution_status.json": "9595a844666a4956bd8f2c235809e0f4965805578697bf6e9b24a5eeb13fbd75",
+    "scripts/audit_reuse.py": "4bbc76391c0e6ba3021f55c6ef0a42b4a390be449bfc62f650a137f5c2ee8887",
+    "scripts/capture_environment.py": "6d85690387c6597c65f49d47e3f93692e3f1092a0e8e619de8072cb55c94d56b",
+    "scripts/finalize_artifact_manifest.py": "9150bc5c53f5ee3fd5bdbea39b86f37c1b14445bf2f31652f5b9a3c46b59c30f",
+    "scripts/p7_6a_1_metadata_replay.py": "11fd6c997c5789a0fffba6f4899665c90e8ae184640aa8debcf941d8ad5bb39c",
+    "scripts/p7_6b_benchmark.py": "9afb6c540ae1551d7b31778cd1852cdf328ceabfb0572ee8bd8cbe830e9b9d7d",
+    "scripts/p7_6b_compare_qualification.py": "d1c49a11e3e325ad82519f3f03c6ef5719f71da51cfc33a9130d6ac313d8a046",
+    "scripts/p7_6b_cuda2_benchmark.py": "a8f84635ecf04454cdd2c4fa3719e77858d5318a03533b12784e197d673bf313",
+    "scripts/p7_6b_fit_r0_testonly.py": "29fa264ac6f037a4179158f86be12a8dcab59eb3911bd8291943b91cedc5810b",
+    "scripts/p7_6b_fit_supervisor.py": "e267030cb42183fdae856fc2a4d44c9bf9a31f02ba02b38c9018e038a8a14497",
+    "scripts/p7_6b_full_trajectory_qualification.py": "9314fa8c103806ebaa1d3a9bd0c0f682d2ec22458c6ebb2b1e43ed01a30770f2",
+    "scripts/p7_6b_qualification_monitor.py": "0f5f3bdfb104e9e4324fa078e24b010cdf560357ba122ae257c07df7a5178571",
+    "scripts/p7_6b_resume_qualification.py": "fb62d0783baa567cf961e81624ccdbe73326c3a32923f990100ce21a96198541",
+    "scripts/p7_6b_science.py": "302dad26e456105304f3b4d9a5d226f5c149b5b38da8cdcc73abd6c30c0566a5",
+    "scripts/paper_figure_style.py": "3a02660a32b1a6a9b011102de8f7d6b5d561882389f502e38a7740f6131d1624",
+    "scripts/plot_paper3_figures.py": "f3646471d5fd039506a76b6de7e561efc90811f8fab37738052fae2b2632b520",
+    "scripts/run_p3.py": "c6d269424e057bf591b89b1daad799dd42cbe2da8be6fff30cc680139aa78ba9",
+    "scripts/run_p3_2.py": "b901feae7b2b3e7d334ba05f5f5c9760ca1f93620d02c945e89c4ec55486d273",
+    "scripts/run_p6.py": "9a83e1359426a9a185ec420f539137686c86c4db5afd7a21867520e0f2b71ac0",
+    "scripts/run_p7.py": "51dd05f494ae561858c8de804eb34a4ef0590f69480aae0cc5dbae2baff25494",
+    "scripts/run_p7_2.py": "91c345761060c15f53fd7338563b185e2f0bdfb33e722678ccb0a41b695da482",
+    "scripts/run_p7_3.py": "fa8227cf9ae75d753f699823cab77463747794db996656406a3b6ccd718338b7",
+    "scripts/run_p7_4b.py": "5f52b379f55b67a667189b3000b311dc0e545c4ccaad603ba46b60133b572d57",
+    "scripts/run_p7_4b_cpu_recovery.py": "45f408fc3207787193b1ca356bf1be2380c6c0535b03801c89762d11063fc647",
+    "scripts/run_p7_4b_cpu_recovery_supervisor.py": "619d4ad0678108f53a1cddee35669d0c6c745e45953567635ffd7cd0dc14a235",
+    "scripts/run_p7_4b_gpu_finalize.py": "dd8569634e633a16cd4351ec9f84c028469edd973c087e362fb82041d65e7648",
+    "scripts/run_p7_4b_gpu_supervisor.py": "1756b05d7e6227c54448fb2db7e71ce0077d3af22e64f80d6c9a1df3d668d913",
+    "scripts/run_p7_6b.py": "8b5bc39f67daee1b2c4227bfa66b1fa6a46bfb1709292c8d950dc3f20b9c3b8f",
+    "scripts/run_p7_7_final.py": "ced000f213f8fc9b52a859e683fc6d27dd04a268641c3d6024500f56c1c158fe",
+    "scripts/run_p7_seed_bound.py": "ef65520df029960077eccf98d72778f0b2ad83858c8dc9098e8d173f6c75b218"
+  },
+  "statistics_executed": false,
+  "task": {
+    "center_id": 33008,
+    "config_id": "P7_7_RECOVERABILITY_GUIDED_ratio10_grid33",
+    "method": "P7.7",
+    "scenario": "C3",
+    "seed": 7312
+  },
+  "timeline_access": {
+    "center_id": 33008,
+    "completed_stages": 24,
+    "events": [
+      {
+        "current_decision_sealed": false,
+        "current_stage": 0,
+        "kind": "segment",
+        "legacy_hash": "46a7153b80a39b85e7a4954ffc70530b715b2e3e1fdbe59747450550b93a08bf",
+        "phase": "INITIAL",
+        "purpose": "initial_warmup",
+        "requested_stage": null,
+        "role": "warmup",
+        "sequence": 0,
+        "span": [
+          0,
+          800
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 0,
+        "kind": "segment",
+        "legacy_hash": "b5ac8bfb8229d858b7db8eab5f8abc3fbe07d5ebf1060fc46cbd4102371c47e8",
+        "phase": "INITIAL",
+        "purpose": "initial_reference",
+        "requested_stage": null,
+        "role": "assessment",
+        "sequence": 1,
+        "span": [
+          800,
+          1000
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 0,
+        "kind": "segment",
+        "legacy_hash": "b5ac8bfb8229d858b7db8eab5f8abc3fbe07d5ebf1060fc46cbd4102371c47e8",
+        "phase": "INITIAL",
+        "purpose": "initial_reference",
+        "requested_stage": null,
+        "role": "assessment",
+        "sequence": 2,
+        "span": [
+          800,
+          1000
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "e2cbf0711ece716b243056bf0f397c44d73554039fa8406f2b85d810e29ac0f6",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 1,
+        "role": "update",
+        "sequence": 3,
+        "span": [
+          1000,
+          1400
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "41c8602ab764f333c3a50d3c4755904b1aaa4576489b644ede81a391ec276b95",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 1,
+        "role": "assessment",
+        "sequence": 4,
+        "span": [
+          1400,
+          1640
+        ]
+      },
+      {
+        "current_stage": 1,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 5,
+        "stage": 1
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 1,
+        "role": "service",
+        "sequence": 6,
+        "span": [
+          1640,
+          2040
+        ]
+      },
+      {
+        "current_stage": 1,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 7,
+        "stage": 1
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "e2cbf0711ece716b243056bf0f397c44d73554039fa8406f2b85d810e29ac0f6",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 1,
+        "role": "update",
+        "sequence": 8,
+        "span": [
+          1000,
+          1400
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "41c8602ab764f333c3a50d3c4755904b1aaa4576489b644ede81a391ec276b95",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 1,
+        "role": "assessment",
+        "sequence": 9,
+        "span": [
+          1400,
+          1640
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 1,
+        "role": "offline_oracle_service",
+        "sequence": 10,
+        "span": [
+          1640,
+          2040
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 2,
+        "role": "offline_oracle_service",
+        "sequence": 11,
+        "span": [
+          2280,
+          2680
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 3,
+        "role": "offline_oracle_service",
+        "sequence": 12,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 1,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 4,
+        "role": "offline_oracle_service",
+        "sequence": 13,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 2,
+        "role": "update",
+        "sequence": 14,
+        "span": [
+          1640,
+          2040
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "81bc135dad91db2f22dda5a743ff86054d66811a901552e72bd5234f2c42e5bc",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 2,
+        "role": "assessment",
+        "sequence": 15,
+        "span": [
+          2040,
+          2280
+        ]
+      },
+      {
+        "current_stage": 2,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 16,
+        "stage": 2
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 2,
+        "role": "service",
+        "sequence": 17,
+        "span": [
+          2280,
+          2680
+        ]
+      },
+      {
+        "current_stage": 2,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 18,
+        "stage": 2
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "899725a6d021003018fb15d5b7b407b4bf9cf919de793835e53b521c5e9e9be5",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 2,
+        "role": "update",
+        "sequence": 19,
+        "span": [
+          1640,
+          2040
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "81bc135dad91db2f22dda5a743ff86054d66811a901552e72bd5234f2c42e5bc",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 2,
+        "role": "assessment",
+        "sequence": 20,
+        "span": [
+          2040,
+          2280
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 2,
+        "role": "offline_oracle_service",
+        "sequence": 21,
+        "span": [
+          2280,
+          2680
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 3,
+        "role": "offline_oracle_service",
+        "sequence": 22,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 4,
+        "role": "offline_oracle_service",
+        "sequence": 23,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 2,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 5,
+        "role": "offline_oracle_service",
+        "sequence": 24,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 3,
+        "role": "update",
+        "sequence": 25,
+        "span": [
+          2280,
+          2680
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "10a43c96540cbfeff37c2a38ccfa33c9fac86584fa802de2e8a733d6068e6906",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 3,
+        "role": "assessment",
+        "sequence": 26,
+        "span": [
+          2680,
+          2920
+        ]
+      },
+      {
+        "current_stage": 3,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 27,
+        "stage": 3
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 3,
+        "role": "service",
+        "sequence": 28,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_stage": 3,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 29,
+        "stage": 3
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "f4792aa3e329e1fdb69bedae43ec57090a4bab817c364d72a1b62f5d7527c924",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 3,
+        "role": "update",
+        "sequence": 30,
+        "span": [
+          2280,
+          2680
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "10a43c96540cbfeff37c2a38ccfa33c9fac86584fa802de2e8a733d6068e6906",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 3,
+        "role": "assessment",
+        "sequence": 31,
+        "span": [
+          2680,
+          2920
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 3,
+        "role": "offline_oracle_service",
+        "sequence": 32,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 4,
+        "role": "offline_oracle_service",
+        "sequence": 33,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 5,
+        "role": "offline_oracle_service",
+        "sequence": 34,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 3,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 6,
+        "role": "offline_oracle_service",
+        "sequence": 35,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 4,
+        "role": "update",
+        "sequence": 36,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "752119901de6af63a37232a6174b44f5792f61545a300ce85d3e0c29b8515993",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 4,
+        "role": "assessment",
+        "sequence": 37,
+        "span": [
+          3320,
+          3560
+        ]
+      },
+      {
+        "current_stage": 4,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 38,
+        "stage": 4
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 4,
+        "role": "service",
+        "sequence": 39,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_stage": 4,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 40,
+        "stage": 4
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "b57c9420ad44e764fe907aab1756a52e893a1ff1b64f4349b241ac4f558f235b",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 4,
+        "role": "update",
+        "sequence": 41,
+        "span": [
+          2920,
+          3320
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "752119901de6af63a37232a6174b44f5792f61545a300ce85d3e0c29b8515993",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 4,
+        "role": "assessment",
+        "sequence": 42,
+        "span": [
+          3320,
+          3560
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 4,
+        "role": "offline_oracle_service",
+        "sequence": 43,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 5,
+        "role": "offline_oracle_service",
+        "sequence": 44,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 6,
+        "role": "offline_oracle_service",
+        "sequence": 45,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 4,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 7,
+        "role": "offline_oracle_service",
+        "sequence": 46,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 5,
+        "role": "update",
+        "sequence": 47,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "1dac168ba2485c516a85f6cad5741bcbc00cc08ff6f59c540a3e5671337cf9fd",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 5,
+        "role": "assessment",
+        "sequence": 48,
+        "span": [
+          3960,
+          4200
+        ]
+      },
+      {
+        "current_stage": 5,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 49,
+        "stage": 5
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 5,
+        "role": "service",
+        "sequence": 50,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_stage": 5,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 51,
+        "stage": 5
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "5746ca7dc148d88cf71d6259e52cd0544f657460fd522d5f2710bf9c3b65e31d",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 5,
+        "role": "update",
+        "sequence": 52,
+        "span": [
+          3560,
+          3960
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "1dac168ba2485c516a85f6cad5741bcbc00cc08ff6f59c540a3e5671337cf9fd",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 5,
+        "role": "assessment",
+        "sequence": 53,
+        "span": [
+          3960,
+          4200
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 5,
+        "role": "offline_oracle_service",
+        "sequence": 54,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 6,
+        "role": "offline_oracle_service",
+        "sequence": 55,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 7,
+        "role": "offline_oracle_service",
+        "sequence": 56,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 5,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 8,
+        "role": "offline_oracle_service",
+        "sequence": 57,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 6,
+        "role": "update",
+        "sequence": 58,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "8de13c475d67a30d2d7c5c242a5159ee1e33847e92a61d8cc607228f33a543dc",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 6,
+        "role": "assessment",
+        "sequence": 59,
+        "span": [
+          4600,
+          4840
+        ]
+      },
+      {
+        "current_stage": 6,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 60,
+        "stage": 6
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 6,
+        "role": "service",
+        "sequence": 61,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_stage": 6,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 62,
+        "stage": 6
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "010987f86c133dc08f61fbcab37d8a83fe9312ac598b96ffc3d86bade51f8a65",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 6,
+        "role": "update",
+        "sequence": 63,
+        "span": [
+          4200,
+          4600
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "8de13c475d67a30d2d7c5c242a5159ee1e33847e92a61d8cc607228f33a543dc",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 6,
+        "role": "assessment",
+        "sequence": 64,
+        "span": [
+          4600,
+          4840
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 6,
+        "role": "offline_oracle_service",
+        "sequence": 65,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 7,
+        "role": "offline_oracle_service",
+        "sequence": 66,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 8,
+        "role": "offline_oracle_service",
+        "sequence": 67,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 6,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 9,
+        "role": "offline_oracle_service",
+        "sequence": 68,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 7,
+        "role": "update",
+        "sequence": 69,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "97001e0587999433f736e68bc3b41462c51604a0cfcb06b3ad1be37fbf7e211f",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 7,
+        "role": "assessment",
+        "sequence": 70,
+        "span": [
+          5240,
+          5480
+        ]
+      },
+      {
+        "current_stage": 7,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 71,
+        "stage": 7
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 7,
+        "role": "service",
+        "sequence": 72,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_stage": 7,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 73,
+        "stage": 7
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "57a04d493d81416bd64710cfa912c1cff574b52be5a5d8930b89bd46f49ae231",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 7,
+        "role": "update",
+        "sequence": 74,
+        "span": [
+          4840,
+          5240
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "97001e0587999433f736e68bc3b41462c51604a0cfcb06b3ad1be37fbf7e211f",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 7,
+        "role": "assessment",
+        "sequence": 75,
+        "span": [
+          5240,
+          5480
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 7,
+        "role": "offline_oracle_service",
+        "sequence": 76,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 8,
+        "role": "offline_oracle_service",
+        "sequence": 77,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 9,
+        "role": "offline_oracle_service",
+        "sequence": 78,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 7,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 10,
+        "role": "offline_oracle_service",
+        "sequence": 79,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 8,
+        "role": "update",
+        "sequence": 80,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "14623852bff0cca34758d362544918c9de10070e0cc5049cffd40e3d3a5136b2",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 8,
+        "role": "assessment",
+        "sequence": 81,
+        "span": [
+          5880,
+          6120
+        ]
+      },
+      {
+        "current_stage": 8,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 82,
+        "stage": 8
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 8,
+        "role": "service",
+        "sequence": 83,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_stage": 8,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 84,
+        "stage": 8
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "c4161413bbde1d2b10a5eae91eea60ece883e1e31c6b04db99a74ad97bc0f305",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 8,
+        "role": "update",
+        "sequence": 85,
+        "span": [
+          5480,
+          5880
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "14623852bff0cca34758d362544918c9de10070e0cc5049cffd40e3d3a5136b2",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 8,
+        "role": "assessment",
+        "sequence": 86,
+        "span": [
+          5880,
+          6120
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 8,
+        "role": "offline_oracle_service",
+        "sequence": 87,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 9,
+        "role": "offline_oracle_service",
+        "sequence": 88,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 10,
+        "role": "offline_oracle_service",
+        "sequence": 89,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 8,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 11,
+        "role": "offline_oracle_service",
+        "sequence": 90,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 9,
+        "role": "update",
+        "sequence": 91,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "c6dfd5e85c8534715d79f79e7f68bc51c451055ad5a00506796591e7d1558531",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 9,
+        "role": "assessment",
+        "sequence": 92,
+        "span": [
+          6520,
+          6760
+        ]
+      },
+      {
+        "current_stage": 9,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 93,
+        "stage": 9
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 9,
+        "role": "service",
+        "sequence": 94,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_stage": 9,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 95,
+        "stage": 9
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "b0e939150ea904314ff8b50c264ae8201f3aa46df93961a6568532b58b8640d4",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 9,
+        "role": "update",
+        "sequence": 96,
+        "span": [
+          6120,
+          6520
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "c6dfd5e85c8534715d79f79e7f68bc51c451055ad5a00506796591e7d1558531",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 9,
+        "role": "assessment",
+        "sequence": 97,
+        "span": [
+          6520,
+          6760
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 9,
+        "role": "offline_oracle_service",
+        "sequence": 98,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 10,
+        "role": "offline_oracle_service",
+        "sequence": 99,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 11,
+        "role": "offline_oracle_service",
+        "sequence": 100,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 9,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 12,
+        "role": "offline_oracle_service",
+        "sequence": 101,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 10,
+        "role": "update",
+        "sequence": 102,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "21d248c78ce00dcdd77412822137390b79758af1094887c16a016b3d7e6d2d82",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 10,
+        "role": "assessment",
+        "sequence": 103,
+        "span": [
+          7160,
+          7400
+        ]
+      },
+      {
+        "current_stage": 10,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 104,
+        "stage": 10
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 10,
+        "role": "service",
+        "sequence": 105,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_stage": 10,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 106,
+        "stage": 10
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "41572e613976ed71b7ea1c43c49eb33ac53e2be1419ab511146cdf88e1f007c8",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 10,
+        "role": "update",
+        "sequence": 107,
+        "span": [
+          6760,
+          7160
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "21d248c78ce00dcdd77412822137390b79758af1094887c16a016b3d7e6d2d82",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 10,
+        "role": "assessment",
+        "sequence": 108,
+        "span": [
+          7160,
+          7400
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 10,
+        "role": "offline_oracle_service",
+        "sequence": 109,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 11,
+        "role": "offline_oracle_service",
+        "sequence": 110,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 12,
+        "role": "offline_oracle_service",
+        "sequence": 111,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 10,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 13,
+        "role": "offline_oracle_service",
+        "sequence": 112,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 11,
+        "role": "update",
+        "sequence": 113,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "95d7903f0e4b0ace62703694a06139497f978b5275e2abb2d41547bd1e20444d",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 11,
+        "role": "assessment",
+        "sequence": 114,
+        "span": [
+          7800,
+          8040
+        ]
+      },
+      {
+        "current_stage": 11,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 115,
+        "stage": 11
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 11,
+        "role": "service",
+        "sequence": 116,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_stage": 11,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 117,
+        "stage": 11
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "8714b0ac1215bb8238db85aa728db5345beaca624a49fdcef7507f91dcce5eb8",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 11,
+        "role": "update",
+        "sequence": 118,
+        "span": [
+          7400,
+          7800
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "95d7903f0e4b0ace62703694a06139497f978b5275e2abb2d41547bd1e20444d",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 11,
+        "role": "assessment",
+        "sequence": 119,
+        "span": [
+          7800,
+          8040
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 11,
+        "role": "offline_oracle_service",
+        "sequence": 120,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 12,
+        "role": "offline_oracle_service",
+        "sequence": 121,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 13,
+        "role": "offline_oracle_service",
+        "sequence": 122,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 11,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 14,
+        "role": "offline_oracle_service",
+        "sequence": 123,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 12,
+        "role": "update",
+        "sequence": 124,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "31b66343bed38b8be2fa9aa70cacd533529fd917bff83997199c0f47cb19e276",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 12,
+        "role": "assessment",
+        "sequence": 125,
+        "span": [
+          8440,
+          8680
+        ]
+      },
+      {
+        "current_stage": 12,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 126,
+        "stage": 12
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 12,
+        "role": "service",
+        "sequence": 127,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_stage": 12,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 128,
+        "stage": 12
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "1e01ac106856db024409613749c3e061669f850a616fc4c071ddfdc21479887d",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 12,
+        "role": "update",
+        "sequence": 129,
+        "span": [
+          8040,
+          8440
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "31b66343bed38b8be2fa9aa70cacd533529fd917bff83997199c0f47cb19e276",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 12,
+        "role": "assessment",
+        "sequence": 130,
+        "span": [
+          8440,
+          8680
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 12,
+        "role": "offline_oracle_service",
+        "sequence": 131,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 13,
+        "role": "offline_oracle_service",
+        "sequence": 132,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 14,
+        "role": "offline_oracle_service",
+        "sequence": 133,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 12,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 15,
+        "role": "offline_oracle_service",
+        "sequence": 134,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 13,
+        "role": "update",
+        "sequence": 135,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "c53258acdc1008169ad0924b12e6634c8bad9e5bbdc319c6f4c52966515b0ac0",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 13,
+        "role": "assessment",
+        "sequence": 136,
+        "span": [
+          9080,
+          9320
+        ]
+      },
+      {
+        "current_stage": 13,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 137,
+        "stage": 13
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 13,
+        "role": "service",
+        "sequence": 138,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_stage": 13,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 139,
+        "stage": 13
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "20eda3a85b4042fb4aeaeb73d9a0e0a0631fb656fee04cd096663b199c95fd6b",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 13,
+        "role": "update",
+        "sequence": 140,
+        "span": [
+          8680,
+          9080
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "c53258acdc1008169ad0924b12e6634c8bad9e5bbdc319c6f4c52966515b0ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 13,
+        "role": "assessment",
+        "sequence": 141,
+        "span": [
+          9080,
+          9320
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 13,
+        "role": "offline_oracle_service",
+        "sequence": 142,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 14,
+        "role": "offline_oracle_service",
+        "sequence": 143,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 15,
+        "role": "offline_oracle_service",
+        "sequence": 144,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 13,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 16,
+        "role": "offline_oracle_service",
+        "sequence": 145,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 14,
+        "role": "update",
+        "sequence": 146,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "9d5367afee4c2ca68599c387f33b9df66731e983bc07bc8a5addd81b5660614c",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 14,
+        "role": "assessment",
+        "sequence": 147,
+        "span": [
+          9720,
+          9960
+        ]
+      },
+      {
+        "current_stage": 14,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 148,
+        "stage": 14
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 14,
+        "role": "service",
+        "sequence": 149,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_stage": 14,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 150,
+        "stage": 14
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "ed1238a91a43c744705351caecb91f1f87b618a83094b96648d20bde1a0fb4a1",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 14,
+        "role": "update",
+        "sequence": 151,
+        "span": [
+          9320,
+          9720
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "9d5367afee4c2ca68599c387f33b9df66731e983bc07bc8a5addd81b5660614c",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 14,
+        "role": "assessment",
+        "sequence": 152,
+        "span": [
+          9720,
+          9960
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 14,
+        "role": "offline_oracle_service",
+        "sequence": 153,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 15,
+        "role": "offline_oracle_service",
+        "sequence": 154,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 16,
+        "role": "offline_oracle_service",
+        "sequence": 155,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 14,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 17,
+        "role": "offline_oracle_service",
+        "sequence": 156,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 15,
+        "role": "update",
+        "sequence": 157,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "4d69add6baf328d7b6dc2e9cf07f5af35fcd5f5354c8c3df3e0fc94484e66ff0",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 15,
+        "role": "assessment",
+        "sequence": 158,
+        "span": [
+          10360,
+          10600
+        ]
+      },
+      {
+        "current_stage": 15,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 159,
+        "stage": 15
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 15,
+        "role": "service",
+        "sequence": 160,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_stage": 15,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 161,
+        "stage": 15
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "2179a48333ba1ad2ca87fd5c67c62ff5e9d1bb6750ffc17acb3d94992cb53d6b",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 15,
+        "role": "update",
+        "sequence": 162,
+        "span": [
+          9960,
+          10360
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "4d69add6baf328d7b6dc2e9cf07f5af35fcd5f5354c8c3df3e0fc94484e66ff0",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 15,
+        "role": "assessment",
+        "sequence": 163,
+        "span": [
+          10360,
+          10600
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 15,
+        "role": "offline_oracle_service",
+        "sequence": 164,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 16,
+        "role": "offline_oracle_service",
+        "sequence": 165,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 17,
+        "role": "offline_oracle_service",
+        "sequence": 166,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 15,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 18,
+        "role": "offline_oracle_service",
+        "sequence": 167,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 16,
+        "role": "update",
+        "sequence": 168,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "7c8c9211701be449396f56e582f9ca156171481e1c3b5f579e35935fe8c994fc",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 16,
+        "role": "assessment",
+        "sequence": 169,
+        "span": [
+          11000,
+          11240
+        ]
+      },
+      {
+        "current_stage": 16,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 170,
+        "stage": 16
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 16,
+        "role": "service",
+        "sequence": 171,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_stage": 16,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 172,
+        "stage": 16
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "7582b23373988b0c79d32e86f53bcef19966ddf0125498117773e50c30f909c9",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 16,
+        "role": "update",
+        "sequence": 173,
+        "span": [
+          10600,
+          11000
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "7c8c9211701be449396f56e582f9ca156171481e1c3b5f579e35935fe8c994fc",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 16,
+        "role": "assessment",
+        "sequence": 174,
+        "span": [
+          11000,
+          11240
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 16,
+        "role": "offline_oracle_service",
+        "sequence": 175,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 17,
+        "role": "offline_oracle_service",
+        "sequence": 176,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 18,
+        "role": "offline_oracle_service",
+        "sequence": 177,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 16,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 19,
+        "role": "offline_oracle_service",
+        "sequence": 178,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 17,
+        "role": "update",
+        "sequence": 179,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "5f1de25b6d9f280c83f7af6ef25e17f021977c8f79cbebb17a5a335df2cfc442",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 17,
+        "role": "assessment",
+        "sequence": 180,
+        "span": [
+          11640,
+          11880
+        ]
+      },
+      {
+        "current_stage": 17,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 181,
+        "stage": 17
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 17,
+        "role": "service",
+        "sequence": 182,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_stage": 17,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 183,
+        "stage": 17
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "71221c132f899810771fe8004c6cb851d8898bcfd542d7e560ed2b17262992af",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 17,
+        "role": "update",
+        "sequence": 184,
+        "span": [
+          11240,
+          11640
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "5f1de25b6d9f280c83f7af6ef25e17f021977c8f79cbebb17a5a335df2cfc442",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 17,
+        "role": "assessment",
+        "sequence": 185,
+        "span": [
+          11640,
+          11880
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 17,
+        "role": "offline_oracle_service",
+        "sequence": 186,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 18,
+        "role": "offline_oracle_service",
+        "sequence": 187,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 19,
+        "role": "offline_oracle_service",
+        "sequence": 188,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 17,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 20,
+        "role": "offline_oracle_service",
+        "sequence": 189,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 18,
+        "role": "update",
+        "sequence": 190,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "19f796f260912f67e121f037219dd2f7624582762407d708e20d4415b80d020c",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 18,
+        "role": "assessment",
+        "sequence": 191,
+        "span": [
+          12280,
+          12520
+        ]
+      },
+      {
+        "current_stage": 18,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 192,
+        "stage": 18
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 18,
+        "role": "service",
+        "sequence": 193,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_stage": 18,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 194,
+        "stage": 18
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "187cdb2cb5b7f84b4b2ce216ddc3529caee97c17f3591c3326fe0dd21c2ec1c2",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 18,
+        "role": "update",
+        "sequence": 195,
+        "span": [
+          11880,
+          12280
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "19f796f260912f67e121f037219dd2f7624582762407d708e20d4415b80d020c",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 18,
+        "role": "assessment",
+        "sequence": 196,
+        "span": [
+          12280,
+          12520
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 18,
+        "role": "offline_oracle_service",
+        "sequence": 197,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 19,
+        "role": "offline_oracle_service",
+        "sequence": 198,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 20,
+        "role": "offline_oracle_service",
+        "sequence": 199,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 18,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 21,
+        "role": "offline_oracle_service",
+        "sequence": 200,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 19,
+        "role": "update",
+        "sequence": 201,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "ed4bb5edbc0eaceb94a3bf99cff66bd60ef77f2b2a48c2a5ff35a1eaaaf37507",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 19,
+        "role": "assessment",
+        "sequence": 202,
+        "span": [
+          12920,
+          13160
+        ]
+      },
+      {
+        "current_stage": 19,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 203,
+        "stage": 19
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 19,
+        "role": "service",
+        "sequence": 204,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_stage": 19,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 205,
+        "stage": 19
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "ccd49ca689cc7a4730d2ad53255b03166491d1717951fa7a8f0bd4d736529b1e",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 19,
+        "role": "update",
+        "sequence": 206,
+        "span": [
+          12520,
+          12920
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "ed4bb5edbc0eaceb94a3bf99cff66bd60ef77f2b2a48c2a5ff35a1eaaaf37507",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 19,
+        "role": "assessment",
+        "sequence": 207,
+        "span": [
+          12920,
+          13160
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 19,
+        "role": "offline_oracle_service",
+        "sequence": 208,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 20,
+        "role": "offline_oracle_service",
+        "sequence": 209,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 21,
+        "role": "offline_oracle_service",
+        "sequence": 210,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 19,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 22,
+        "role": "offline_oracle_service",
+        "sequence": 211,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 20,
+        "role": "update",
+        "sequence": 212,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "ecba6a44b5dac2970fd37615be871978b92559a9ad5b59f5c3f0d240a1800cd0",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 20,
+        "role": "assessment",
+        "sequence": 213,
+        "span": [
+          13560,
+          13800
+        ]
+      },
+      {
+        "current_stage": 20,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 214,
+        "stage": 20
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 20,
+        "role": "service",
+        "sequence": 215,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_stage": 20,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 216,
+        "stage": 20
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "9164b6f3164b281f5d58ec5a834e220f99e093bee54652000ab28f29c47bc2e7",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 20,
+        "role": "update",
+        "sequence": 217,
+        "span": [
+          13160,
+          13560
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "ecba6a44b5dac2970fd37615be871978b92559a9ad5b59f5c3f0d240a1800cd0",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 20,
+        "role": "assessment",
+        "sequence": 218,
+        "span": [
+          13560,
+          13800
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 20,
+        "role": "offline_oracle_service",
+        "sequence": 219,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 21,
+        "role": "offline_oracle_service",
+        "sequence": 220,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 22,
+        "role": "offline_oracle_service",
+        "sequence": 221,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 20,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 23,
+        "role": "offline_oracle_service",
+        "sequence": 222,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 21,
+        "role": "update",
+        "sequence": 223,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "23c47cf87a85b805bbcf60be6e32085fa2d03cf5c57fd4a3b83c09a045c4b7d6",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 21,
+        "role": "assessment",
+        "sequence": 224,
+        "span": [
+          14200,
+          14440
+        ]
+      },
+      {
+        "current_stage": 21,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 225,
+        "stage": 21
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 21,
+        "role": "service",
+        "sequence": 226,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_stage": 21,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 227,
+        "stage": 21
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "cc8b613548f83b78be918e5839189cda25de0f569d617354ddd48609f2d94ac0",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 21,
+        "role": "update",
+        "sequence": 228,
+        "span": [
+          13800,
+          14200
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "23c47cf87a85b805bbcf60be6e32085fa2d03cf5c57fd4a3b83c09a045c4b7d6",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 21,
+        "role": "assessment",
+        "sequence": 229,
+        "span": [
+          14200,
+          14440
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 21,
+        "role": "offline_oracle_service",
+        "sequence": 230,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 22,
+        "role": "offline_oracle_service",
+        "sequence": 231,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 23,
+        "role": "offline_oracle_service",
+        "sequence": 232,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 21,
+        "kind": "segment",
+        "legacy_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 24,
+        "role": "offline_oracle_service",
+        "sequence": 233,
+        "span": [
+          16360,
+          16760
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 22,
+        "role": "update",
+        "sequence": 234,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "737dd9039225671af073377ab14b778de85537e9d809ba8d6fd96b82788e136e",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 22,
+        "role": "assessment",
+        "sequence": 235,
+        "span": [
+          14840,
+          15080
+        ]
+      },
+      {
+        "current_stage": 22,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 236,
+        "stage": 22
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 22,
+        "role": "service",
+        "sequence": 237,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_stage": 22,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 238,
+        "stage": 22
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "1e102391afc2782ece7b023aebd46479a5cfad5313a7aa0606821eb606200442",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 22,
+        "role": "update",
+        "sequence": 239,
+        "span": [
+          14440,
+          14840
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "737dd9039225671af073377ab14b778de85537e9d809ba8d6fd96b82788e136e",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 22,
+        "role": "assessment",
+        "sequence": 240,
+        "span": [
+          14840,
+          15080
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 22,
+        "role": "offline_oracle_service",
+        "sequence": 241,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 23,
+        "role": "offline_oracle_service",
+        "sequence": 242,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 22,
+        "kind": "segment",
+        "legacy_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 24,
+        "role": "offline_oracle_service",
+        "sequence": 243,
+        "span": [
+          16360,
+          16760
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 23,
+        "role": "update",
+        "sequence": 244,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "4db1bcabdb17c658e993975729b4fae683991e5596fb407d6ca3633c9f47f766",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 23,
+        "role": "assessment",
+        "sequence": 245,
+        "span": [
+          15480,
+          15720
+        ]
+      },
+      {
+        "current_stage": 23,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 246,
+        "stage": 23
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 23,
+        "role": "service",
+        "sequence": 247,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_stage": 23,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 248,
+        "stage": 23
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "ff9d3d1170ccaa1baab1d0e26aad8d71a0196b03b47f2c8f14880924aaf2ac5f",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 23,
+        "role": "update",
+        "sequence": 249,
+        "span": [
+          15080,
+          15480
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "4db1bcabdb17c658e993975729b4fae683991e5596fb407d6ca3633c9f47f766",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 23,
+        "role": "assessment",
+        "sequence": 250,
+        "span": [
+          15480,
+          15720
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 23,
+        "role": "offline_oracle_service",
+        "sequence": 251,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 23,
+        "kind": "segment",
+        "legacy_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 24,
+        "role": "offline_oracle_service",
+        "sequence": 252,
+        "span": [
+          16360,
+          16760
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 24,
+        "role": "update",
+        "sequence": 253,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": false,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "c9c72292d1818d5f873930bc7ae7aa6a0502c4d894c7c733276c24fc6547de9e",
+        "phase": "DECISION_READ",
+        "purpose": "online_decision",
+        "requested_stage": 24,
+        "role": "assessment",
+        "sequence": 254,
+        "span": [
+          16120,
+          16360
+        ]
+      },
+      {
+        "current_stage": 24,
+        "kind": "decision_sealed",
+        "phase": "SEALED",
+        "sequence": 255,
+        "stage": 24
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+        "phase": "SEALED",
+        "purpose": "online_service_after_commit",
+        "requested_stage": 24,
+        "role": "service",
+        "sequence": 256,
+        "span": [
+          16360,
+          16760
+        ]
+      },
+      {
+        "current_stage": 24,
+        "kind": "service_returned",
+        "phase": "SERVICED",
+        "sequence": 257,
+        "stage": 24
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "493af9f0bd10eb62ab8c1ec1068fc866ec4fac5d6673f20d4619bf12251f4090",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 24,
+        "role": "update",
+        "sequence": 258,
+        "span": [
+          15720,
+          16120
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "c9c72292d1818d5f873930bc7ae7aa6a0502c4d894c7c733276c24fc6547de9e",
+        "phase": "SERVICED",
+        "purpose": "offline_diagnostic_after_commit",
+        "requested_stage": 24,
+        "role": "assessment",
+        "sequence": 259,
+        "span": [
+          16120,
+          16360
+        ]
+      },
+      {
+        "current_decision_sealed": true,
+        "current_stage": 24,
+        "kind": "segment",
+        "legacy_hash": "94dd24363c29eefec84ea3dfebfabc5b3e8d4b24a0afd3b02e11d4a20775a03a",
+        "phase": "SERVICED",
+        "purpose": "offline_oracle_after_commit",
+        "requested_stage": 24,
+        "role": "offline_oracle_service",
+        "sequence": 260,
+        "span": [
+          16360,
+          16760
+        ]
+      }
+    ],
+    "offline_oracle_policy": "exact_frozen_offline_labels_after_current_seal_and_service",
+    "phase": "SERVICED",
+    "scenario": "C3",
+    "schema": "paper3-fixed-input-causal-access-v1",
+    "scope": "guarded_timeline_access_plus_separately_bound_frozen_source",
+    "violation_count": 0,
+    "violations": []
+  }
+}
