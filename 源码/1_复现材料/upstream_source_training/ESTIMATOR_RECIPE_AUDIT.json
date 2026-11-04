@@ -1,0 +1,98 @@
+{
+  "status": "ESTIMATOR_LINEAGE_AND_REQUIRED_EXECUTION_AUDIT_ONLY",
+  "updated": "2026-11-01T13:26:00.643388+08:00",
+  "source_bindings": [
+    {
+      "path": "configs/P7_7A2_INTEGRATION_DECISION.json",
+      "sha256": "6bd8403c81895f559286b93b6a9eb04fafbebb17b0782be1cbc57fb563f613e1"
+    },
+    {
+      "path": "scripts/run_p7_7_final.py",
+      "sha256": "ced000f213f8fc9b52a859e683fc6d27dd04a268641c3d6024500f56c1c158fe"
+    },
+    {
+      "path": "scripts/p7_6b_science.py",
+      "sha256": "302dad26e456105304f3b4d9a5d226f5c149b5b38da8cdcc73abd6c30c0566a5"
+    },
+    {
+      "path": "scripts/run_p7_6b.py",
+      "sha256": "8b5bc39f67daee1b2c4227bfa66b1fa6a46bfb1709292c8d950dc3f20b9c3b8f"
+    },
+    {
+      "path": "scripts/run_p7_4b.py",
+      "sha256": "5f52b379f55b67a667189b3000b311dc0e545c4ccaad603ba46b60133b572d57"
+    },
+    {
+      "path": "scripts/run_p6.py",
+      "sha256": "9a83e1359426a9a185ec420f539137686c86c4db5afd7a21867520e0f2b71ac0"
+    },
+    {
+      "path": "core/p7_6b_selected_data.py",
+      "sha256": "dee7eda85297562c96fa23046e2238e10a35ae7a4eaf381173a38d57e3ec59dc"
+    },
+    {
+      "path": "audits/P7_6B_FIT_FREEZE.json",
+      "sha256": "8624504d93b9c8a8676130b6fc08b56e1743516ecef3410cb705298aba1be93f"
+    },
+    {
+      "path": "audits/P7_6B_FINAL_SCIENTIFIC_AUDIT.json",
+      "sha256": "85caccf51c49e7046908a1550df62702c3d16f07d109d9315d6d7a98a102c674"
+    },
+    {
+      "path": "audits/P6_ESTIMATOR_FREEZE.json",
+      "sha256": "6c5286e3e470413a150b17d908bfd7c87931ce1fa55304ccf270d578fb57374f"
+    },
+    {
+      "path": "configs/P7_6B_CENTER_ASSIGNMENT.json",
+      "sha256": "172c694057fea9926fecabe800538a5f8ff5bddf8880c078dd457b705b53fb95"
+    }
+  ],
+  "final_selected_branch": "B",
+  "final_proposed_estimator": "artifacts/p7_6b_A1_estimator.pt",
+  "other_method_and_P7_6B_behavior_estimator": "artifacts/p6_recoverability_estimator.pt",
+  "fit_protocol": {
+    "fit_centers": 36,
+    "validation_centers": 36,
+    "seeds": [
+      7311,
+      7312,
+      7313
+    ],
+    "scenarios": [
+      "C0",
+      "C1",
+      "C3",
+      "C4"
+    ],
+    "fit_trajectories": 432,
+    "validation_trajectories": 432,
+    "stages_per_trajectory": 24,
+    "fit_oof_folds": 4,
+    "MLP_epochs": 400,
+    "MLP_learning_rate": 0.001,
+    "MLP_weight_decay": 0.0001,
+    "final_training_seed": 19631,
+    "A0_target_multiplier": 1000.0,
+    "A1_target_multiplier": 1.0,
+    "bootstrap_seed": 7601,
+    "bootstrap_resamples": 4000
+  },
+  "required_sequence": [
+    "Regenerate source bank and independently reproduce P6 fitting and selection; check frozen estimator/scaler states",
+    "Regenerate 432 P7.6B ReplicationFit trajectories with original paired behavior, scales and canonical order",
+    "Execute unchanged four-fold OOF numerical functions and absolute gates; refit A0/A1 and compare scaler/weights",
+    "Regenerate disjoint 432 ReplicationValidation trajectories and execute frozen validation/paired bootstrap/36-center leave-one-out",
+    "Connect reproduced A1 and P6 models to final lifecycle and final paper evidence"
+  ],
+  "portability_work": [
+    "Replace historical Git-bound authorization checks with auditable current reproduction authorization without changing scientific gates",
+    "Keep all historical manifests intact; never invoke original git commit helpers in delivery package",
+    "Route output-only globals to a new directory and verify module/input roots",
+    "Preserve frozen source implementation hashes and compare every new numerical output at original tolerances"
+  ],
+  "training_run_in_this_audit": false,
+  "full_source_reproduction": false,
+  "P6_manifest_missing_package_files": [
+    ".gitattributes"
+  ]
+}

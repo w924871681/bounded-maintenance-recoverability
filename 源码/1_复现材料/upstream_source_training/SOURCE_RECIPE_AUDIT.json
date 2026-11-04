@@ -1,0 +1,90 @@
+{
+  "updated": "2026-11-01T17:14:13.173092+08:00",
+  "status": "SOURCE_RECIPE_IDENTITY_AUDIT_ONLY",
+  "imported_identities": [
+    {
+      "identity": "msa_a1_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a1.pt",
+      "sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "historical_asset_sha256": "0953c393d04cca7bea80b9bc3b4edfaaaeca330785c7e16a1052ad3868cb5988",
+      "recipe": "source_prior_bank/pipeline.py original training branch; seed 3006",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3006"
+    },
+    {
+      "identity": "msa_a6_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a6.pt",
+      "sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "historical_asset_sha256": "eb574956ef4f59ff82ba316ffd8dfedd580031f8d818243be77d1207608795ef",
+      "recipe": "source_prior_bank/pipeline.py original training branch; seed 3011",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3011"
+    },
+    {
+      "identity": "msa_a46_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a46.pt",
+      "sha256": "34b60214405ed2f5d945eea6a3b2121625819222f36c2dc4ecb229e7409f3f8c",
+      "historical_asset_sha256": null,
+      "recipe": "formal_protocol/pipeline.py new-source training branch; seed 3051",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3051"
+    },
+    {
+      "identity": "msa_a55_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a55.pt",
+      "sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "historical_asset_sha256": "ad00ee90288cfcaecd550d42979ae9693fa5fb94350482692755cee521449e1f",
+      "recipe": "source_prior_bank/pipeline.py original training branch; seed 3060",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3060"
+    },
+    {
+      "identity": "msa_a56_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a56.pt",
+      "sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "historical_asset_sha256": "2a4d81b8669207180e496c3a09dd7f9e6b8bc6b41016a1927099077a1749d5de",
+      "recipe": "source_prior_bank/pipeline.py original training branch; seed 3061",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3061"
+    },
+    {
+      "identity": "msa_a57_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a57.pt",
+      "sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "historical_asset_sha256": "9faaf152f58bb1be4261369914169868b024f4b5baf7ac621b92619ff25682b5",
+      "recipe": "external_source_original/external_e2e_c23/pipeline.py unchanged prepare_source_assets; PT seed 3062, 50 epochs",
+      "status": "ORIGINAL_IMPLEMENTATION_COLLECTED_RUNTIME_VALIDATION_PENDING",
+      "original_identity_label": "pt_seed_3062"
+    },
+    {
+      "identity": "msa_a62_pt",
+      "checkpoint": "repository/imported/msa_dti/bank/formal_h1_a62.pt",
+      "sha256": "3bc0540c925c310dbed91dff81d29f9900c109d690fea9a93fc06727cb969b5d",
+      "historical_asset_sha256": null,
+      "recipe": "formal_protocol/pipeline.py new-source training branch; seed 3067",
+      "status": "PORTABLE_ORIGINAL_BRANCH_PREFLIGHT_PASS_TRAINING_QUEUED",
+      "original_identity_label": "pt_seed_3067"
+    },
+    {
+      "identity": "msa_a57_medet",
+      "checkpoint": "repository/imported/msa_dti/bank/medet_style_h1_a57.pt",
+      "sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "historical_asset_sha256": "304c1eac43f12f99ac1693eaa6a3f29238491562b21a18556a51bb27f475a59a",
+      "recipe": "external_source_original/external_e2e_c23/pipeline.py unchanged prepare_source_assets; MeDeT seed 3172, 400 iterations, meta-batch 8, inner5",
+      "status": "ORIGINAL_IMPLEMENTATION_COLLECTED_RUNTIME_VALIDATION_PENDING",
+      "original_identity_label": "medet_source_meta_init"
+    }
+  ],
+  "frozen_collected_files_verified": 87,
+  "checkpoint_identity_matches_original_manifest": 6,
+  "formal_new_source_identities": 2,
+  "source_models_retrained": 0,
+  "full_source_reproduction": false,
+  "do_not_use_copying_checkpoints_as_retraining": true,
+  "external_source_builder_search": "Located original implementation in D:/dt-talk/new_exercise_revised; 38 Python files and 7 frozen inputs copied with original SHA verification. Historical protocol and two imported checkpoint bytes match. No optimizer execution yet.",
+  "external_builder_collection": "external_source_original/COLLECTION_RECEIPT.json",
+  "external_source_entrypoint": "retrain_external_sources.py",
+  "external_static_check": "validation/paper3_external_source_verify_002/RECEIPT.json",
+  "six_msa_entrypoint": "retrain_msa_sources.py",
+  "six_msa_preflight": "validation/paper3_six_msa_preflight_001/RECEIPT.json"
+}

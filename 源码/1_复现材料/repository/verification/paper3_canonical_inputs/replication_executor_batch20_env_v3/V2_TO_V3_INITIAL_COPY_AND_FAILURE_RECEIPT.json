@@ -1,0 +1,36 @@
+{
+  "schema": "paper3-v2-to-v3-exclusive-copy-and-frozen-predecessor-preservation-v1",
+  "created_utc": "2026-10-09T08:00:24.2341098Z",
+  "predecessor_executor": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_executor_batch20_env_v2",
+  "new_executor": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_executor_batch20_env_v3",
+  "new_results": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v3",
+  "python_files_count": 16,
+  "initial_exact_copy_sha256": {
+    "tests\\test_executor_worker.py": "230d8389eb1e5966106a4500c9bddeef16582d7b7bf409a1fce78098eced5932",
+    "tests\\test_provenance.py": "07fc2f819d41b50d8d259025d1f903ef5e1102351adc0ae972169251151e6417",
+    "fixed_inputs.py": "9078dd2376f970678482e67570f8575f37cf0c6c002f8e06a30188efe5c8f04c",
+    "tests\\test_import_binding_cache.py": "71215e64b5857c033bf175af714f7d5ef826e7bf8a3d41d087b12da4522fc9d4",
+    "provenance.py": "42902c81564550d3004d058091f6cc7761ec21d9111089a3c6eee8f3abb6d307",
+    "executor_driver.py": "82255d2ed42463c9852642d16b159cfa210149ad29978144b29fb68993266915",
+    "tests\\test_platform_bootstrap.py": "dc74f57d49eae03c3053b9768d4f4be93a49cbfc6d16580b529b60818fda008d",
+    "tests\\test_executor_driver.py": "21f78b2e476f9fd36bbf33c597e1abdbebd1770b0aa6fdfb551bc310a773ea64",
+    "test_fixed_inputs.py": "c0b9b23bff85d695fa48c87e4eed9c4fdfe4a663e51a13b91a1e73ead5587c66",
+    "executor_worker.py": "664158102273a498daed9178522fe77b59e57b482841e7cbd5bb017ce475c8f2",
+    "run_synthetic_tests.py": "618eeb8be8d57dac5a2bb26a4b7e46d08d399b5f12b6c9d7adb5df8aa554de7c",
+    "tests\\test_torch_generated_namespace.py": "e04706346b5cd503ab99b93445ffb992dfdad4e0fe13ebd96695524d16c0799d",
+    "tests\\test_science_adapter.py": "6f2dbf6979358992f51763c5eeaea3315b6bb676b06328c51d167f2eb6325b15",
+    "science_adapter.py": "7b97c557814265ee23f8c4b105ba69d9ecdc1cf6ffe049297bd93cfebd3197c6",
+    "toy_bootstrap_compatibility_probe.py": "5349e8e11fd81b54382f289be14b16f37d1548731b064d61682029e73840d105",
+    "tests\\test_independent_runtime.py": "e73f981f42ed0def29391c0abbf1ace32ed26ec082ebbd8ce166a66fff81372d"
+  },
+  "frozen_v2_failure_evidence_sha256": {
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\execution\\initial\\A_INITIAL_0001\\W1_request.json": "0987f875df2b8bfd69578fa54159d1b3f05a83041f8fcddcd767de82e1af0105",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\workers\\W1_A_INITIAL_0001_initial.runtime.json": "5421eb3990eb7d0baa9323849dd9ff9eae8a7b1416f0ff3e83e1dacacb8158cf",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\provenance_manifest.json": "7097d301ce2e06560946a7e380c42c724a5bd5996b24d6c6b5640ea8d464db24",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\workers\\W1_A_INITIAL_0001_initial.failure.json": "afa5cf0b40525da3a08421af430202ae29c53d0ad1d7994f48780643e8cd5e7f",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\execution\\initial\\A_INITIAL_0001\\failure.json": "46b68e86b3cd1ef49a691e65b125c04b4ebbe423fa204a13ce7a52dc644b9e4c",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\execution\\initial\\A_INITIAL_0001\\W1.log": "58d636403517918b846c2d72a464ffd6182734c40889718c7680f71263b48e86",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_env_v2\\execution\\initial\\A_INITIAL_0001\\W1_process.json": "19d34bb7b801ebc2633445663fd591652035db50f95db4dfdad9ef0eb4749ffa"
+  },
+  "predecessor_frozen_manifest_digest": "468ee2a0a174ba17c65d98e87afeb521aca3cab77c611d31e60d9f2f4bc0aba8"
+}

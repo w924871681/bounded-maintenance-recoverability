@@ -1,0 +1,59 @@
+{
+  "schema": "paper3-statistics-v3-source-adaptation-binding-v1",
+  "status": "EXACT_DECLARED_ADAPTATION_ONLY",
+  "repository": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION",
+  "source_root": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v2",
+  "adapted_root": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3",
+  "allowed_substitutions": [
+    {
+      "to": "_env_v3",
+      "from": "_env_v2"
+    },
+    {
+      "to": "P7_7_JOINT_CENTER_STATISTICS_BATCH20_ENV_V3",
+      "from": "P7_7_JOINT_CENTER_STATISTICS_BATCH20_ENV_V2"
+    }
+  ],
+  "files": {
+    "statistics.py": {
+      "source_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v2\\statistics.py",
+      "source_sha256": "71030ad0b267562ee89fb7437aa3aea2896ca3bfb0164374b8c8817709f12182",
+      "adapted_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\statistics.py",
+      "adapted_sha256": "5ccda537c83bf88f7531eeee7c9b4b82a55b23f4ba81b3c031b978ac8375e33c",
+      "exact_declared_substitutions_only": true
+    },
+    "runtime_guard.py": {
+      "source_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v2\\runtime_guard.py",
+      "source_sha256": "dc3775cde99a6846528e9b008b0fb24cb1b53fda584ad88973692b0a9c404de4",
+      "adapted_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\runtime_guard.py",
+      "adapted_sha256": "42a7fff9b32493904537e89737d5b4ed7adc2f32ab155915d3c5dfdbcc40bcb8",
+      "exact_declared_substitutions_only": true
+    },
+    "run_statistics.py": {
+      "source_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v2\\run_statistics.py",
+      "source_sha256": "7ff9f0dbc67f66c352d7d488a65c45c8361f7557ad077cb6b3a4f59831a0e4bb",
+      "adapted_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\run_statistics.py",
+      "adapted_sha256": "0346c5cdecfc595bab20f4f98b53547d215103931fd6d4aff7eb7783296e96bc",
+      "exact_declared_substitutions_only": true
+    },
+    "test_statistics.py": {
+      "source_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v2\\test_statistics.py",
+      "source_sha256": "b07c37e9607352e8a6f0e2972c275706a20519596989b91489d5a2f2ae598727",
+      "adapted_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\test_statistics.py",
+      "adapted_sha256": "06ee1a6e1e15808bab2f8aa82b1b2aa0cea2bd94e318ceb1252a2d41edabdc86",
+      "exact_declared_substitutions_only": true
+    }
+  },
+  "statistical_arithmetic_changed": false,
+  "scientific_definitions_changed": false,
+  "original_v1_or_v2_assets_modified": false,
+  "real_statistics_or_bootstrap_executed": false,
+  "new_outcomes_read": false,
+  "diff_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\SOURCE_ADAPTATION_DIFF.patch",
+  "diff_sha256": "dbab4d70f3e9d2839c342205c2d39a5f9eaf21efe7913cfcdc832ffef74ee31d",
+  "synthetic_receipt_path": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_statistics_batch20_env_v3\\SYNTHETIC_TEST_RESULTS_ATTEMPT001.json",
+  "synthetic_receipt_sha256": "149cf3461cf5a70bf2e26f0cfaa06f3e8944271ff91b470d62a603031cc8ee10",
+  "synthetic_tests": 58,
+  "all_synthetic_pass": true,
+  "earlier_failed_runtime_lineage": "retained separately by parent; no V1/V2 initial state or trajectory qualifies as V3 success"
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "ONLY_PURE_DEFINITION_LOADING_AND_CONFIG_RESOLUTION",
+  "generator_called": false,
+  "model_called": false,
+  "status": "ERROR",
+  "resolved_config_data_seed": 7311,
+  "implicit_import_requests": [
+    {
+      "name": "numpy._core._methods",
+      "fromlist": [],
+      "level": 0
+    }
+  ],
+  "failed_step": "synthetic b.mean() with nonexecuting import capture",
+  "type": "RuntimeError",
+  "message": "implicit import captured without executing it: numpy._core._methods",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\diagnose_materialization_import.py\", line 100, in <module>\n    exec(compile(\"b=np.ones((4,2),dtype=np.float32);n=float(b.mean())\",\"<synthetic_numpy_import_capture>\",\"exec\"),restricted)\n  File \"<synthetic_numpy_import_capture>\", line 1, in <module>\n  File \"D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\diagnose_materialization_import.py\", line 97, in capture\n    raise RuntimeError(\"implicit import captured without executing it: \"+name)\nRuntimeError: implicit import captured without executing it: numpy._core._methods\n"
+}

@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "file": "repository/tests/test_p6.py",
+      "source": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\tests\\test_p6.py",
+      "bytes": 6818,
+      "sha256": "3b9ca5ca8aab4fcde1b0461482fd1cbc9fb122f518baf3c02ce8fbe3e49193ac"
+    },
+    {
+      "file": "repository/vendor/figure_helpers/layout_tools.py",
+      "source": "C:\\Users\\92487\\.codex\\skills\\scipilot-figure-skill\\scripts\\layout_tools.py",
+      "bytes": 9351,
+      "sha256": "68e1d25774148fe78f5d87035d651f5e3707382502505cb11f62f9ec7ae88e49"
+    },
+    {
+      "file": "repository/vendor/figure_helpers/visual_qa.py",
+      "source": "C:\\Users\\92487\\.codex\\skills\\scipilot-figure-skill\\scripts\\visual_qa.py",
+      "bytes": 12677,
+      "sha256": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    },
+    {
+      "file": "repository/vendor/figure_helpers/export_figure.py",
+      "source": "C:\\Users\\92487\\.codex\\skills\\scipilot-figure-skill\\scripts\\export_figure.py",
+      "bytes": 6450,
+      "sha256": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1"
+    }
+  ],
+  "reason": "Full P6 original tests and figure generation require these files; exact copies, no numerical edits",
+  "full_training_pass": false,
+  "original_frozen_test_sha256": "3b9ca5ca8aab4fcde1b0461482fd1cbc9fb122f518baf3c02ce8fbe3e49193ac",
+  "test_matches_original_p6_freeze": true
+}

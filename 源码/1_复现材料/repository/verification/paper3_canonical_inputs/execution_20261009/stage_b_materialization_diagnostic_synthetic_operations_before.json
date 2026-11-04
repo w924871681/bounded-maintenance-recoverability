@@ -1,0 +1,69 @@
+{
+  "scope": "ONLY_PURE_DEFINITION_LOADING_AND_CONFIG_RESOLUTION",
+  "generator_called": false,
+  "model_called": false,
+  "status": "ERROR",
+  "resolved_config_data_seed": 7311,
+  "synthetic_operations": [
+    {
+      "statement": "rng=np.random.RandomState(0)",
+      "status": "PASS"
+    },
+    {
+      "statement": "a=np.arange(4,dtype=np.float64)",
+      "status": "PASS"
+    },
+    {
+      "statement": "b=np.ones((4,2),dtype=np.float32)",
+      "status": "PASS"
+    },
+    {
+      "statement": "c=np.zeros((4,2),dtype=np.float32)",
+      "status": "PASS"
+    },
+    {
+      "statement": "d=np.clip(a,0.0,1.0)",
+      "status": "PASS"
+    },
+    {
+      "statement": "e=np.sin(a)+np.exp(a)",
+      "status": "PASS"
+    },
+    {
+      "statement": "f=rng.normal(0.0,0.1,size=(4,2))",
+      "status": "PASS"
+    },
+    {
+      "statement": "g=rng.uniform(0.0,1.0,size=4)",
+      "status": "PASS"
+    },
+    {
+      "statement": "h=rng.randint(0,10)",
+      "status": "PASS"
+    },
+    {
+      "statement": "i=rng.choice(['A','B','C'])",
+      "status": "PASS"
+    },
+    {
+      "statement": "j=rng.choice(['tight','medium','loose'],p=[0.2,0.5,0.3])",
+      "status": "PASS"
+    },
+    {
+      "statement": "k=['A','B','C'];rng.shuffle(k)",
+      "status": "PASS"
+    },
+    {
+      "statement": "l=b.astype(np.float32)",
+      "status": "PASS"
+    },
+    {
+      "statement": "m=np.concatenate([b,c],axis=1).astype(np.float32)",
+      "status": "PASS"
+    }
+  ],
+  "failed_step": "n=float(b.mean())",
+  "type": "KeyError",
+  "message": "'__import__'",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\diagnose_materialization_import.py\", line 90, in <module>\n    exec(compile(statement,\"<synthetic_numpy_operations_probe>\",\"exec\"),restricted)\n  File \"<synthetic_numpy_operations_probe>\", line 1, in <module>\nKeyError: '__import__'\n"
+}

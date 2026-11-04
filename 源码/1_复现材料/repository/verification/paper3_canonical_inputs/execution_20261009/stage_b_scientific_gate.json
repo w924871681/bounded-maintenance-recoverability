@@ -1,0 +1,62 @@
+{
+  "R2": "PENDING_STAGE_C_INITIAL_MODEL_AND_CAUSAL_CERTIFICATION",
+  "R3": "PENDING_FULL_REPLICATION",
+  "all_existing_records_canonical_F": false,
+  "binding_and_completeness_errors": [],
+  "cohorts": {
+    "LEGACY_SERIAL": {
+      "count": 239,
+      "matched_expected": 239,
+      "unmatched": []
+    },
+    "SINGLETON_PARALLEL": {
+      "count": 961,
+      "matched_expected": 961,
+      "unmatched": []
+    }
+  },
+  "correspondence_level": "SAVED_FIELDS_R1_CURRENT_ENV_RECOVERED_REFERENCES",
+  "decisions_based_on_model_results": false,
+  "diagnostic_nonmatch_rows": 216000,
+  "execution_pass": true,
+  "execution_receipt_sha256": "0cddc74b4fdfbb874a9142cccf271ed5368df684f44c38b5a86a73c04eb6405e",
+  "existing_group_summary": {
+    "cohorts": {
+      "LEGACY_SERIAL": 239,
+      "SINGLETON_PARALLEL": 961
+    },
+    "expected_groups": 240,
+    "expected_source_cohorts_match": true,
+    "expected_trajectories": 1200,
+    "initial_state_verified": false,
+    "inspected_trajectories": 1200,
+    "matched_groups": 239,
+    "mismatched_groups": [
+      "33003/7313/C4"
+    ],
+    "missing_csv_names": [],
+    "missing_receipt_names": [],
+    "observed_csv_count": 1200,
+    "observed_receipt_count": 1200,
+    "outcome_fields_read_scientifically": false,
+    "performance_or_statistics_computed": false,
+    "r0_qualified_count": 1200,
+    "r1_F_count": 239,
+    "r1_S_count": 961,
+    "r2_qualified_count": 0,
+    "r3_qualified_count": 0,
+    "record_set_complete": true,
+    "unexpected_csv_names": [],
+    "unexpected_receipt_names": [],
+    "unverifiable_groups": []
+  },
+  "expected_historical_cohort_correspondence_pass": true,
+  "full_historical_metadata_reproduced": false,
+  "full_vs_singleton_comparison": "EXACT_REPORT_NOT_A_REQUIREMENT_TO_MATCH",
+  "historical_environment_reproduced": false,
+  "initial_state_verified": false,
+  "input_verification_root": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\P7_7_CANONICAL_INPUT_VERIFICATION_V1\\CIV_INPUT_V1_AUTHORIZED_20261009_RUN003",
+  "required_saved_fields_per_record_context": 264,
+  "schema": "paper3-stage-b-scientific-gate-v2",
+  "stage_c_allowed": true
+}

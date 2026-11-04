@@ -1,0 +1,33 @@
+{
+  "schema": "paper3-observed-process-failure-v1",
+  "status": "BLOCKED",
+  "phase": "STAGE_C_PREPARE_MODEL_ENVIRONMENT_FREEZE",
+  "source_of_observation": "Codex exec/write_stdin result; failure text transcribed from the completed tool result, not a second execution",
+  "exec_session_id": 47643,
+  "completed_tool_chunk_id": "7f221e",
+  "exit_code": 1,
+  "stdout_progress_log": "verification/paper3_canonical_inputs/execution_20261009/stage_c_prepare_attempt01.log",
+  "stdout_log_scope": "PowerShell Tee-Object captured stdout only; the original stderr traceback was observed in the completed tool result and is recorded below",
+  "hash_progress": {"completed": 12529, "total": 12529},
+  "command": [
+    "C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\python.exe", "-I", "-S", "-B", "-X",
+    "pycache_prefix=D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\results\\p7_7_integrity_replication_batch20_v1\\_never_created_prepare_pycache",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\replication_executor_batch20_v1\\executor_driver.py",
+    "--phase", "prepare", "--test-attempt", "1"
+  ],
+  "exception_type": "paper3_replication.provenance.ProvenanceError",
+  "exception_message": "required scientific packages missing from frozen distribution metadata",
+  "observed_stack": [
+    {"path": "verification/paper3_canonical_inputs/replication_executor_batch20_v1/executor_driver.py", "line": 341, "function": "run", "operation": "freeze_provenance"},
+    {"path": "verification/paper3_canonical_inputs/replication_executor_batch20_v1/provenance.py", "line": 346, "function": "freeze_provenance", "operation": "capture_model_environment"},
+    {"path": "verification/paper3_canonical_inputs/replication_executor_batch20_v1/provenance.py", "line": 270, "function": "capture_model_environment", "operation": "require numpy, torch, pandas, psutil, river, scipy, scikit-learn distribution metadata"},
+    {"path": "verification/paper3_canonical_inputs/replication_executor_batch20_v1/provenance.py", "line": 132, "function": "_assert", "operation": "raise ProvenanceError"}
+  ],
+  "model_environment_manifest_published": false,
+  "warmup_executed": false,
+  "model_or_optimizer_executed": false,
+  "new_trajectories_completed": 0,
+  "new_bootstrap_executed": false,
+  "automatic_environment_installation_or_expansion": false,
+  "next_stages_stopped_under_researcher_rules": true
+}

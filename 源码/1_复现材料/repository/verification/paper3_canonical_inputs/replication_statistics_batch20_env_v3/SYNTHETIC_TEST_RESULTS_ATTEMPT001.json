@@ -1,0 +1,21 @@
+{
+  "all_pass": true,
+  "errors": 0,
+  "failures": 0,
+  "finished_utc": "2026-10-09T07:59:38.814655+00:00",
+  "implementation_sha256": {
+    "run_statistics.py": "0346c5cdecfc595bab20f4f98b53547d215103931fd6d4aff7eb7783296e96bc",
+    "runtime_guard.py": "42a7fff9b32493904537e89737d5b4ed7adc2f32ab155915d3c5dfdbcc40bcb8",
+    "statistics.py": "5ccda537c83bf88f7531eeee7c9b4b82a55b23f4ba81b3c031b978ac8375e33c",
+    "test_statistics.py": "06ee1a6e1e15808bab2f8aa82b1b2aa0cea2bd94e318ceb1252a2d41edabdc86"
+  },
+  "numpy_version": "2.4.6",
+  "project_models_or_generators_executed": false,
+  "python_executable": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\model_env_recovery_v1_20261009\\P7_7_REPLICATION_MODEL_ENV_V1\\Scripts\\python.exe",
+  "python_executable_sha256": "8e83e4f932e02ffcf93d6ce00ef19791d9e78f1ca37fa2da31c45e99061d4dcc",
+  "real_outcomes_read": false,
+  "schema": "paper3-statistics-independent-synthetic-tests-v1",
+  "site_packages_root": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\model_env_recovery_v1_20261009\\P7_7_REPLICATION_MODEL_ENV_V1\\Lib\\site-packages",
+  "started_utc": "2026-10-09T07:59:23.801624+00:00",
+  "tests": 58
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "ONLY_PURE_DEFINITION_LOADING_AND_CONFIG_RESOLUTION",
+  "generator_called": false,
+  "model_called": false,
+  "status": "PASS",
+  "resolved_config_data_seed": 7311
+}
