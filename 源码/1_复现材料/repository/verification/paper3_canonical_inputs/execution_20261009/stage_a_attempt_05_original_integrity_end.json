@@ -1,0 +1,10 @@
+{
+  "stage_a_attempt": 5,
+  "all_42_tests_pass": true,
+  "protected_files_checked": 2535,
+  "changed_original_files": [],
+  "raw_csv_count": 1200,
+  "raw_receipt_count": 1200,
+  "generator_model_or_statistics_performed": false,
+  "precise_regression": "Restricted-namespace synthetic ndarray.mean implicit import numpy._core._methods allowed; core/torch/os/relative/explicit AST imports remain rejected"
+}

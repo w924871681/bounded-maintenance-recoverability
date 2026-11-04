@@ -1,0 +1,9 @@
+{
+  "frozen_bindings_match": true,
+  "mismatches": [],
+  "original_output_ledger_checks": 1201,
+  "protected_files": 2535,
+  "raw_csv_count": 1200,
+  "raw_receipt_count": 1200,
+  "source_pins_match": true
+}

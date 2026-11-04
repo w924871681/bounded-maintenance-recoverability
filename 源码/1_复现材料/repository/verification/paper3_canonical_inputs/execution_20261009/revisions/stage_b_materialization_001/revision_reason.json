@@ -1,0 +1,13 @@
+{
+  "before_sha256": {
+    "materialization.py": "287539fe471bffd427ef3398fdabcdd36107c9641791756271ff5b166525a4a7",
+    "tests/test_materialization.py": "36bb77f4a122f0b3923822829ac53b3dc53499706b542af2d4fdb21faf44dafc"
+  },
+  "cause": "NumPy ndarray.mean C implementation needs caller builtins __import__ for numpy._core._methods; reproduced using only synthetic4x2 array, import request captured without executing any generator",
+  "fix": "Exact one-module absolute empty-fromlist import hook; other imports rejected, original AST call whitelist still excludes __import__",
+  "original_generation_code_changed": false,
+  "random_context_or_parameters_changed": false,
+  "global_random_seed_changed": false,
+  "scientific_definition_change": false,
+  "actual_generation_during_diagnostic": false
+}

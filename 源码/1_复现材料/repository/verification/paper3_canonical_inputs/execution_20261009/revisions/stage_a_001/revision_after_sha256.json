@@ -1,0 +1,6 @@
+{
+  "after_sha256": "fd8ae10e3bf99c9f9408c79c5dfe5cb4e961585121babaddc4b54e56193a0a14",
+  "revised_file": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\verifier_v1\\tests\\test_contract.py",
+  "exact_change": "three explicit synthetic equality/dtype/shape assertions in place of np.testing helper",
+  "scientific_definition_change": false
+}

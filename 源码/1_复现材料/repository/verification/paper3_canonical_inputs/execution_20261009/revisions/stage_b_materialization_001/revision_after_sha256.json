@@ -1,0 +1,9 @@
+{
+  "after_sha256": {
+    "materialization.py": "9fb1d39377cc61d214065b0a76188a2590795f00e4448c761925b94e809c68d4",
+    "tests/test_materialization.py": "1befa01a862d43407d9f65a6ddec1715d2d6cf1652409cbd0bdc1bfd50488dee"
+  },
+  "static_ast_parse": "PASS",
+  "unchanged_original_generator_AST": true,
+  "explicit_source_imports_still_rejected": true
+}

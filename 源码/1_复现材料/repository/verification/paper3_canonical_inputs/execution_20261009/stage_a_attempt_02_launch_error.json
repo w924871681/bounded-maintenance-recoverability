@@ -1,0 +1,7 @@
+{
+  "tests_run": 0,
+  "stage": "AST parse before discovery",
+  "error": "IndentationError: expected an indented block after for statement line86",
+  "repair": "stage_a_002",
+  "scientific_execution": false
+}

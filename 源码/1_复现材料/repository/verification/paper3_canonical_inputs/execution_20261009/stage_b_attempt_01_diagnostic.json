@@ -1,0 +1,14 @@
+{
+  "schema": "paper3-stage-b-attempt-diagnostic-v1",
+  "attempt": 1,
+  "status": "STOPPED_BEFORE_INPUT_MATERIALIZATION",
+  "exit_code": 2,
+  "error": "ContractError: historical patch context missing",
+  "source_and_environment_preflight_passed": true,
+  "historical_reconstruction_completed": false,
+  "run_root_created": false,
+  "input_generator_executed": false,
+  "model_executed": false,
+  "statistics_executed": false,
+  "action": "Diagnose only the new verifier text-patch reconstruction; preserve exact old expected hashes and original source unchanged. No dependent stage may run until fixed and all tests pass."
+}

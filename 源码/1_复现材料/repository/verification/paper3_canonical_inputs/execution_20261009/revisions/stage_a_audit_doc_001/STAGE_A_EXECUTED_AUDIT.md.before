@@ -1,0 +1,104 @@
+# Stage A Executed Test and Local Revision Audit
+
+日期：2026-10-09（Asia/Shanghai）。状态：**VERIFIED — STAGE_A_42_TESTS_PASS**。
+目标仓库：`D:\dt-talk\DT_LIFECYCLE_ESCALATION`。本报告排他新建，不覆盖任何已有报告、日志、SHA 清单或原实验记录。
+
+本报告仅认证实际执行的 Stage A 五轮测试尝试、两项局部运行兼容修订及相关合成诊断。Stage B 的真实 canonical materialization 和其科学认证属于独立运行记录，不由本报告宣布通过。所有下列测试是软件验证证据，**不是模型性能或实验结果**。
+
+## 1. Authorization and execution boundary
+
+**VERIFIED：**采用研究者 2026-10-09 明确授予的 Stage A 测试授权和新 verifier 局部错误修订范围。授权引用保存在 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\environment.reviewed.json` 的 `authorization_reference` 字段。早期 IMPLEMENTATION_AND_STATIC_AUDIT_ONLY 交付是历史记录，不能替代本次执行授权。
+
+实际命令模板（attempt=1…5；attempt02 在 AST parse 阶段即停止）：
+~~~powershell
+& "C:\Users\92487\anaconda3\envs\rcf-dti-py311\python.exe" -I -S -B -X "pycache_prefix=D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\_never_created_pycache" "D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_test_launcher.py" <attempt>
+~~~
+
+**VERIFIED：**`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_test_launcher.py`:49 `main` 要求 isolated/no-site/no-bytecode，核对解释器和批准文件 SHA；:103 `ApprovedImportGuard` 在 loader 运行前核对具体模块文件；:126 `audit` 阻断四个真实生成器源文件的执行及独立 execution root 外的写入；:153 起固定五个测试文件；:169 验证恰好 42 个不重复方法；:180 排他新建日志；:184 再核模块和实现字节。未向 sys.path 添加目标仓库根目录。
+
+## 2. Reviewed environment and dependency counts
+
+| 项目 | 实际值及证据等级 |
+|---|---|
+| Python | 3.11.15；`C:\Users\92487\anaconda3\envs\rcf-dti-py311\python.exe`；VERIFIED |
+| Python executable SHA256 | `0562f573871cb16a2fb8de16e3d486e3dfd74bb83c7e87db265561917d05ad1a`；VERIFIED |
+| NumPy | 2.4.6；批准父目录 `C:\Users\92487\anaconda3\envs\rcf-dti-py311\Lib\site-packages`；VERIFIED |
+| NumPy source/native bindings | 772 个具体文件；VERIFIED approved-file hash gates |
+| Stdlib bindings | 960 个具体文件；VERIFIED approved-file hash gates |
+| Runtime binary bindings | 89 个具体文件；VERIFIED |
+| Endian / architecture | little / AMD64；VERIFIED |
+| CPU/thread metadata | 3 hardware 字段、11 thread-env 字段与 NumPy build configuration 已记录；不修改这些环境值 |
+| 完整历史环境重现 | `historical_environment_reproduced=false`；NOT_VERIFIED |
+| Repository source/evidence pins | **26** 个 `source_pins.json.sources` 条目；历史 session 另列一个绑定，不是第 27 个 repository source |
+
+环境完整清单：`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\environment.reviewed.json`，SHA256 `93b5dc09f398df5ba73494d63f8461d342f6eb1d9cdb5390397727f488ed0503`。CPU/线程及实际导入 closure 的生产 preflight 规则位于 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\preflight.py`:77 `_environment`、:89–93 hardware/thread 比对、:159 `BoundImportGuard`、:200 起已载模块核验。
+
+**VERIFIED 的文档计数纠正：**历史静态审计 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\IMPLEMENTATION_STATIC_AUDIT.md`:41、61、211 将 repository dependencies 描述为 27；实际 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\source_pins.json`:2 `sources` 长度为 26，`history_session` 另列一个外部 session 字节绑定。旧文档不改写，本报告明确记录准确计数。源清单本身未改。
+
+## 3. Every executed attempt, including failures
+
+| Attempt | 实际执行量 | 结果 | 直接证据与局部处置 |
+|---|---:|---|---|
+| 01 | 42 methods；38.068 s | 41 PASS、1 ERROR | `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_01.log`:46–88；`np.testing.assert_array_equal` 导入 numpy.testing→platform→subprocess，Windows NUL 的 O_RDWR 被严格写守卫阻断；digest 前置断言已通过。这是测试 helper 依赖副作用，不是 digest 不匹配。 |
+| 02 | 0 methods | 启动 AST parse 失败 | `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_02_launch_error.json`:1；更换三条 synthetic assert 时未保留原内层 for 缩进，触发 IndentationError。发现后保留错位字节，修正缩进；没有开始 unittest。 |
+| 03 | 42 methods；20.277 s | 42 PASS | `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_03.log`:46–48；结果 JSON 无失败／错误／skip；合成 equality+dtype+shape assertions 通过，严格写守卫未放宽。 |
+| 04 | 42 methods；20.316 s | 42 PASS | `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_04.log`:46–48；历史 patch matcher 局部兼容修订及 4 个回归 subtests 被纳入原有方法。 |
+| 05 | 42 methods；20.338 s | 42 PASS | `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_05.log`:46–48；restricted-namespace ndarray.mean 兼容修订和违规 import 回归 subtests 被纳入原有方法。 |
+
+所有 attempt 日志、results、method inventories 和 implementation SHA inventories 均独立命名保留。attempt02 没有伪造完整测试 results 或 PASS。attempt03/04/05 的全量重跑不是挑选若干通过测试。合成 regression 均放入既有方法，方法总数始终为 42。
+
+## 4. Revision ledger and scientific invariants
+
+### 4.1 Test helper and indentation repair
+
+**VERIFIED：**`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_contract.py`:70 `test_legacy_array_digest_matches_original_algorithm_no_cast` 原先使用 NumPy testing helper；当前 :87–89 改为 unittest `assertTrue(np.array_equal(...))` 加 exact dtype/shape 相等。原 `<f4`、`>f4`、非连续视图、独立旧 digest 字节参考和不得改动输入的断言保留。
+备份和原因：`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\revisions\stage_a_001`（helper 兼容）及 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\revisions\stage_a_002`（新增编辑的缩进错误）。第二项明确属于可避免的本次编辑错误，已经修正；不将它解释为原研究代码缺陷。
+
+### 4.2 Literal historical patch replay compatibility
+
+**VERIFIED：**`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\revisions\stage_b_history_001\diagnosis_and_exact_recovery.json`:2–6 指明 JSONL event 23150 的 six-space deletion context 对 four-space source；exact-only matcher 无法模拟当时 apply_patch 的空白兼容语义。当前 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\history.py`:26 `_find` 依序 exact→rstrip→strip 搜索；replacement text 原样保留；:98 完整 session SHA gate 与 :120–122 最终 recovered byte SHA gate 没有放宽。
+
+该独立文本诊断确切恢复：旧 runner 51010 bytes / `20c0a3546f5cff28dc0dccb3737bc27ee47d81b06fcb94f9fe294ca576e43ec5`，旧 protocol 12151 bytes / `8785dc1ecf9e8123f47d786b880011774ed952daa56345b6f61e60361d15838d`。旧 runner 没有执行，session 工具 payload 没有作为指令执行，也没有覆盖当前源码／协议。`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_safety_history_entry.py`:30 原方法加入空白匹配／拒绝缺失上下文 regression subtests；attempt04、05 全部通过。
+
+### 4.3 Restricted NumPy reduction implicit import
+
+**VERIFIED：**最小 hash-pinned definition loading 和 MainCfg resolution 已通过（`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_b_materialization_diagnostic_before.json`:1）；实际生成函数被 trace gate 禁止。随后小型 synthetic 4×2 array 的 `float(b.mean())` 复现 KeyError `__import__`（`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_b_materialization_diagnostic_synthetic_operations_before.json`:65–68）。非执行 capture 精确记录 name=`numpy._core._methods`、fromlist=[]、level=0（`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_b_materialization_diagnostic_capture_implicit_import.json`:9–12）；不是猜测依赖。
+
+局部修订：`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\materialization.py`:168 `_namespace` 在 restricted builtins 中配置 `_numpy_method_import`；:188–193 只接受该准确模块、absolute level=0、空 fromlist，再委托经批准的 BoundImportGuard 解析。`_SAFE_BUILTIN_NAMES` 未添加显式 `__import__` call；:94 `_audit_node` 仍拒绝显式 source import 和不在 call whitelist 的函数。原四份 hash-pinned source AST、所有参数、中心次序、seed、RNG draws 定义及数组公式没有修改。
+
+`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_materialization.py`:47 原方法新增 synthetic reduction 验证，并拒绝 core.models、torch、numpy.random、os、relative import 及显式 AST __import__。attempt05 通过；备份和原因保存在 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\revisions\stage_b_materialization_001`。这不是放开任意项目依赖，也不证明真实数组已匹配历史运行。诊断中创建的局部 RandomState/小数组只作软件 probe，不调用项目生成器、不更改 global NumPy seed。
+
+## 5. Latest exact test gate and preserved originals
+
+**VERIFIED：**`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_05_results.json`:2 all_42_pass=true；:41 implementation_unchanged_during_test=true；:47 tests_run=42；failures/errors/skipped=[]；generator/model/statistics flags=false。`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_05_method_inventory.json` 保存所有 42 个准确 test IDs。
+
+软件覆盖包括独立旧 digest 字节算法及 endian、不连续输入；完整 stage half-open spans/window counts；shape/dtype/nonfinite；资源库顺序和双约束；outcome 字段毒值屏蔽；R1 缺失／不一致阻断；R2/R3 不越权；调度／resume 负例；排他路径创建；无环 SHA 图；受限依赖。materialization orchestration 使用 mocked pure runtime 和内存 writer，不生成 canonical population。
+
+**VERIFIED：**`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_source_integrity_preflight.json`:2–8 起始 frozen bindings/source pins=true、原 ledger 1201 byte hashes 合格、1200 CSV/1200 receipts；`D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_05_original_integrity_end.json`:4–7 全 2535 protected files SHA 起止相同（changed_original_files=[]），原 CSV/receipts 数量各 1200。checkpoint 仅流式 byte SHA，不做反序列化／模型加载。没有重新计算旧性能或统计。
+
+**边界：**这些 PASS 证明本软件测试和保存文件完整性；不证明 canonical membership、历史环境数值复现、共同 initial parameters、在线因果守卫运行效果或全文严格科学比较资格。R2/R3、initial_state_verified 仍保持待授权／false。
+
+## 6. Post-revision implementation SHA256
+
+最新可执行 bundle 的完整清单为 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\execution_20261009\stage_a_attempt_05_implementation_sha256.json`；测试前／后精确相等且本报告写入前又只读复核当前实现对应。相对于原静态交付 inventory 共 5 个新 verifier 文件变化：
+
+| 完整新文件路径 | 原静态 SHA256 | Attempt05 / 当前 SHA256 |
+|---|---|---|
+| `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\history.py` | `f4f23a334fb4b1c9e14c8d81b706595f51957dd3bf7cfe56ce48234cf5372235` | `2c3377cd6786ddcfee66c252bb57d80210601efa0e58a7dd75bb58229f19f991` |
+| `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\materialization.py` | `287539fe471bffd427ef3398fdabcdd36107c9641791756271ff5b166525a4a7` | `9fb1d39377cc61d214065b0a76188a2590795f00e4448c761925b94e809c68d4` |
+| `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_contract.py` | `fa7502deb28a4e544ba22ceac627fd082a750bcea559e7e33429a867e8f9f5f9` | `b5ede9666024f11b7af18c4ae883b0095198112402ed1a0c781433771a32933b` |
+| `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_materialization.py` | `36bb77f4a122f0b3923822829ac53b3dc53499706b542af2d4fdb21faf44dafc` | `1befa01a862d43407d9f65a6ddec1715d2d6cf1652409cbd0bdc1bfd50488dee` |
+| `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\verifier_v1\tests\test_safety_history_entry.py` | `14980037137df0ec3f14f4bd6fb231c33df16c7eab6bebf8582b492cd70826c0` | `b9429aa594334c99ecfb90c66cb178bd4893158abaef583cabaeb7b524d4e44f` |
+
+未变的实现文件及 source_pins 仍以 attempt05 完整 inventory 核验。每项局部修订保留 old bytes、原因、before/after SHA；没有让旧 delivery SHA 清单冒充修订后的 bundle。
+
+## 7. Historical static deliverables remain immutable
+
+原 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\IMPLEMENTATION_STATIC_AUDIT.md` 当前 SHA256=`3e5ed86518116a32b6149300cd68a9c9c29196b0a374044027d838b3dd61b703`，与原 IMPLEMENTATION_SHA256.json.delivery_files_sha256 内记录精确相等；旧 static audit 的 NOT_RUN/NOT_EXECUTED 是交付时历史状态，不被改写为测试后状态。
+原 `D:\dt-talk\DT_LIFECYCLE_ESCALATION\verification\paper3_canonical_inputs\IMPLEMENTATION_SHA256.json` 仍保留，当前 byte SHA256=`8cdaeb2d8a9c5b067d393e906cdd0a667ba8c85d3ef7e4bf0d0ef82e05774806`。它属于 IMPLEMENTATION_AND_STATIC_AUDIT_ONLY 历史 snapshot；本报告和 attempt05 inventory 构成追加证据，不能将二者静默合并或覆盖旧清单。
+
+## 8. Final Stage A disposition
+
+**VERIFIED：STAGE_A_PASS。**最新批准依赖下恰好 42 个 synthetic/mocked 测试全部通过、原 2535 protected 文件不变，既有 1200 CSV 与 receipts 完整；已知局部 helper/replay/namespace 运行错误均有公开失败记录、精确诊断、备份、修订原因和全量回归。
+
+本报告不执行或认证 Stage B；不自动运行 warm-up、模型、训练、维护、candidate adaptation、final-heldout、Bootstrap、筛选统计或更改原结果。任何后续科学通过判断必须引用独立执行的完整 manifest／receipt 和相应授权。

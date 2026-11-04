@@ -1,0 +1,7 @@
+{
+  "source": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\check_stage_b_gate.py",
+  "sha256": "028195a1a90e6bd1c5dfccc7423fa1d5841c5660cbb35db8a91ec4f4850666a9",
+  "bytes": 3593,
+  "reason": "independent gate completeness and safe field/hash/source/candidate/definition/environment binding; no change to verifier science, original inputs or outcomes",
+  "actual_gate_executed": false
+}

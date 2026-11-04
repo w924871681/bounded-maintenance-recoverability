@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "-X",
+    "pycache_prefix=D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\P7_7_CANONICAL_INPUT_VERIFICATION_V1\\CIV_INPUT_V1_AUTHORIZED_20261009_RUN002\\_never_created_pycache",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\verifier_v1\\verify_inputs.py",
+    "--repo",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION",
+    "--authorization-file",
+    "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\stage_b_attempt_02_execution_authorization.reviewed.json",
+    "--run-id",
+    "CIV_INPUT_V1_AUTHORIZED_20261009_RUN002"
+  ],
+  "started_utc": "2026-10-08T16:43:50.441555+00:00",
+  "scope": "AUTHORIZED_STAGE_B_INPUT_ONLY",
+  "generators_authorized": true,
+  "models_authorized": false,
+  "statistics_authorized": false
+}

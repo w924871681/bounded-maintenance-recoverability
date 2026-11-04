@@ -1,0 +1,6 @@
+{
+  "before_sha256": "fd8ae10e3bf99c9f9408c79c5dfe5cb4e961585121babaddc4b54e56193a0a14",
+  "reason": "Attempt02 discovered newly edited assertion indentation before unittest discovery; no tests ran",
+  "change": "Restore all three equality/dtype/shape assertions inside the existing inner for loop",
+  "scientific_definition_change": false
+}

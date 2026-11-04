@@ -1,0 +1,63 @@
+{
+  "M0": "VERIFIED_CURRENT_BINDINGS_EXACT_OLD_SOURCE_RECOVERED_HISTORY_ENV_NOT_VERIFIED",
+  "M1": true,
+  "M10": "INPUT_RESUME_GATES_CHECKED_MODEL_RESUME_FORBIDDEN",
+  "M2": "EXACT_FIELD_COMPARISON_REPORTED_NO_CONTEXT_EQUIVALENCE_ASSUMED",
+  "M3_M4_M5_M6": "INVENTORIES_RECORDED_NO_MODEL_EXECUTION",
+  "M7": {
+    "cohorts": {
+      "LEGACY_SERIAL": 239,
+      "SINGLETON_PARALLEL": 961
+    },
+    "expected_groups": 240,
+    "expected_source_cohorts_match": true,
+    "expected_trajectories": 1200,
+    "initial_state_verified": false,
+    "inspected_trajectories": 1200,
+    "matched_groups": 239,
+    "mismatched_groups": [
+      "33003/7313/C4"
+    ],
+    "missing_csv_names": [],
+    "missing_receipt_names": [],
+    "observed_csv_count": 1200,
+    "observed_receipt_count": 1200,
+    "outcome_fields_read_scientifically": false,
+    "performance_or_statistics_computed": false,
+    "r0_qualified_count": 1200,
+    "r1_F_count": 239,
+    "r1_S_count": 961,
+    "r2_qualified_count": 0,
+    "r3_qualified_count": 0,
+    "record_set_complete": true,
+    "unexpected_csv_names": [],
+    "unexpected_receipt_names": [],
+    "unverifiable_groups": []
+  },
+  "M8": true,
+  "M9": "SAVED_INITIAL_METADATA_ONLY_PENDING_SEPARATE_AUTHORIZATION",
+  "R0": "SEE_PER_RECORD_BYTE_AND_SOURCE_QUALIFICATION",
+  "R1": "SEE_PER_RECORD_SAVED_FIELD_COVERAGE_ONLY",
+  "R2": "PENDING_SEPARATE_AUTHORIZATION",
+  "R3": "PENDING_SEPARATE_AUTHORIZATION",
+  "checks_completed": true,
+  "definition_digest": "1e2863758cd5303c7d64457c012ce49d4aef4339781a01bf5869ab41e67f32e5",
+  "dependency_digest": "c6735cd6c8c7a0ca8f6c6ec369d6d2222911c3594549f28126853af439d240d6",
+  "existing_mismatched_groups": [
+    "33003/7313/C4"
+  ],
+  "full_scientific_certification": false,
+  "historical_environment_reproduced": false,
+  "initial_state_verified": false,
+  "input_bundle_digests": {
+    "F1": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+    "F2": "ac82f95f4db3b1f624e5348cc8535d75ee3edc8d589c08e74d4aa6fa93f5e228",
+    "S1": "5db2b6062235c7415307b31d8cc597d8f9be3b6766f2e101dbaffe44ed5485e1",
+    "S2": "5db2b6062235c7415307b31d8cc597d8f9be3b6766f2e101dbaffe44ed5485e1"
+  },
+  "original_statistics_replaced": false,
+  "outcome_based_reuse_or_protocol_selection": false,
+  "schema": "paper3-civ-input-certificate-v1",
+  "status": "PROVISIONAL_REQUIRES_FINAL_SUCCESS_RECEIPT",
+  "valid_only_with_final_success_receipt": true
+}

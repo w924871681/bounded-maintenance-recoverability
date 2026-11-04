@@ -1,0 +1,53 @@
+{
+  "all_42_pass": false,
+  "approved_import_guard": "EXACT_BYTE_BINDING_BEFORE_MODULE_CODE",
+  "attempt": 1,
+  "environment_manifest_sha256": "93b5dc09f398df5ba73494d63f8461d342f6eb1d9cdb5390397727f488ed0503",
+  "errors": [
+    {
+      "test": "paper3_stage_a_test_contract.SyntheticArrayTests.test_legacy_array_digest_matches_original_algorithm_no_cast",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\verifier_v1\\tests\\test_contract.py\", line 87, in test_legacy_array_digest_matches_original_algorithm_no_cast\n    np.testing.assert_array_equal(original, saved)\n    ^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\site-packages\\numpy\\__init__.py\", line 746, in __getattr__\n    import numpy.testing as testing\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\site-packages\\numpy\\testing\\__init__.py\", line 12, in <module>\n    from ._private.utils import *\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\site-packages\\numpy\\testing\\_private\\utils.py\", line 89, in <module>\n    IS_WASM = platform.machine() in [\"wasm32\", \"wasm64\"]\n              ^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\platform.py\", line 963, in machine\n    return uname().machine\n           ^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\platform.py\", line 861, in uname\n    release, version, csd, ptype = win32_ver()\n                                   ^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\platform.py\", line 371, in win32_ver\n    major, minor, build = map(int, _syscmd_ver()[2].split('.'))\n                                   ^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\platform.py\", line 284, in _syscmd_ver\n    info = subprocess.check_output(cmd,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\subprocess.py\", line 992, in __init__\n    errread, errwrite) = self._get_handles(stdin, stdout, stderr)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\subprocess.py\", line 1359, in _get_handles\n    p2cread = msvcrt.get_osfhandle(self._get_devnull())\n                                   ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\92487\\anaconda3\\envs\\rcf-dti-py311\\Lib\\subprocess.py\", line 1137, in _get_devnull\n    self._devnull = os.open(os.devnull, os.O_RDWR)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\stage_a_test_launcher.py\", line 147, in audit\n    raise RuntimeError(\"Stage A write outside independent execution root forbidden\")\nRuntimeError: Stage A write outside independent execution root forbidden\n"
+    }
+  ],
+  "failures": [],
+  "generator_executed": false,
+  "implementation_end_sha256": {
+    "contract.py": "4cdb2c7235f04bf09652c5e0c9478c6ab4b91b16b597a8b5ed42337009e43817",
+    "history.py": "f4f23a334fb4b1c9e14c8d81b706595f51957dd3bf7cfe56ce48234cf5372235",
+    "materialization.py": "287539fe471bffd427ef3398fdabcdd36107c9641791756271ff5b166525a4a7",
+    "preflight.py": "458796154bb19e8f9fef7c8fd9dc401732c779585b1085f4dee31fa5adad953f",
+    "records.py": "95bf7dc68e4240edb6dc0742137baa75a8e39c3f46343c3d5e4ac74597498367",
+    "safety.py": "04f355c02359e60742721791a33c2af13d7917200bd5f061b98ee6d60c9d916e",
+    "schedule.py": "29d6fb143a525e0c5d1f025e22059906f8b0449845a36006340b97bcc7b6e304",
+    "source_pins.json": "98cd0ca5371e8671ba61afc27f7920008c0819464a4e2b675f2247d6bc0033a9",
+    "tests/test_contract.py": "fa7502deb28a4e544ba22ceac627fd082a750bcea559e7e33429a867e8f9f5f9",
+    "tests/test_materialization.py": "36bb77f4a122f0b3923822829ac53b3dc53499706b542af2d4fdb21faf44dafc",
+    "tests/test_records.py": "93539dceee00db0b2a99cdef8280dcddf3102ba0295ce393d1d9d0534ec9123a",
+    "tests/test_safety_history_entry.py": "14980037137df0ec3f14f4bd6fb231c33df16c7eab6bebf8582b492cd70826c0",
+    "tests/test_schedule.py": "71bd16082aaed7510d2fce73065310c4036a40443c8f2348883bc391da72e8f2",
+    "verify_inputs.py": "0ad2c848c57217e60ef7e42bc98f50ea7315d9d2e20dab2fdecc5b7aac4d0938"
+  },
+  "implementation_start_sha256": {
+    "contract.py": "4cdb2c7235f04bf09652c5e0c9478c6ab4b91b16b597a8b5ed42337009e43817",
+    "history.py": "f4f23a334fb4b1c9e14c8d81b706595f51957dd3bf7cfe56ce48234cf5372235",
+    "materialization.py": "287539fe471bffd427ef3398fdabcdd36107c9641791756271ff5b166525a4a7",
+    "preflight.py": "458796154bb19e8f9fef7c8fd9dc401732c779585b1085f4dee31fa5adad953f",
+    "records.py": "95bf7dc68e4240edb6dc0742137baa75a8e39c3f46343c3d5e4ac74597498367",
+    "safety.py": "04f355c02359e60742721791a33c2af13d7917200bd5f061b98ee6d60c9d916e",
+    "schedule.py": "29d6fb143a525e0c5d1f025e22059906f8b0449845a36006340b97bcc7b6e304",
+    "source_pins.json": "98cd0ca5371e8671ba61afc27f7920008c0819464a4e2b675f2247d6bc0033a9",
+    "tests/test_contract.py": "fa7502deb28a4e544ba22ceac627fd082a750bcea559e7e33429a867e8f9f5f9",
+    "tests/test_materialization.py": "36bb77f4a122f0b3923822829ac53b3dc53499706b542af2d4fdb21faf44dafc",
+    "tests/test_records.py": "93539dceee00db0b2a99cdef8280dcddf3102ba0295ce393d1d9d0534ec9123a",
+    "tests/test_safety_history_entry.py": "14980037137df0ec3f14f4bd6fb231c33df16c7eab6bebf8582b492cd70826c0",
+    "tests/test_schedule.py": "71bd16082aaed7510d2fce73065310c4036a40443c8f2348883bc391da72e8f2",
+    "verify_inputs.py": "0ad2c848c57217e60ef7e42bc98f50ea7315d9d2e20dab2fdecc5b7aac4d0938"
+  },
+  "implementation_unchanged_during_test": true,
+  "model_executed": false,
+  "scope": "STAGE_A_SYNTHETIC_UNIT_TESTS_ONLY",
+  "skipped": [],
+  "statistics_executed": false,
+  "tests_are_not_experimental_performance_results": true,
+  "tests_run": 42
+}

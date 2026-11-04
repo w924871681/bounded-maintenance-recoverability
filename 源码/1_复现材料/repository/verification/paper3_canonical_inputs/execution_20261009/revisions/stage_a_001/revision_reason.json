@@ -1,0 +1,9 @@
+{
+  "file": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\verifier_v1\\tests\\test_contract.py",
+  "before_sha256": "fa7502deb28a4e544ba22ceac627fd082a750bcea559e7e33429a867e8f9f5f9",
+  "trigger": "Stage A attempt01 only ERROR: np.testing importing platform opens Windows NUL, blocked by strict write guard",
+  "planned_change": "Replace np.testing.assert_array_equal with unittest assertTrue(np.array_equal), plus exact dtype and shape assertions",
+  "scientific_definition_change": false,
+  "guard_loosened": false,
+  "original_source_config_results_changed": false
+}

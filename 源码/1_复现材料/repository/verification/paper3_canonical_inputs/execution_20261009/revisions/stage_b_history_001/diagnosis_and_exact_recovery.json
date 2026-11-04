@@ -1,0 +1,62 @@
+{
+  "failure_event": 23150,
+  "historical_target": "configs/P7_7_FINAL_LIFECYCLE_PROTOCOL.json",
+  "failure_reason": "historical apply_patch accepted deletion context after leading whitespace stripping; verifier exact-only matcher rejected six-space context against four-space source",
+  "repair": "forward exact, then rstrip, then strip matching; replacement source bytes preserved verbatim; final old SHA gates unchanged",
+  "recovered": {
+    "scripts/run_p7_7_final.py": {
+      "sha256": "20c0a3546f5cff28dc0dccb3737bc27ee47d81b06fcb94f9fe294ca576e43ec5",
+      "byte_count": 51010,
+      "exact_expected_hash": true,
+      "event_chain": [
+        22278,
+        22306,
+        22360,
+        22734,
+        22826,
+        23143,
+        23177,
+        23212,
+        23294,
+        23340,
+        23374,
+        23422,
+        23822,
+        23833,
+        23840,
+        23847
+      ]
+    },
+    "configs/P7_7_FINAL_LIFECYCLE_PROTOCOL.json": {
+      "sha256": "8785dc1ecf9e8123f47d786b880011774ed952daa56345b6f61e60361d15838d",
+      "byte_count": 12151,
+      "exact_expected_hash": true,
+      "event_chain": [
+        22285,
+        22320,
+        22380,
+        22860,
+        23150,
+        23374,
+        23408,
+        23422,
+        23450,
+        23505,
+        23531,
+        23566,
+        23735,
+        23875
+      ]
+    }
+  },
+  "history_session_sha256": "a8778c201e786820fac462b0f4499f400d000560d5e8f686aa02992e2b7e5366",
+  "generator_called": false,
+  "models_called": false,
+  "historical_runner_executed": false,
+  "session_instructions_executed": false,
+  "tests_executed_by_this_diagnostic": false,
+  "modified_files": {
+    "history.py": "2c3377cd6786ddcfee66c252bb57d80210601efa0e58a7dd75bb58229f19f991",
+    "tests/test_safety_history_entry.py": "b9429aa594334c99ecfb90c66cb178bd4893158abaef583cabaeb7b524d4e44f"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "all_original_bytes_unchanged": true,
+  "basis": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION\\verification\\paper3_canonical_inputs\\execution_20261009\\original_protected_start_sha256.json",
+  "basis_sha256": "0e701502222a3f4dee381eb853a01a1fd87544589c0e23361376f82c9b5d3683",
+  "errors": [],
+  "git_HEAD": "436ee9960a32a8e94e571ded3fc800a2fa20f3e4",
+  "git_tracked_status": " M core/p7.py\n M reports/P7_7_FINAL_LIFECYCLE_PROTOCOL.md\n M reports/P7_7_FINAL_LIFECYCLE_PROTOCOL.md.sha256\n M results/p7_6b/task_states/fit/32248_7312_C1.json\n M results/p7_6b/task_states/fit/32248_7312_C3.json\n",
+  "historical_output_ledger_entries": 1201,
+  "historical_output_ledger_matches": true,
+  "new_csv_count": 0,
+  "new_receipt_count": 0,
+  "original_csv_count": 1200,
+  "original_receipt_count": 1200,
+  "protected_files": 2535,
+  "repo": "D:\\dt-talk\\DT_LIFECYCLE_ESCALATION",
+  "status": "VERIFIED",
+  "time_utc": "2026-10-08T18:01:52.722194+00:00"
+}
