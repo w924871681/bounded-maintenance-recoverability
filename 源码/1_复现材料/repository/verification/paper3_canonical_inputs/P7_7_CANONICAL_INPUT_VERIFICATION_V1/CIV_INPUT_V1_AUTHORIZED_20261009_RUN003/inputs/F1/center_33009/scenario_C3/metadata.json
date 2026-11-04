@@ -1,0 +1,11 @@
+{
+  "definition": "direct same-architecture source-domain A-to-B replacement",
+  "generator_revision": "p3_mismatch_v2_r3",
+  "matched_identity": "p3v2_a57_regime_b",
+  "mechanism": "direct telemetry transfer-function and centered source-response orientation replacement",
+  "onset_raw_index": 6520,
+  "prediction_output_blending": false,
+  "scenario": "C3",
+  "scientific_rationale": "a source replacement reverses the centered load-to-risk response orientation without altering the temporal innovation process; telemetry channel semantics change as prescribed",
+  "target_unchanged_by_design": false
+}

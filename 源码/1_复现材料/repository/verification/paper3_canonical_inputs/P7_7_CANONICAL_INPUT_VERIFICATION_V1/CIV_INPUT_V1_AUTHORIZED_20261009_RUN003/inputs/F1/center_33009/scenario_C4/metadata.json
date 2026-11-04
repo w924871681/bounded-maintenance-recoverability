@@ -1,0 +1,12 @@
+{
+  "definition": "direct nonlinear multi-lag dependency replacement",
+  "generator_revision": "p3_mismatch_v2_r3",
+  "matched_identity": "p3v2_a46_regime_c",
+  "mechanism": "direct nonlinear multi-lag target dependency",
+  "onset_raw_index": 6520,
+  "prediction_output_blending": false,
+  "same_regime_architecture_control": "p3v2_a57_regime_c_control",
+  "scenario": "C4",
+  "scientific_rationale": "the post-shift target depends on a fixed nonlinear interaction of multiple causal lags within the TCN receptive field",
+  "target_unchanged_by_design": false
+}
