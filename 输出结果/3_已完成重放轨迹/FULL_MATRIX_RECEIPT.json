@@ -1,0 +1,10 @@
+{
+  "status": "PASS_1200_CANONICAL_LIFECYCLE_REPLAYS",
+  "trajectories": 1200,
+  "stages": 28800,
+  "exact_scientific_table_equality": true,
+  "wall_times_excluded": true,
+  "source_bank_retrained": false,
+  "statistics_regeneration": "PENDING_SEPARATE_STEP",
+  "elapsed_seconds": 23141.327999999994
+}

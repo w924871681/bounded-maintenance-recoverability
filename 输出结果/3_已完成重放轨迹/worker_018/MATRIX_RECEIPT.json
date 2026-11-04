@@ -1,0 +1,110 @@
+{
+  "status": "PASS_SHARD",
+  "shard_index": 18,
+  "shards": 120,
+  "completed": 10,
+  "expected": 10,
+  "source_bank_retrained": false,
+  "records": [
+    {
+      "task": {
+        "center": 33000,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33000_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33002,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33002_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33004,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33004_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33006,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33006_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33008,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33008_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33010,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33010_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33012,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33012_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33014,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33014_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33016,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33016_7311_C4_B8"
+    },
+    {
+      "task": {
+        "center": 33018,
+        "seed": 7311,
+        "scenario": "C4",
+        "method": "B8"
+      },
+      "status": "PASS_SINGLE_LIFECYCLE",
+      "directory": "cases/33018_7311_C4_B8"
+    }
+  ]
+}
